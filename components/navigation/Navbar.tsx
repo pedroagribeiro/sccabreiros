@@ -24,7 +24,7 @@ const Navbar = () => {
               Sobre
             </a>
             <a
-              href="#"
+              href="/roaster"
               className="py-2 px-8 h-10 w-40 text-sm font-medium text-center text-green-600 bg-white rounded-md border border-transparent shadow-sm hover:bg-green-50"
             >
               Plantel
