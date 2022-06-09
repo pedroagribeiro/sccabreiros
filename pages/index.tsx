@@ -4,7 +4,7 @@ import LandingPagePost from '../components/feed/LandingPagePost'
 import Layout from '../components/layouts/Layout'
 import { ReactElement } from 'react'
 
-const Home: NextPage = () => {
+const Home = () => {
   return (
     <>
       <div className="relative bg-green-600 mb-20">
