@@ -1,7 +1,22 @@
 import React from 'react'
 import Link from 'next/link'
+import Dropdown from './dropdowns/Dropdown'
 
 const Navbar = () => {
+  const clube_dropdown = [
+    { name: 'História', page: 'history' },
+    { name: 'Parceiros', page: 'partners' },
+    { name: 'Faz-te Sócio', page: 'membership' },
+  ]
+  const futebol_dropdown = [
+    { name: 'Vista Geral', page: 'general_view' },
+    { name: 'Classificação', page: 'classification' },
+    { name: 'Últimos Resultados', page: 'latest_results' },
+    { name: 'Calendário', page: 'calendar' },
+    { name: 'Plantel', page: 'roster' },
+    { name: 'Staff', page: 'staff' },
+  ]
+
   return (
     <header className="bg-green-600">
       <nav className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8" aria-label="Top">
@@ -17,17 +32,9 @@ const Navbar = () => {
             </Link>
           </div>
           <div className="flex flex-col sm:flex-row space-y-4 sm:space-x-6 sm:space-y-0 items-center">
-            <Link href="#">
-              <button className="py-2 px-8 h-10 w-40 text-sm font-medium text-center text-green-600 bg-white rounded-md border border-transparent shadow-sm hover:bg-green-50">
-                Sobre
-              </button>
-            </Link>
-            <Link href="/roaster">
-              <button className="py-2 px-8 h-10 w-40 text-sm font-medium text-center text-green-600 bg-white rounded-md border border-transparent shadow-sm hover:bg-green-50">
-                Plantel
-              </button>
-            </Link>
-            <Link href="#">
+            <Dropdown name="Clube" elements={clube_dropdown} />
+            <Dropdown name="Futebol" elements={futebol_dropdown} />
+            <Link href="/contact">
               <button className="py-2 px-8 h-10 w-40 text-sm font-medium text-center text-green-600 bg-white rounded-md border border-transparent shadow-sm hover:bg-green-50">
                 Contacte-nos
               </button>

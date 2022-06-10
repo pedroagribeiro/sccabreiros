@@ -2,7 +2,7 @@ import React, { ReactElement } from 'react'
 import Layout from '../components/layouts/Layout'
 import PlayerCard from '../components/roaster/PlayerCard'
 
-const Roaster = () => {
+const Roster = () => {
   return (
     <div className="relative px-4 pb-8 mx-auto mt-8 max-w-2xl sm:px-6 sm:mt-20 lg:px-8 lg:pb-0 lg:max-w-7xl bg-gray-100 text-gray-700">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-6 lg:gap-10 gap-y-4">
@@ -124,6 +124,6 @@ const Roaster = () => {
   )
 }
 
-Roaster.getLayout = (page: ReactElement) => <Layout>{page}</Layout>
+Roster.getLayout = (page: ReactElement) => <Layout>{page}</Layout>
 
-export default Roaster
+export default Roster
