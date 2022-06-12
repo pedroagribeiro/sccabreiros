@@ -97,8 +97,6 @@ const Home = () => {
   )
 }
 
-Home.getLayout = (page: ReactElement) => (
-  <LandingLayout title="Início">{page}</LandingLayout>
-)
+Home.getLayout = (page: ReactElement) => <LandingLayout>{page}</LandingLayout>
 
 export default Home
