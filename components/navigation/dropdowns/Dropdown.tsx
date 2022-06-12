@@ -14,7 +14,7 @@ type MainProp = {
 
 const Dropdown = ({ name, elements }: MainProp) => {
   return (
-    <Menu as="div" className="relative inline-block text-left z-10">
+    <Menu as="div" className="relative inline-block text-left z-10 w-40">
       <div>
         <Menu.Button className="inline-flex w-full justify-center rounded-md items-center bg-white h-10 px-8 py-2 text-sm font-medium text-green-600 hover:bg-green-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
           {name}

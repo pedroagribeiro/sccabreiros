@@ -4,17 +4,17 @@ import Dropdown from './dropdowns/Dropdown'
 
 const Navbar = () => {
   const clube_dropdown = [
-    { name: 'História', page: 'history' },
-    { name: 'Parceiros', page: 'partners' },
-    { name: 'Faz-te Sócio', page: 'membership' },
+    { name: 'História', page: '/club/history' },
+    { name: 'Parceiros', page: '/club/partners' },
+    { name: 'Faz-te Sócio', page: '/club/membership' },
   ]
   const futebol_dropdown = [
-    { name: 'Vista Geral', page: 'general_view' },
-    { name: 'Classificação', page: 'classification' },
-    { name: 'Últimos Resultados', page: 'latest_results' },
-    { name: 'Calendário', page: 'calendar' },
-    { name: 'Plantel', page: 'roster' },
-    { name: 'Staff', page: 'staff' },
+    { name: 'Vista Geral', page: '/football/general_view' },
+    { name: 'Classificação', page: '/football/classification' },
+    { name: 'Últimos Resultados', page: '/football/latest_results' },
+    { name: 'Calendário', page: '/football/calendar' },
+    { name: 'Plantel', page: '/football/roster' },
+    { name: 'Staff', page: '/football/staff' },
   ]
 
   return (

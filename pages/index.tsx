@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
 import Image from 'next/image'
 import LandingPagePost from '../components/feed/LandingPagePost'
-import Layout from '../components/layouts/Layout'
+import LandingLayout from '../components/layouts/LandingLayout'
 import { ReactElement } from 'react'
 
 const Home = () => {
@@ -97,6 +97,8 @@ const Home = () => {
   )
 }
 
-Home.getLayout = (page: ReactElement) => <Layout>{page}</Layout>
+Home.getLayout = (page: ReactElement) => (
+  <LandingLayout title="Início">{page}</LandingLayout>
+)
 
 export default Home

@@ -1,6 +1,6 @@
 import React, { ReactElement } from 'react'
-import Layout from '../components/layouts/Layout'
-import PlayerCard from '../components/roaster/PlayerCard'
+import Layout from '../../components/layouts/Layout'
+import PlayerCard from '../../components/roster/PlayerCard'
 
 const Roster = () => {
   return (
@@ -11,7 +11,7 @@ const Roster = () => {
           position="Guarda-Redes"
           number={1}
           first_name="Malhão"
-          photo="/roaster/goalkeepers/malhao.png"
+          photo="/roster/goalkeepers/malhao.png"
           nationality="PT"
           age={36}
         />
@@ -21,7 +21,7 @@ const Roster = () => {
           number={4}
           first_name="Francisco"
           second_name="Brito"
-          photo="/roaster/backline/francisco_brito.png"
+          photo="/roster/backline/francisco_brito.png"
           nationality="PT"
           age={22}
         />
@@ -30,7 +30,7 @@ const Roster = () => {
           position="Defesa Esquerdo"
           number={25}
           first_name="Klayve"
-          photo="/roaster/backline/klayve.png"
+          photo="/roster/backline/klayve.png"
           nationality="BR"
           age={21}
         />
@@ -40,7 +40,7 @@ const Roster = () => {
           number={22}
           first_name="Luiz"
           second_name="Alberto"
-          photo="/roaster/backline/luiz_alberto.png"
+          photo="/roster/backline/luiz_alberto.png"
           nationality="BR"
           age={39}
         />
@@ -50,7 +50,7 @@ const Roster = () => {
           number={3}
           first_name="Ricardo"
           second_name="Machado"
-          photo="/roaster/backline/ricardo_machado.png"
+          photo="/roster/backline/ricardo_machado.png"
           nationality="PT"
           age={28}
         />
@@ -59,7 +59,7 @@ const Roster = () => {
           position="Defesa Esquerdo"
           number={5}
           first_name="Ruizinho"
-          photo="/roaster/backline/ruizinho.png"
+          photo="/roster/backline/ruizinho.png"
           nationality="PT"
           age={28}
         />
@@ -68,7 +68,7 @@ const Roster = () => {
           position="Médio Centro"
           number={38}
           first_name="Jorginho"
-          photo="/roaster/mediums/jorginho.png"
+          photo="/roster/mediums/jorginho.png"
           nationality="PT"
           age={22}
         />
@@ -78,7 +78,7 @@ const Roster = () => {
           number={25}
           first_name="Nuno"
           second_name="Gomes"
-          photo="/roaster/mediums/nuno_gomes.png"
+          photo="/roster/mediums/nuno_gomes.png"
           nationality="PT"
           age={21}
         />
@@ -87,7 +87,7 @@ const Roster = () => {
           position="Médio Centro"
           number={10}
           first_name="Valtinho"
-          photo="/roaster/mediums/valtinho.png"
+          photo="/roster/mediums/valtinho.png"
           nationality="PT"
           age={28}
         />
@@ -97,7 +97,7 @@ const Roster = () => {
           number={9}
           first_name="João"
           second_name="Tiago"
-          photo="/roaster/strikers/joao_tiago.png"
+          photo="/roster/strikers/joao_tiago.png"
           nationality="PT"
           age={22}
         />
@@ -106,7 +106,7 @@ const Roster = () => {
           position="Avançado"
           number={90}
           first_name="Tekla"
-          photo="/roaster/strikers/tekla.png"
+          photo="/roster/strikers/tekla.png"
           nationality="PT"
           age={28}
         />
@@ -115,7 +115,7 @@ const Roster = () => {
           position="Avançado Esquerdo"
           number={30}
           first_name="Ukra"
-          photo="/roaster/strikers/ukra.png"
+          photo="/roster/strikers/ukra.png"
           nationality="PT"
           age={22}
         />
@@ -124,6 +124,8 @@ const Roster = () => {
   )
 }
 
-Roster.getLayout = (page: ReactElement) => <Layout>{page}</Layout>
+Roster.getLayout = (page: ReactElement) => (
+  <Layout title="Plantel 2022/2023">{page}</Layout>
+)
 
 export default Roster
