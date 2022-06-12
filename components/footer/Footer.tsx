@@ -6,7 +6,7 @@ import { MdEmail } from 'react-icons/md'
 
 const Footer = () => {
   return (
-    <footer className="p-4 bg-green-600 shadow md:px-6 md:py-8 text-white">
+    <footer className="relative bottom-0 w-full p-4 bg-green-600 shadow md:px-6 md:py-8 text-white">
       <div className="flex flex-col space-y-6 sm:flex-row sm:space-y-0 items-center justify-between sm:px-6 mb-6">
         <Link href="/">
           <div className="flex space-x-4">

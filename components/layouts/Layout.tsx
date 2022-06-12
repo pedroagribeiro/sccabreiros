@@ -18,7 +18,7 @@ const Layout = (props: MainLayoutProps) => {
       </Head>
       <Navbar />
       <main>
-        <div>
+        <div className="min-h-screen">
           <div className="bg-green-600 text-white">
             <div className="flex items-center justify-center lg:justify-start pt-8 px-4 pb-8 mx-auto max-w-2xl sm:px-6 sm:pt-12 lg:px-8 lg:max-w-7xl ">
               <p className="text-2xl md:text-3xl">{props!.title}</p>
