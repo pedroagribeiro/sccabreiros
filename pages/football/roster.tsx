@@ -119,6 +119,15 @@ const Roster = () => {
           nationality="PT"
           age={22}
         />
+        <PlayerCard
+          zerozero={446060}
+          position="Avançado Direito"
+          number={97}
+          first_name="Binho"
+          photo="/roster/strikers/binho.png"
+          nationality="BR"
+          age={24}
+        />
       </div>
     </div>
   )
