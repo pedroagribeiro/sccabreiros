@@ -9,7 +9,6 @@ const Navbar = () => {
     { name: 'Faz-te Sócio', page: '/club/membership' },
   ]
   const futebol_dropdown = [
-    { name: 'Vista Geral', page: '/football/general' },
     { name: 'Classificação', page: '/football/classification' },
     { name: 'Últimos Resultados', page: '/football/results' },
     { name: 'Calendário', page: '/football/calendar' },
