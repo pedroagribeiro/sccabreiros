@@ -128,6 +128,15 @@ const Roster = () => {
           nationality="BR"
           age={24}
         />
+        <PlayerCard
+          zerozero={0}
+          position="Avançado Esquerdo"
+          number={7}
+          first_name="Figo"
+          photo="/roster/strikers/figo.png"
+          nationality="PT"
+          age={25}
+        />
       </div>
     </div>
   )
