@@ -1,0 +1,161 @@
+[
+  {
+    "id": 0,
+    "firstName": "Malhão",
+    "photo": "https://imgbb.com/0.png",
+    "nationality": "Portuguese",
+    "age": 36,
+    "number": 1,
+    "position": "Guarda-redes",
+    "zerozeroId": 420909,
+    "step": "Sénior"
+  },
+  {
+    "id": 1,
+    "firstName": "Ricardo",
+    "secondName": "Machado",
+    "photo": "https://imgbb.com/1.png",
+    "nationality": "Portuguese",
+    "age": 28,
+    "number": 3,
+    "position": "Defesa Direito",
+    "zerozeroId": 693872,
+    "step": "Sénior"
+  },
+  {
+    "id": 2,
+    "firstName": "Francisco",
+    "secondName": "Brito",
+    "photo": "https://imgbb.com/2.png",
+    "nationality": "Portuguese",
+    "age": 22,
+    "number": 4,
+    "position": "Defesa Central",
+    "zerozeroId": 807849,
+    "step": "Sénior"
+  },
+  {
+    "id": 3,
+    "firstName": "Ruizinho",
+    "photo": "https://imgbb.com/3.png",
+    "nationality": "Portuguese",
+    "age": 28,
+    "number": 5,
+    "position": "Defesa Esquerdo",
+    "zerozeroId": 167092,
+    "step": "Sénior"
+  },
+  {
+    "id": 4,
+    "firstName": "Figo",
+    "photo": "https://imgbb.com/4.png",
+    "nationality": "Portuguese",
+    "age": 25,
+    "number": 7,
+    "position": "Avançado Direito",
+    "zerozeroId": 307456,
+    "step": "Sénior"
+  },
+  {
+    "id": 5,
+    "firstName": "João",
+    "secondName": "Tiago",
+    "photo": "https://imgbb.com/5.png",
+    "nationality": "Portuguese",
+    "age": 22,
+    "number": 9,
+    "position": "Avançado",
+    "zerozeroId": 635892,
+    "step": "Sénior"
+  },
+  {
+    "id": 6,
+    "firstName": "Valtinho",
+    "photo": "https://imgbb.com/6.png",
+    "nationality": "Portuguese",
+    "age": 28,
+    "number": 10,
+    "position": "Médio Centro",
+    "zerozeroId": 610925,
+    "step": "Sénior"
+  },
+  {
+    "id": 7,
+    "firstName": "Luiz",
+    "secondName": "Alberto",
+    "photo": "https://imgbb.com/7.png",
+    "nationality": "Brazilian",
+    "age": 39,
+    "number": 22,
+    "position": "Defesa Central",
+    "zerozeroId": 66887,
+    "step": "Sénior"
+  },
+  {
+    "id": 8,
+    "firstName": "Nuno",
+    "secondName": "Gomes",
+    "photo": "https://imgbb.com/8.png",
+    "nationality": "Portuguese",
+    "age": 21,
+    "number": 25,
+    "position": "Médio Centro",
+    "zerozeroId": 807835,
+    "step": "Sénior"
+  },
+  {
+    "id": 9,
+    "firstName": "Klayve",
+    "photo": "https://imgbb.com/9.png",
+    "nationality": "Brazilian",
+    "age": 21,
+    "number": 25,
+    "position": "Defesa Direito",
+    "zerozeroId": 693872,
+    "step": "Sénior"
+  },
+  {
+    "id": 10,
+    "firstName": "Ukra",
+    "photo": "https://imgbb.com/10.png",
+    "nationality": "Portuguese",
+    "age": 22,
+    "number": 30,
+    "position": "Avançado Esquerdo",
+    "zerozeroId": 805673,
+    "step": "Sénior"
+  },
+  {
+    "id": 11,
+    "firstName": "Jorginho",
+    "photo": "https://imgbb.com/11.png",
+    "nationality": "Portuguese",
+    "age": 22,
+    "number": 38,
+    "position": "Médio Centro",
+    "zerozeroId": 647721,
+    "step": "Sénior"
+  },
+  {
+    "id": 12,
+    "firstName": "Tekla",
+    "photo": "https://imgbb.com/12.png",
+    "nationality": "Portuguese",
+    "age": 28,
+    "number": 90,
+    "position": "Avançado",
+    "zerozeroId": 418173,
+    "step": "Sénior"
+  },
+  {
+    "id": 13,
+    "firstName": "Binho",
+    "photo": "https://imgbb.com/13.png",
+    "nationality": "Brazilian",
+    "age": 24,
+    "number": 97,
+    "position": "Avançado",
+    "zerozeroId": 446060,
+    "step": "Sénior"
+  }
+]

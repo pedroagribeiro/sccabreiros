@@ -1,0 +1,38 @@
+[
+  {
+    "id": 0,
+    "date": "2022-04-16",
+    "location": "Cabreiros",
+    "venue": "Complexo Desportivo de Cabreiros",
+    "homeTeamId": 1,
+    "awayTeamId": 2,
+    "homeTeamGoals": 0,
+    "awayTeamGoals": 1,
+    "competition": "A.F Braga - Pró-Nacional - Série A",
+    "round": "Jornada 26"
+  },
+  {
+    "id": 1,
+    "date": "2022-04-10",
+    "location": "Nine",
+    "venue": "Complexo Desportivo de Nine",
+    "homeTeamId": 3,
+    "awayTeamId": 1,
+    "homeTeamGoals": 1,
+    "awayTeamGoals": 1,
+    "competition": "A.F Braga - Pró-Nacional - Série A",
+    "round": "Jornada 25"
+  },
+  {
+    "id": 2,
+    "date": "2022-03-26",
+    "location": "Cabreiros",
+    "venue": "Complexo Desportivo de Cabreiros",
+    "homeTeamId": 1,
+    "awayTeamId": 4,
+    "homeTeamGoals": 1,
+    "awayTeamGoals": 2,
+    "competition": "A.F Braga - Pró-Nacional - Série A",
+    "round": "Jornada 25"
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "id": 0,
+    "step": "Sénior",
+    "name": "Sporting Clube de Cabreiros",
+    "competition": "A.F Braga - Pró-Nacional - Série A",
+    "logo": "https://imgbb.com/sccabreiros.png"
+  },
+  {
+    "id": 1,
+    "step": "Sénior",
+    "name": "Grupo Desportivo Recreativo de Esporões",
+    "competition": "A.F Braga - Pró-Nacional - Série A",
+    "logo": "https://imgbb.com/gdr_esporoes.png"
+  },
+  {
+    "id": 2,
+    "step": "Sénior",
+    "name": "Associação Desportiva Ninense",
+    "competition": "A.F Braga - Pró-Nacional - Série A",
+    "logo": "https://imgbb.com/ad_ninense.png"
+  },
+  {
+    "id": 3,
+    "step": "Sénior",
+    "name": "Dumiense/CJP II",
+    "competition": "A.F Braga - Pró-Nacional - Série A",
+    "logo": "https://imgbb.com/dumiensecjp2.png"
+  }
+]
