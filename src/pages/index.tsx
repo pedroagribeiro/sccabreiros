@@ -3,8 +3,10 @@ import Image from 'next/image'
 import LandingPagePost from '../components/feed/LandingPagePost'
 import LandingLayout from '../components/layouts/LandingLayout'
 import { ReactElement } from 'react'
+import { trpc } from '../utils/trpc'
 
 const Home = () => {
+  const hello = trpc.useQuery(['hello', { text: 'client' }])
   return (
     <>
       <div className="relative bg-green-600 mb-20">
