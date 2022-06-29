@@ -10,6 +10,14 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+model Contact {
+  id            Int       @id @default(autoincrement())
+  fullName      String
+  email         String
+  subject       String
+  message       String
+}
+
 model Member {
   id            Int       @id @default(autoincrement())
   fullName      String
@@ -17,8 +25,9 @@ model Member {
   address       String
   postalCode    String
   location      String
-  phoneNumber   String
+  phone         String
   photo         String
+  email         String
 }
 
 model Fixture {
@@ -61,6 +70,7 @@ model Team {
   id                Int         @id @default(autoincrement())
   step              String
   name              String
+  shorthand_name    String
   competition       String
   logo              String
   homeFixtures      Fixture[]   @relation("HomeTeam")

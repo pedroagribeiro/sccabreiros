@@ -7,7 +7,8 @@
     "postalCode": "4705-362",
     "location": "Semelhe",
     "phoneNumber": "914991214",
-    "photo": "https://imgbb.com/0.png"
+    "photo": "https://imgbb.com/0.png",
+    "email": "bernardoribeiro42@gmail.com"
   },
   {
     "id": 1,
@@ -17,7 +18,8 @@
     "postalCode": "4705-362",
     "location": "Semelhe",
     "phoneNumber": "916669693",
-    "photo": "https://imgbb.com/1.png"
+    "photo": "https://imgbb.com/1.png",
+    "email": "pedrouminhoribeiro@gmail.com"
   },
   {
     "id": 2,
@@ -27,6 +29,7 @@
     "postalCode": "4700-000",
     "location": "Várzea",
     "phoneNumber": "962228592",
-    "photo": "https://imgbb.com/2.png"
+    "photo": "https://imgbb.com/2.png",
+    "email": "jose_laurentino@gmail.com"
   }
 ]

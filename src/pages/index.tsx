@@ -1,12 +1,16 @@
-import type { NextPage } from 'next'
-import Image from 'next/image'
-import LandingPagePost from '../components/feed/LandingPagePost'
-import LandingLayout from '../components/layouts/LandingLayout'
-import { ReactElement } from 'react'
-import { trpc } from '../utils/trpc'
+import type { NextPage } from 'next';
+import Image from 'next/image';
+import LandingPagePost from '../components/feed/LandingPagePost';
+import LandingLayout from '../components/layouts/LandingLayout';
+import { ReactElement } from 'react';
+import { trpc } from '../utils/trpc';
 
 const Home = () => {
-  const hello = trpc.useQuery(['hello', { text: 'client' }])
+  const {
+    data: roster,
+    refetch,
+    isLoading,
+  } = trpc.useQuery(['roster.getRoster']);
   return (
     <>
       <div className="relative bg-green-600 mb-20">
@@ -96,9 +100,9 @@ const Home = () => {
       </div>
       <LandingPagePost />
     </>
-  )
-}
+  );
+};
 
-Home.getLayout = (page: ReactElement) => <LandingLayout>{page}</LandingLayout>
+Home.getLayout = (page: ReactElement) => <LandingLayout>{page}</LandingLayout>;
 
-export default Home
+export default Home;

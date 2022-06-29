@@ -3,28 +3,40 @@
     "id": 0,
     "step": "Sénior",
     "name": "Sporting Clube de Cabreiros",
+    "shorthand_name": "S.C Cabreiros",
     "competition": "A.F Braga - Pró-Nacional - Série A",
-    "logo": "https://imgbb.com/sccabreiros.png"
+    "logo": "/emblema.png"
   },
   {
     "id": 1,
     "step": "Sénior",
     "name": "Grupo Desportivo Recreativo de Esporões",
+    "shorthand_name": "G.D.R Esporões",
     "competition": "A.F Braga - Pró-Nacional - Série A",
-    "logo": "https://imgbb.com/gdr_esporoes.png"
+    "logo": "/oponents/championship/gdr_esporoes.png"
   },
   {
     "id": 2,
     "step": "Sénior",
     "name": "Associação Desportiva Ninense",
+    "shorthand_name": "A.D Ninense",
     "competition": "A.F Braga - Pró-Nacional - Série A",
-    "logo": "https://imgbb.com/ad_ninense.png"
+    "logo": "/oponents/championship/ad_ninense.png"
   },
   {
     "id": 3,
     "step": "Sénior",
     "name": "Dumiense/CJP II",
+    "shorthand_name": "Dumiense/CJP II",
     "competition": "A.F Braga - Pró-Nacional - Série A",
-    "logo": "https://imgbb.com/dumiensecjp2.png"
+    "logo": "/oponents/championship/dumiense.png"
+  },
+  {
+    "id": 4,
+    "step": "Sénior",
+    "name": "Sporting Clube da Ucha",
+    "shorthand_name": "S.C Ucha",
+    "competition": "A.F Braga - Pró-Nacional - Série A",
+    "logo": "/oponents/championship/sc_ucha.png"
   }
 ]

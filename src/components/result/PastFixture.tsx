@@ -1,22 +1,20 @@
-import React from 'react'
-import Image from 'next/image'
-import { GrMapLocation } from 'react-icons/gr'
-import { BsFillCalendarDateFill } from 'react-icons/bs'
+import React from 'react';
+import Image from 'next/image';
+import { GrMapLocation } from 'react-icons/gr';
+import { BsFillCalendarDateFill } from 'react-icons/bs';
+import { Team } from '.prisma/client';
 
 type PastFixtureProps = {
-  date: string
-  location: string
-  venue_name: string
-  result_type: string
-  home_team: string
-  away_team: string
-  home_scored_goals: number
-  away_scored_goals: number
-  home_team_symbol_path: string
-  away_team_symbol_path: string
-  competition: string
-  round: string
-}
+  date: Date;
+  location: string;
+  venue_name: string;
+  home_team: Team;
+  away_team: Team;
+  home_scored_goals: number;
+  away_scored_goals: number;
+  competition: string;
+  round: string;
+};
 
 const PastFixture = (props: PastFixtureProps) => {
   return (
@@ -30,22 +28,22 @@ const PastFixture = (props: PastFixtureProps) => {
           <div className="flex space-x-4 items-center pt-4">
             <div className="flex flex-col space-y-2 items-center">
               <Image
-                src={props.home_team_symbol_path}
+                src={props.home_team.logo}
                 alt="home_team_symbol"
                 width={43}
                 height={58}
               />
-              <p className="text-md">{props.home_team}</p>
+              <p className="text-md">{props.home_team.shorthand_name}</p>
               <p className="text-3xl font-bold">{props.home_scored_goals}</p>
             </div>
             <div className="flex flex-col space-y-2 items-center">
               <Image
-                src={props.away_team_symbol_path}
+                src={props.away_team.logo}
                 alt="away_team_symbol"
                 width={43}
                 height={58}
               />
-              <p className="text-md">{props.away_team}</p>
+              <p className="text-md">{props.away_team.shorthand_name}</p>
               <p className="text-3xl font-bold">{props.away_scored_goals}</p>
             </div>
           </div>
@@ -56,13 +54,15 @@ const PastFixture = (props: PastFixtureProps) => {
             </div>
             <div className="flex space-x-2 justify-start">
               <BsFillCalendarDateFill />
-              <p className="text-md">{props.date}</p>
+              <p className="text-md">
+                {new Date(props.date).toLocaleDateString('pt-PT')}
+              </p>
             </div>
           </div>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default PastFixture
+export default PastFixture;

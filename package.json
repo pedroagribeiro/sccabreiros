@@ -14,12 +14,21 @@
   "dependencies": {
     "@headlessui/react": "^1.6.4",
     "@prisma/client": "^3.15.2",
+    "@trpc/client": "^9.25.3",
+    "@trpc/next": "^9.25.3",
+    "@trpc/react": "^9.25.3",
+    "@trpc/server": "^9.25.3",
+    "formik": "^2.2.9",
     "next": "12.1.6",
     "react": "18.1.0",
     "react-boxicons": "^0.0.28",
     "react-country-flag": "^3.0.2",
     "react-dom": "18.1.0",
-    "react-icons": "^4.4.0"
+    "react-icons": "^4.4.0",
+    "react-query": "^3.39.1",
+    "trpc": "^0.11.3",
+    "yup": "^0.32.11",
+    "zod": "^3.17.3"
   },
   "devDependencies": {
     "@types/node": "^17.0.45",

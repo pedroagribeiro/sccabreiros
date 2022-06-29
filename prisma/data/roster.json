@@ -2,8 +2,8 @@
   {
     "id": 0,
     "firstName": "Malhão",
-    "photo": "https://imgbb.com/0.png",
-    "nationality": "Portuguese",
+    "photo": "/roster/goalkeepers/malhao.png",
+    "nationality": "PT",
     "age": 36,
     "number": 1,
     "position": "Guarda-redes",
@@ -12,10 +12,21 @@
   },
   {
     "id": 1,
+    "firstName": "Cara",
+    "photo": "/roster/backline/cara.png",
+    "nationality": "PT",
+    "age": 38,
+    "number": 2,
+    "position": "Defesa Direito",
+    "zerozeroId": 99467,
+    "step": "Sénior"
+  },
+  {
+    "id": 2,
     "firstName": "Ricardo",
     "secondName": "Machado",
-    "photo": "https://imgbb.com/1.png",
-    "nationality": "Portuguese",
+    "photo": "/roster/backline/ricardo_machado.png",
+    "nationality": "PT",
     "age": 28,
     "number": 3,
     "position": "Defesa Direito",
@@ -23,11 +34,11 @@
     "step": "Sénior"
   },
   {
-    "id": 2,
+    "id": 3,
     "firstName": "Francisco",
     "secondName": "Brito",
-    "photo": "https://imgbb.com/2.png",
-    "nationality": "Portuguese",
+    "photo": "/roster/backline/francisco_brito.png",
+    "nationality": "PT",
     "age": 22,
     "number": 4,
     "position": "Defesa Central",
@@ -35,10 +46,10 @@
     "step": "Sénior"
   },
   {
-    "id": 3,
+    "id": 4,
     "firstName": "Ruizinho",
-    "photo": "https://imgbb.com/3.png",
-    "nationality": "Portuguese",
+    "photo": "/roster/backline/ruizinho.png",
+    "nationality": "PT",
     "age": 28,
     "number": 5,
     "position": "Defesa Esquerdo",
@@ -46,10 +57,10 @@
     "step": "Sénior"
   },
   {
-    "id": 4,
+    "id": 5,
     "firstName": "Figo",
-    "photo": "https://imgbb.com/4.png",
-    "nationality": "Portuguese",
+    "photo": "/roster/strikers/figo.png",
+    "nationality": "PT",
     "age": 25,
     "number": 7,
     "position": "Avançado Direito",
@@ -57,11 +68,11 @@
     "step": "Sénior"
   },
   {
-    "id": 5,
+    "id": 6,
     "firstName": "João",
     "secondName": "Tiago",
-    "photo": "https://imgbb.com/5.png",
-    "nationality": "Portuguese",
+    "photo": "/roster/strikers/joao_tiago.png",
+    "nationality": "PT",
     "age": 22,
     "number": 9,
     "position": "Avançado",
@@ -69,10 +80,10 @@
     "step": "Sénior"
   },
   {
-    "id": 6,
+    "id": 7,
     "firstName": "Valtinho",
-    "photo": "https://imgbb.com/6.png",
-    "nationality": "Portuguese",
+    "photo": "/roster/mediums/valtinho.png",
+    "nationality": "PT",
     "age": 28,
     "number": 10,
     "position": "Médio Centro",
@@ -80,11 +91,11 @@
     "step": "Sénior"
   },
   {
-    "id": 7,
+    "id": 8,
     "firstName": "Luiz",
     "secondName": "Alberto",
-    "photo": "https://imgbb.com/7.png",
-    "nationality": "Brazilian",
+    "photo": "/roster/backline/luiz_alberto.png",
+    "nationality": "BR",
     "age": 39,
     "number": 22,
     "position": "Defesa Central",
@@ -92,11 +103,11 @@
     "step": "Sénior"
   },
   {
-    "id": 8,
+    "id": 9,
     "firstName": "Nuno",
     "secondName": "Gomes",
-    "photo": "https://imgbb.com/8.png",
-    "nationality": "Portuguese",
+    "photo": "/roster/mediums/nuno_gomes.png",
+    "nationality": "PT",
     "age": 21,
     "number": 25,
     "position": "Médio Centro",
@@ -104,10 +115,10 @@
     "step": "Sénior"
   },
   {
-    "id": 9,
+    "id": 10,
     "firstName": "Klayve",
-    "photo": "https://imgbb.com/9.png",
-    "nationality": "Brazilian",
+    "photo": "/roster/backline/klayve.png",
+    "nationality": "BR",
     "age": 21,
     "number": 25,
     "position": "Defesa Direito",
@@ -115,10 +126,10 @@
     "step": "Sénior"
   },
   {
-    "id": 10,
+    "id": 11,
     "firstName": "Ukra",
-    "photo": "https://imgbb.com/10.png",
-    "nationality": "Portuguese",
+    "photo": "/roster/strikers/ukra.png",
+    "nationality": "PT",
     "age": 22,
     "number": 30,
     "position": "Avançado Esquerdo",
@@ -126,10 +137,10 @@
     "step": "Sénior"
   },
   {
-    "id": 11,
+    "id": 12,
     "firstName": "Jorginho",
-    "photo": "https://imgbb.com/11.png",
-    "nationality": "Portuguese",
+    "photo": "/roster/mediums/jorginho.png",
+    "nationality": "PT",
     "age": 22,
     "number": 38,
     "position": "Médio Centro",
@@ -137,10 +148,10 @@
     "step": "Sénior"
   },
   {
-    "id": 12,
+    "id": 13,
     "firstName": "Tekla",
-    "photo": "https://imgbb.com/12.png",
-    "nationality": "Portuguese",
+    "photo": "/roster/strikers/tekla.png",
+    "nationality": "PT",
     "age": 28,
     "number": 90,
     "position": "Avançado",
@@ -148,14 +159,25 @@
     "step": "Sénior"
   },
   {
-    "id": 13,
+    "id": 14,
     "firstName": "Binho",
-    "photo": "https://imgbb.com/13.png",
-    "nationality": "Brazilian",
+    "photo": "/roster/strikers/binho.png",
+    "nationality": "BR",
     "age": 24,
     "number": 97,
     "position": "Avançado",
     "zerozeroId": 446060,
+    "step": "Sénior"
+  },
+  {
+    "id": 15,
+    "firstName": "Telmo",
+    "photo": "/roster/mediums/telmo.png",
+    "nationality": "PT",
+    "age": 37,
+    "number": 15,
+    "position": "Médio Ofensivo",
+    "zerozeroId": 101116,
     "step": "Sénior"
   }
 ]

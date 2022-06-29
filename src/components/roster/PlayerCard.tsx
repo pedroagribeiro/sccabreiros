@@ -1,19 +1,19 @@
-import React from 'react'
-import Image from 'next/image'
-import ReactCountryFlag from 'react-country-flag'
-import Link from 'next/link'
-import { GiSoccerBall } from 'react-icons/gi'
+import React from 'react';
+import Image from 'next/image';
+import ReactCountryFlag from 'react-country-flag';
+import Link from 'next/link';
+import { GiSoccerBall } from 'react-icons/gi';
 
 type PlayerInfo = {
-  first_name: string
-  second_name?: string
-  photo: string
-  nationality: string
-  age: number
-  number: number
-  position: string
-  zerozero: number
-}
+  first_name: string;
+  second_name: string | null;
+  photo: string;
+  nationality: string;
+  age: number;
+  number: number;
+  position: string;
+  zerozero: number;
+};
 
 const PlayerCard = ({
   first_name,
@@ -28,12 +28,7 @@ const PlayerCard = ({
   return (
     <div className="grid grid-cols-2 divide-white rounded-md ring-1 ring-gray-200 shadow-sm mb-16">
       <div className="px-4 py-1 bg-gray-200">
-        <Image
-          src={photo}
-          alt={first_name + second_name}
-          width={199}
-          height={281}
-        />
+        <Image src={photo} alt={first_name + number} width={199} height={281} />
       </div>
       <div className="flex flex-col space-y-2 p-6 justify-center">
         <div className="flex space-x-2 items-center">
@@ -69,7 +64,7 @@ const PlayerCard = ({
         </Link>
       </div>{' '}
     </div>
-  )
-}
+  );
+};
 
-export default PlayerCard
+export default PlayerCard;
