@@ -1,6 +1,5 @@
 import React, { ReactElement } from 'react';
 import Image from 'next/image';
-import Layout from '../layouts/Layout';
 
 const LandingPost = () => {
   return (
@@ -16,7 +15,5 @@ const LandingPost = () => {
     </div>
   );
 };
-
-LandingPost.getLayout = (page: ReactElement) => <Layout>{page}</Layout>;
 
 export default LandingPost;
