@@ -1,7 +1,7 @@
-import React, { ReactElement } from 'react'
-import Layout from '../../components/layouts/Layout'
-import Image from 'next/image'
-import OfficialPartner from '../../components/partners/OfficialPartner'
+import React, { ReactElement } from 'react';
+import Layout from '../components/layouts/Layout';
+import Image from 'next/image';
+import OfficialPartner from '../components/partners/OfficialPartner';
 
 const Partners = () => {
   return (
@@ -32,10 +32,15 @@ const Partners = () => {
         />
       </div>
     </div>
-  )
-}
+  );
+};
 
 Partners.getLayout = (page: ReactElement) => (
-  <Layout title="Parceiros">{page}</Layout>
-)
-export default Partners
+  <Layout
+    title="Parceiros"
+    subpages={[{ title: 'Parceiros', url: '/partners' }]}
+  >
+    {page}
+  </Layout>
+);
+export default Partners;

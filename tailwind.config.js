@@ -6,8 +6,8 @@ module.exports = {
   theme: {
     extend: {},
     fontFamily: {
-      sans: ['Saira', 'sans-serif'],
+      sans: ['Fira Sans', 'sans-serif'],
     },
   },
   plugins: [],
-}
+};

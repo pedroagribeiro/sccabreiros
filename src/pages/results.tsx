@@ -1,8 +1,8 @@
 import React, { ReactElement } from 'react';
 import { FaFireExtinguisher } from 'react-icons/fa';
-import Layout from '../../components/layouts/Layout';
-import PastFixture from '../../components/result/PastFixture';
-import { trpc } from '../../utils/trpc';
+import Layout from '../components/layouts/Layout';
+import PastFixture from '../components/result/PastFixture';
+import { trpc } from '../utils/trpc';
 
 const Results = () => {
   const {
@@ -36,7 +36,12 @@ const Results = () => {
 };
 
 Results.getLayout = (page: ReactElement) => (
-  <Layout title="Últimos resultados">{page}</Layout>
+  <Layout
+    title="Resultados"
+    subpages={[{ title: 'Resultados', url: '/results' }]}
+  >
+    {page}
+  </Layout>
 );
 
 export default Results;

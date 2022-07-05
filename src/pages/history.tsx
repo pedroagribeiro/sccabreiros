@@ -1,6 +1,6 @@
-import React, { ReactElement } from 'react'
-import Layout from '../../components/layouts/Layout'
-import Image from 'next/image'
+import React, { ReactElement } from 'react';
+import Layout from '../components/layouts/Layout';
+import Image from 'next/image';
 
 const History = () => {
   return (
@@ -56,11 +56,13 @@ const History = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 History.getLayout = (page: ReactElement) => (
-  <Layout title="História">{page}</Layout>
-)
+  <Layout title="História" subpages={[{ title: 'História', url: '/history' }]}>
+    {page}
+  </Layout>
+);
 
-export default History
+export default History;

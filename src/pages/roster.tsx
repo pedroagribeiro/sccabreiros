@@ -1,7 +1,7 @@
 import React, { ReactElement } from 'react';
-import Layout from '../../components/layouts/Layout';
-import PlayerCard from '../../components/roster/PlayerCard';
-import { trpc } from '../../utils/trpc';
+import Layout from '../components/layouts/Layout';
+import PlayerCard from '../components/roster/PlayerCard';
+import { trpc } from '../utils/trpc';
 
 const Roster = () => {
   const {
@@ -32,7 +32,9 @@ const Roster = () => {
 };
 
 Roster.getLayout = (page: ReactElement) => (
-  <Layout title="Plantel 2022/2023">{page}</Layout>
+  <Layout title="Plantel" subpages={[{ title: 'Plantel', url: '/roster' }]}>
+    {page}
+  </Layout>
 );
 
 export default Roster;
