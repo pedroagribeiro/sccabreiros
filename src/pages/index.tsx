@@ -6,11 +6,6 @@ import { ReactElement } from 'react';
 import { trpc } from '../utils/trpc';
 
 const Home = () => {
-  const {
-    data: roster,
-    refetch,
-    isLoading,
-  } = trpc.useQuery(['roster.getRoster']);
   return (
     <div>
       <LandingPost />
