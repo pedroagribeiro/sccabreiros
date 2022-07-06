@@ -4,7 +4,7 @@ import Image from 'next/image';
 const Highlight = () => {
   return (
     <div className="flex flex-col space-y-4">
-      <h2 className="bg-green-600 text-xl uppercase text-white p-4 rounded-sm shadow-md">
+      <h2 className="bg-green-600 text-3xl font-agencygothic uppercase text-white p-4 rounded-sm shadow-md">
         Bem-vindo Telmo!
       </h2>
       <div className="h-full flex flex-col shadow-md">

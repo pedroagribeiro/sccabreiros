@@ -47,13 +47,14 @@ model Fixture {
 
 model Roster {
   id                Int     @id @default(autoincrement())
-  firstName         String
-  secondName        String?
+  fullname          String
+  nickname          String
   photo             String
   nationality       String
   age               Int
   number            Int
   position          String
+  specific_position String?
   zerozeroId        Int
   step              String
 }

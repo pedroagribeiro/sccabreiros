@@ -1,3 +1,40 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'AgencyGothicCT';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+    url('/fonts/AgencyGothicCT/AgencyGothicCT-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'AgencyGothicCT';
+  font-style: bold;
+  font-weight: 600;
+  src: local(''),
+    url('/fonts/AgencyGothicCT/AgencyGothicCT-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: thin;
+  font-weight: 200;
+  src: local(''), url('/fonts/FiraSans/FiraSans-Thin.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''), url('/fonts/FiraSans/FiraSans-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: bold;
+  font-weight: 600;
+  src: local(''), url('/fonts/FiraSans/FiraSans-Bold.ttf') format('truetype');
+}

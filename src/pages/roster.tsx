@@ -8,24 +8,109 @@ const Roster = () => {
     data: roster,
     refetch,
     isLoading,
-  } = trpc.useQuery(['roster.getRoster']);
+  } = trpc.useQuery(['roster.getFullRoster']);
 
   return (
-    <div className="relative px-4 pb-8 mx-auto mt-8 max-w-2xl sm:px-6 sm:mt-20 lg:px-8 lg:pb-0 lg:max-w-7xl bg-gray-100 text-gray-700">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-6 lg:gap-10 gap-y-4">
-        {roster?.roster.map((player) => (
-          <PlayerCard
-            key={player.firstName + player.number}
-            zerozero={player.zerozeroId}
-            position={player.position}
-            number={player.number}
-            first_name={player.firstName}
-            second_name={player.secondName}
-            photo={player.photo}
-            nationality={player.nationality}
-            age={player.age}
-          />
-        ))}
+    <div className="flex flex-col space-y-8 relative px-4 pb-8 mx-auto mt-8 max-w-2xl sm:px-6 sm:mt-12 lg:px-8 lg:pb-10 lg:max-w-7xl text-gray-700">
+      <div className="flex flex-col space-y-6">
+        <div className="flex flex-col">
+          <h2 className="font-agencygothic text-4xl text-gray-700">
+            Guarda-Redes
+          </h2>
+          <div className="h-1 w-10 bg-green-600"></div>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-6 lg:gap-10 gap-y-4">
+          {roster?.roster
+            .filter((player) => player.position == 'Guarda-redes')
+            .sort((p1, p2) => p1.number - p2.number)
+            .map((player) => (
+              <PlayerCard
+                key={player.fullname + player.number}
+                zerozero={player.zerozeroId}
+                position={player.position}
+                number={player.number}
+                fullname={player.fullname}
+                nickname={player.nickname}
+                photo={player.photo}
+                nationality={player.nationality}
+                age={player.age}
+              />
+            ))}
+        </div>
+      </div>
+      <div className="flex flex-col space-y-6">
+        <div className="flex flex-col">
+          <h2 className="font-agencygothic text-4xl text-gray-700">Defesas</h2>
+          <div className="h-1 w-10 bg-green-600"></div>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-6 lg:gap-10 gap-y-4">
+          {roster?.roster
+            .filter((player) => player.position == 'Defesa')
+            .sort((p1, p2) => p1.number - p2.number)
+            .map((player) => (
+              <PlayerCard
+                key={player.fullname + player.number}
+                zerozero={player.zerozeroId}
+                position={player.position}
+                number={player.number}
+                fullname={player.fullname}
+                nickname={player.nickname}
+                photo={player.photo}
+                nationality={player.nationality}
+                age={player.age}
+              />
+            ))}
+        </div>
+      </div>
+      <div className="flex flex-col space-y-6">
+        <div className="flex flex-col">
+          <h2 className="font-agencygothic text-4xl text-gray-700">Médios</h2>
+          <div className="h-1 w-10 bg-green-600"></div>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-6 lg:gap-10 gap-y-4">
+          {roster?.roster
+            .filter((player) => player.position == 'Médio')
+            .sort((p1, p2) => p1.number - p2.number)
+            .map((player) => (
+              <PlayerCard
+                key={player.fullname + player.number}
+                zerozero={player.zerozeroId}
+                position={player.position}
+                number={player.number}
+                fullname={player.fullname}
+                nickname={player.nickname}
+                photo={player.photo}
+                nationality={player.nationality}
+                age={player.age}
+              />
+            ))}
+        </div>
+      </div>
+      <div className="flex flex-col space-y-6">
+        <div className="flex flex-col">
+          <h2 className="font-agencygothic text-4xl text-gray-700">
+            Avançados
+          </h2>
+          <div className="h-1 w-10 bg-green-600"></div>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-6 lg:gap-10 gap-y-4">
+          {roster?.roster
+            .filter((player) => player.position == 'Avançado')
+            .sort((p1, p2) => p1.number - p2.number)
+            .map((player) => (
+              <PlayerCard
+                key={player.fullname + player.number}
+                zerozero={player.zerozeroId}
+                position={player.position}
+                number={player.number}
+                fullname={player.fullname}
+                nickname={player.nickname}
+                photo={player.photo}
+                nationality={player.nationality}
+                age={player.age}
+              />
+            ))}
+        </div>
       </div>
     </div>
   );

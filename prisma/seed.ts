@@ -69,13 +69,14 @@ async function createRoster() {
   const _roster: Prisma.RosterCreateInput[] = [];
   roster.forEach((player) => {
     _roster.push({
-      firstName: player.firstName,
-      secondName: player.secondName!,
+      fullname: player.fullname,
+      nickname: player.nickname,
       photo: player.photo,
       nationality: player.nationality,
       age: player.age,
       number: player.number,
       position: player.position,
+      specific_position: player.specific_position!,
       zerozeroId: player.zerozeroId,
       step: player.step,
     });
