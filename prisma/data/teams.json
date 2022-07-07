@@ -38,5 +38,77 @@
     "shorthand_name": "S.C Ucha",
     "competition": "A.F Braga - Pró-Nacional - Série A",
     "logo": "/oponents/championship/sc_ucha.png"
+  },
+  {
+    "id": 5,
+    "step": "Sénior",
+    "name": "Académico Futebol Clube de Martim",
+    "shorthand_name": "A.F.C Martim",
+    "competition": "A.F Braga - Pró-Nacional - Série A",
+    "logo": "/oponents/championship/afc_martim.png"
+  },
+  {
+    "id": 6,
+    "step": "Sénior",
+    "name": "Futebol Clube de Amares",
+    "shorthand_name": "F.C Amares",
+    "competition": "A.F Braga - Pró-Nacional - Série A",
+    "logo": "/oponents/championship/fc_amares.png"
+  },
+  {
+    "id": 7,
+    "step": "Sénior",
+    "name": "Futebol Clube Marinhas",
+    "shorthand_name": "F.C Marinhas",
+    "competition": "A.F Braga - Pró-Nacional - Série A",
+    "logo": "/oponets/championship/fc_marinhas.png"
+  },
+  {
+    "id": 8,
+    "step": "Sénior",
+    "name": "Grupo Desportivo Porto D'Ave",
+    "shorthand_name": "G.D Porto D'Ave",
+    "competition": "A.F Braga - Pró-Nacional - Série A",
+    "logo": "/oponents/championship/gd_porto_dave.png"
+  },
+  {
+    "id": 9,
+    "step": "Sénior",
+    "name": "Grupo Desportivo de Prado",
+    "shorthand_name": "G.D Prado",
+    "competition": "A.F Braga - Pró-Nacional - Série A",
+    "logo": "/oponents/championship/gd_prado.png"
+  },
+  {
+    "id": 10,
+    "step": "Sénior",
+    "name": "Grupo Futebol Clube da Pousa",
+    "shorthand_name": "G.F.C Pousa",
+    "competition": "A.F Braga - Pró-Nacional - Série A",
+    "logo": "/oponents/championship/gfc_pousa.png"
+  },
+  {
+    "id": 11,
+    "step": "Sénior",
+    "name": "Santa Maria Futebol Clube",
+    "shorthand_name": "Santa Maria F.C",
+    "competition": "A.F Braga - Pró-Nacional - Série A",
+    "logo": "/oponents/championship/santa_maria_fc.png"
+  },
+  {
+    "id": 12,
+    "step": "Sénior",
+    "name": "São Paio D'Arcos Futebol Clube",
+    "shorthand_name": "São Paio D'Arcos F.C",
+    "competition": "A.F Braga - Pró-Nacional - Série A",
+    "logo": "/oponents/championship/sao_paio_darcos_fc.png"
+  },
+  {
+    "id": 13,
+    "step": "Sénior",
+    "name": "União Desportiva de Vila Chã",
+    "shorthand_name": "U.D Vila Chã",
+    "competition": "A.F Braga - Pró-Nacional - Série A",
+    "logo": "/oponents/championship/ud_vila_cha.png"
   }
 ]

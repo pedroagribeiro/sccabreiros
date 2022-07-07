@@ -9,7 +9,11 @@ const Classification = () => {
 Classification.getLayout = (page: ReactElement) => (
   <Layout
     title="Classificação"
-    subpages={[{ title: 'Classificação', url: '/classification' }]}
+    subpages={[
+      { title: 'Próximos Jogos', url: '/fixtures' },
+      { title: 'Resultados', url: '/results' },
+      { title: 'Classificação', url: '/classification' },
+    ]}
   >
     {page}
   </Layout>

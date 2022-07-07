@@ -120,6 +120,7 @@ async function createFixtures() {
       awayTeamGoals: fixture.awayTeamGoals,
       competition: fixture.competition,
       round: fixture.round,
+      season: fixture.season,
     });
   });
 

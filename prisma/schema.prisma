@@ -39,10 +39,11 @@ model Fixture {
   homeTeam          Team    @relation(name: "HomeTeam", fields: [homeTeamId], references: [id])
   awayTeamId        Int
   awayTeam          Team    @relation(name: "AwayTeam", fields: [awayTeamId], references: [id])
-  homeTeamGoals     Int 
-  awayTeamGoals     Int
+  homeTeamGoals     Int? 
+  awayTeamGoals     Int?
   competition       String
-  round             String
+  round             String?
+  season            String
 }
 
 model Roster {

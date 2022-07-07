@@ -8,7 +8,6 @@ import { trpc } from '../utils/trpc';
 const Home = () => {
   return (
     <div>
-      <LandingPost />
       <LandingFeed />
     </div>
   );

@@ -1,7 +1,7 @@
 [
   {
     "id": 0,
-    "date": "2022-04-16",
+    "date": "2022-04-16 16:00:00",
     "location": "Cabreiros",
     "venue": "Complexo Desportivo de Cabreiros",
     "homeTeamId": 1,
@@ -9,11 +9,12 @@
     "homeTeamGoals": 0,
     "awayTeamGoals": 1,
     "competition": "A.F Braga - Pró-Nacional - Série A",
-    "round": "Jornada 26"
+    "round": "Jornada 26",
+    "season": "2021/2022"
   },
   {
     "id": 1,
-    "date": "2022-04-10",
+    "date": "2022-04-10 16:00:00",
     "location": "Nine",
     "venue": "Complexo Desportivo de Nine",
     "homeTeamId": 3,
@@ -21,11 +22,12 @@
     "homeTeamGoals": 1,
     "awayTeamGoals": 1,
     "competition": "A.F Braga - Pró-Nacional - Série A",
-    "round": "Jornada 25"
+    "round": "Jornada 25",
+    "season": "2021/2022"
   },
   {
     "id": 2,
-    "date": "2022-03-26",
+    "date": "2022-03-26 16:00:00",
     "location": "Cabreiros",
     "venue": "Complexo Desportivo de Cabreiros",
     "homeTeamId": 1,
@@ -33,6 +35,33 @@
     "homeTeamGoals": 1,
     "awayTeamGoals": 2,
     "competition": "A.F Braga - Pró-Nacional - Série A",
-    "round": "Jornada 25"
+    "round": "Jornada 25",
+    "season": "2021/2022"
+  },
+  {
+    "id": 3,
+    "date": "2022-03-26 16:00:00",
+    "location": "Cabreiros",
+    "venue": "Complexo Desportivo de Cabreiros",
+    "homeTeamId": 1,
+    "awayTeamId": 5,
+    "homeTeamGoals": 1,
+    "awayTeamGoals": 2,
+    "competition": "A.F Braga - Pró-Nacional - Série A",
+    "round": "Jornada 25",
+    "season": "2021/2022"
+  },
+  {
+    "id": 4,
+    "date": "2022-03-26 16:00:00",
+    "location": "Cabreiros",
+    "venue": "Complexo Desportivo de Cabreiros",
+    "homeTeamId": 1,
+    "awayTeamId": 11,
+    "homeTeamGoals": 1,
+    "awayTeamGoals": 2,
+    "competition": "A.F Braga - Pró-Nacional - Série A",
+    "round": "Jornada 25",
+    "season": "2021/2022"
   }
 ]

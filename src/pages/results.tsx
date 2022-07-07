@@ -38,7 +38,11 @@ const Results = () => {
 Results.getLayout = (page: ReactElement) => (
   <Layout
     title="Resultados"
-    subpages={[{ title: 'Resultados', url: '/results' }]}
+    subpages={[
+      { title: 'Próximos Jogos', url: '/fixtures' },
+      { title: 'Resultados', url: '/results' },
+      { title: 'Classificação', url: '/classification' },
+    ]}
   >
     {page}
   </Layout>

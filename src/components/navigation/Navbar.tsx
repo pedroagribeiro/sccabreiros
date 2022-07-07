@@ -36,8 +36,8 @@ const Navbar = () => {
       url: '/roster',
     },
     {
-      title: 'Calendário',
-      url: '/calendar',
+      title: 'Jogos',
+      url: '/fixtures',
     },
     {
       title: 'História',
