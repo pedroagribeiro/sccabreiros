@@ -12,7 +12,7 @@ const Highlight = () => {
         <div className="flex flex-col lg:flex-row bg-gray-100 rounded-sm ">
           <div className="w-full lg:w-3/5">
             <Image
-              src="/interviews/entrevista_telmo.png"
+              src="/images/interviews/entrevista_telmo.png"
               alt="interview_telmo"
               width={651}
               height={345}

@@ -2,9 +2,8 @@ import React from 'react';
 import Image from 'next/image';
 import { MdOutlineKeyboardArrowRight } from 'react-icons/md';
 import { Team } from '@prisma/client';
-import { text } from 'stream/consumers';
 
-type UpcomingFixtureData = {
+type FixtureData = {
   date: Date;
   textDate: String;
   venue: String;
@@ -15,7 +14,7 @@ type UpcomingFixtureData = {
   away_team_goals?: number;
 };
 
-const UpcomingFixture = ({
+const Fixture = ({
   date,
   textDate,
   venue,
@@ -24,7 +23,7 @@ const UpcomingFixture = ({
   away_team,
   home_team_goals,
   away_team_goals,
-}: UpcomingFixtureData) => {
+}: FixtureData) => {
   return (
     <div className="flex flex-col shadow-md">
       <div className="w-full h-1 bg-green-600 rounded-t-sm"></div>
@@ -85,4 +84,4 @@ const UpcomingFixture = ({
   );
 };
 
-export default UpcomingFixture;
+export default Fixture;

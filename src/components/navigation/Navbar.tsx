@@ -65,7 +65,12 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           <div className="py-2">
             <Link href="/">
-              <Image src="/emblema.png" alt="emblema" width={49} height={66} />
+              <Image
+                src="/images/emblema.png"
+                alt="emblema"
+                width={49}
+                height={66}
+              />
             </Link>
           </div>
           <div className="flex space-x-2 text-white ">
@@ -116,7 +121,7 @@ const Navbar = () => {
             <Link href="/">
               <Image
                 className="z-20"
-                src="/emblema.png"
+                src="/images/emblema.png"
                 alt="emblema"
                 width={90}
                 height={121}
@@ -157,7 +162,7 @@ const Navbar = () => {
               <div className="flex items-center">
                 <Image
                   className="px-4"
-                  src="/partners/ledechem_branco.png"
+                  src="/images/partners/ledechem_branco.png"
                   alt="ledechem"
                   width={125}
                   height={31}

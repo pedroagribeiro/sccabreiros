@@ -5,7 +5,7 @@
     "name": "Sporting Clube de Cabreiros",
     "shorthand_name": "S.C Cabreiros",
     "competition": "A.F Braga - Pró-Nacional - Série A",
-    "logo": "/emblema.png"
+    "logo": "/images/emblema.png"
   },
   {
     "id": 2,
@@ -13,7 +13,7 @@
     "name": "Grupo Desportivo Recreativo de Esporões",
     "shorthand_name": "G.D.R Esporões",
     "competition": "A.F Braga - Pró-Nacional - Série A",
-    "logo": "/oponents/championship/gdr_esporoes.png"
+    "logo": "/images/oponents/championship/gdr_esporoes.png"
   },
   {
     "id": 3,
@@ -21,7 +21,7 @@
     "name": "Associação Desportiva Ninense",
     "shorthand_name": "A.D Ninense",
     "competition": "A.F Braga - Pró-Nacional - Série A",
-    "logo": "/oponents/championship/ad_ninense.png"
+    "logo": "/images/oponents/championship/ad_ninense.png"
   },
   {
     "id": 4,
@@ -29,7 +29,7 @@
     "name": "Dumiense/CJP II",
     "shorthand_name": "Dumiense/CJP II",
     "competition": "A.F Braga - Pró-Nacional - Série A",
-    "logo": "/oponents/championship/dumiense.png"
+    "logo": "/images/oponents/championship/dumiense.png"
   },
   {
     "id": 5,
@@ -37,7 +37,7 @@
     "name": "Sporting Clube da Ucha",
     "shorthand_name": "S.C Ucha",
     "competition": "A.F Braga - Pró-Nacional - Série A",
-    "logo": "/oponents/championship/sc_ucha.png"
+    "logo": "/images/oponents/championship/sc_ucha.png"
   },
   {
     "id": 6,
@@ -45,7 +45,7 @@
     "name": "Académico Futebol Clube de Martim",
     "shorthand_name": "A.F.C Martim",
     "competition": "A.F Braga - Pró-Nacional - Série A",
-    "logo": "/oponents/championship/afc_martim.png"
+    "logo": "/images/oponents/championship/afc_martim.png"
   },
   {
     "id": 7,
@@ -53,7 +53,7 @@
     "name": "Futebol Clube de Amares",
     "shorthand_name": "F.C Amares",
     "competition": "A.F Braga - Pró-Nacional - Série A",
-    "logo": "/oponents/championship/fc_amares.png"
+    "logo": "/images/oponents/championship/fc_amares.png"
   },
   {
     "id": 8,
@@ -61,7 +61,7 @@
     "name": "Futebol Clube Marinhas",
     "shorthand_name": "F.C Marinhas",
     "competition": "A.F Braga - Pró-Nacional - Série A",
-    "logo": "/oponets/championship/fc_marinhas.png"
+    "logo": "/images/oponents/championship/fc_marinhas.png"
   },
   {
     "id": 9,
@@ -69,7 +69,7 @@
     "name": "Grupo Desportivo Porto D'Ave",
     "shorthand_name": "G.D Porto D'Ave",
     "competition": "A.F Braga - Pró-Nacional - Série A",
-    "logo": "/oponents/championship/gd_porto_dave.png"
+    "logo": "/images/oponents/championship/gd_porto_dave.png"
   },
   {
     "id": 10,
@@ -77,7 +77,7 @@
     "name": "Grupo Desportivo de Prado",
     "shorthand_name": "G.D Prado",
     "competition": "A.F Braga - Pró-Nacional - Série A",
-    "logo": "/oponents/championship/gd_prado.png"
+    "logo": "/images/oponents/championship/gd_prado.png"
   },
   {
     "id": 11,
@@ -85,7 +85,7 @@
     "name": "Grupo Futebol Clube da Pousa",
     "shorthand_name": "G.F.C Pousa",
     "competition": "A.F Braga - Pró-Nacional - Série A",
-    "logo": "/oponents/championship/gfc_pousa.png"
+    "logo": "/images/oponents/championship/gfc_pousa.png"
   },
   {
     "id": 12,
@@ -93,7 +93,7 @@
     "name": "Santa Maria Futebol Clube",
     "shorthand_name": "Santa Maria F.C",
     "competition": "A.F Braga - Pró-Nacional - Série A",
-    "logo": "/oponents/championship/santa_maria_fc.png"
+    "logo": "/images/oponents/championship/santa_maria_fc.png"
   },
   {
     "id": 13,
@@ -101,7 +101,7 @@
     "name": "São Paio D'Arcos Futebol Clube",
     "shorthand_name": "São Paio D'Arcos F.C",
     "competition": "A.F Braga - Pró-Nacional - Série A",
-    "logo": "/oponents/championship/sao_paio_darcos_fc.png"
+    "logo": "/images/oponents/championship/sao_paio_darcos_fc.png"
   },
   {
     "id": 14,
@@ -109,6 +109,22 @@
     "name": "União Desportiva de Vila Chã",
     "shorthand_name": "U.D Vila Chã",
     "competition": "A.F Braga - Pró-Nacional - Série A",
-    "logo": "/oponents/championship/ud_vila_cha.png"
+    "logo": "/images/oponents/championship/ud_vila_cha.png"
+  },
+  {
+    "id": 15,
+    "step": "Sénior",
+    "name": "Grupo Desportivo Recreativo Os Sandinenses",
+    "shorthand_name": "G.D.R Os Sandinenses",
+    "competition": "A.F Braga - Pró-Nacional - Série B",
+    "logo": "/images/oponents/championship/gdr_sandinenses.png"
+  },
+  {
+    "id": 16,
+    "step": "Sénior",
+    "name": "Vieira Sport Clube",
+    "shorthand_name": "Vieira S.C",
+    "competition": "A.F Braga - Pró-Nacional - Série B",
+    "logo": "/images/oponents/championship/vieira_sc.png"
   }
 ]

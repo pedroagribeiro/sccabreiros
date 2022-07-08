@@ -1,6 +1,6 @@
 import React, { ReactElement, useState, useEffect, useCallback } from 'react';
 import Layout from '../components/layouts/Layout';
-import UpcomingFixture from '../components/result/UpcomingFixture';
+import UpcomingFixture from '../components/result/Fixture';
 import { GoDash, GoPlus } from 'react-icons/go';
 import { trpc } from '../utils/trpc';
 
@@ -13,7 +13,7 @@ const Fixtures = () => {
     data: fixtures,
     refetch,
     isLoading,
-  } = trpc.useQuery(['fixture.getFixtures']);
+  } = trpc.useQuery(['fixture.getUpcomingFixtures']);
 
   const [dropdownsStatus, setDropdownsStatus] = useState(new Map([]));
 
@@ -28,10 +28,6 @@ const Fixtures = () => {
       new_state.set(month_year, false);
       setDropdownsStatus(new_state);
     }
-  };
-
-  const keys = (data: Map<any, any>) => {
-    return Object.keys(data);
   };
 
   return (

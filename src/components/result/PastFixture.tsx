@@ -4,7 +4,7 @@ import { GrMapLocation } from 'react-icons/gr';
 import { BsFillCalendarDateFill } from 'react-icons/bs';
 import { Team } from '.prisma/client';
 
-type PastFixtureProps = {
+type FixtureProps = {
   date: Date;
   location: string;
   venue_name: string;
@@ -16,7 +16,7 @@ type PastFixtureProps = {
   round: string;
 };
 
-const PastFixture = (props: PastFixtureProps) => {
+const PastFixture = (props: FixtureProps) => {
   return (
     <div className="w-full flex bg-white ring-1 rounded-sm ring-gray-200">
       <div className="bg-green-600 w-2 rounded-sm" />

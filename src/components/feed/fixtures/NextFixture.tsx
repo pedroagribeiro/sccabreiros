@@ -12,7 +12,7 @@ const NextFixture = () => {
           <div className="flex justify-around pt-6 pb-4 items-center">
             <div className="flex flex-col space-y-2 items-center">
               <Image
-                src="/emblema.png"
+                src="/images/emblema.png"
                 alt="cabreiros"
                 width={56}
                 height={75}
@@ -22,7 +22,7 @@ const NextFixture = () => {
             <p className="text-4xl">V</p>
             <div className="flex flex-col space-y-2 items-center">
               <Image
-                src="/emblema.png"
+                src="/images/emblema.png"
                 alt="cabreiros_fora"
                 width={56}
                 height={75}

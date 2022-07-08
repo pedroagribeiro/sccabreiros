@@ -1,35 +1,84 @@
-import React, { ReactElement } from 'react';
+import React, { ReactElement, useState } from 'react';
 import Layout from '../components/layouts/Layout';
-import PastFixture from '../components/result/PastFixture';
+import Fixture from '../components/result/Fixture';
 import { trpc } from '../utils/trpc';
+import { GoDash, GoPlus } from 'react-icons/go';
 
 const Results = () => {
   const {
     data: fixtures,
     refetch,
     isLoading,
-  } = trpc.useQuery(['fixture.getFixtures']);
+  } = trpc.useQuery(['fixture.getPastFixtures']);
+
+  const [dropdownsStatus, setDropdownsStatus] = useState(new Map([]));
+
+  const updateDropdownStatus = (month_year: string) => {
+    if (dropdownsStatus.has(month_year)) {
+      const new_state = new Map(dropdownsStatus);
+      const prev_value = dropdownsStatus.get(month_year);
+      new_state.set(month_year, !prev_value);
+      setDropdownsStatus(new_state);
+    } else {
+      const new_state = new Map(dropdownsStatus);
+      new_state.set(month_year, false);
+      setDropdownsStatus(new_state);
+    }
+  };
   return (
-    <div className="flex justify-center items-center mt-16 mb-16 text-gray-700">
-      <div className="max-w-6xl flex flex-col space-y-0 items-center mx-6 md:mx-32 lg:mx-72 ">
-        <div className="grid grid-cols-1 space-y-6 md:space-y-0 md:grid-cols-2 md:gap-8">
-          {/* {fixtures?.fixtures
-            .filter((f) => f.homeTeamGoals && f.awayTeamGoals && f.round)
-            .map((fixture) => (
-              <PastFixture
-                key={fixture.competition + fixture.round}
-                date={fixture.date}
-                location={fixture.location}
-                venue_name={fixture.venue}
-                home_team={fixture.homeTeam}
-                away_team={fixture.awayTeam}
-                home_scored_goals={fixture.homeTeamGoals!}
-                away_scored_goals={fixture.awayTeamGoals!}
-                competition={fixture.competition}
-                round={fixture.round!}
-              />
-            ))} */}
-        </div>
+    <div className="px-6 md:px-16 2xl:px-64 mt-8 mb-8">
+      <div className="flex flex-col">
+        {fixtures?.fixtures
+          .sort((fixture) => fixture[1][0])
+          .map((month_year_fixtures) => {
+            return (
+              <span key={month_year_fixtures[0] as string}>
+                <button
+                  className="w-full flex justify-between px-10 py-6 text-gray-700 hover:text-green-600 text-2xl font-agencygothic"
+                  onClick={() =>
+                    updateDropdownStatus(month_year_fixtures[0] as string)
+                  }
+                >
+                  <p className="uppercase">{month_year_fixtures[0]}</p>
+                  <GoDash
+                    className={`${
+                      dropdownsStatus.get(month_year_fixtures[0]) === false
+                        ? 'hidden'
+                        : 'block'
+                    }`}
+                  />
+                  <GoPlus
+                    className={`${
+                      dropdownsStatus.get(month_year_fixtures[0]) === false
+                        ? 'block'
+                        : 'hidden'
+                    }`}
+                  />
+                </button>
+                <div
+                  className={`flex flex-col space-y-6 px-2 md:px-10 mb-6 ${
+                    dropdownsStatus.get(month_year_fixtures[0]) === false
+                      ? 'hidden'
+                      : 'block'
+                  }`}
+                >
+                  {month_year_fixtures[1].map((fixture, index) => (
+                    <Fixture
+                      key={index}
+                      date={fixture.date}
+                      textDate={fixture.textDate}
+                      venue={fixture.venue}
+                      competition={fixture.competition}
+                      home_team={fixture.homeTeam}
+                      away_team={fixture.awayTeam}
+                      home_team_goals={fixture.homeTeamGoals!}
+                      away_team_goals={fixture.awayTeamGoals!}
+                    />
+                  ))}
+                </div>
+              </span>
+            );
+          })}
       </div>
     </div>
   );
