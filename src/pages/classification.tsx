@@ -3,7 +3,11 @@ import Layout from '../components/layouts/Layout';
 import ClassificationTable from '../components/table/ClassificationTable';
 
 const Classification = () => {
-  return <ClassificationTable />;
+  return (
+    <div className="px-6 md:px-16 2xl:px-64 mt-8 mb-8">
+      <ClassificationTable />
+    </div>
+  );
 };
 
 Classification.getLayout = (page: ReactElement) => (

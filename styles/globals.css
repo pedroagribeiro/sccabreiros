@@ -21,8 +21,8 @@
 @font-face {
   font-family: 'Fira Sans';
   font-style: thin;
-  font-weight: 200;
-  src: local(''), url('/fonts/FiraSans/FiraSans-Thin.ttf') format('truetype');
+  font-weight: 300;
+  src: local(''), url('/fonts/FiraSans/FiraSans-Light.ttf') format('truetype');
 }
 
 @font-face {

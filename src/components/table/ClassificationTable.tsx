@@ -1,220 +1,435 @@
-import React from 'react'
+import React from 'react';
+import Image from 'next/image';
 
 const ClassificationTable = () => {
   return (
-    <div className="flex justify-center items-center mt-16 mb-16 text-gray-700">
-      <div className="max-w-6xl flex flex-col space-y-0 items-center mx-6 md:mx-32 lg:mx-72 ">
-        <div className="w-full flex space-x-4 bg-white ring-1 rounded-sm ring-gray-200 ">
-          <div className="bg-green-600 w-2 rounded-sm" />
-          <h2 className="font-bold text-2xl px-3 py-2 text-center md:items-start">
-            Classificação - A.F Braga Pró-Nacional Série A - 2021/2022
-          </h2>
-        </div>
-        <div className="w-full rounded-sm ring-1 ring-gray-200 p-2 bg-white">
-          <table className="w-full text-center">
-            <thead>
-              <tr className="border-separate border-t-2 border-b-2 border-gray-200 font-bold text-sm md:text-base">
-                <th>Posição</th>
-                <th>Equipa</th>
-                <th>P</th>
-                <th>J</th>
-                <th>V</th>
-                <th>E</th>
-                <th>D</th>
-                <th>GM</th>
-                <th>GS</th>
-                <th>DG</th>
-              </tr>
-            </thead>
-            <tbody className="text-sm md:text-base">
-              <tr className="bg-green-300">
-                <td>1</td>
-                <td>Dumiense/CJP II</td>
-                <td>70</td>
-                <td>26</td>
-                <td>22</td>
-                <td>4</td>
-                <td>0</td>
-                <td>54</td>
-                <td>11</td>
-                <td>+43</td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>Santa Maria F.C</td>
-                <td>49</td>
-                <td>26</td>
-                <td>14</td>
-                <td>7</td>
-                <td>5</td>
-                <td>45</td>
-                <td>26</td>
-                <td>+19</td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>F.C Marinhas</td>
-                <td>46</td>
-                <td>26</td>
-                <td>14</td>
-                <td>4</td>
-                <td>8</td>
-                <td>39</td>
-                <td>27</td>
-                <td>+12</td>
-              </tr>
-              <tr>
-                <td>4</td>
-                <td>G.D Prado</td>
-                <td>43</td>
-                <td>26</td>
-                <td>12</td>
-                <td>7</td>
-                <td>7</td>
-                <td>44</td>
-                <td>38</td>
-                <td>+6</td>
-              </tr>
-              <tr>
-                <td>5</td>
-                <td>S.C Cabreiros</td>
-                <td>43</td>
-                <td>26</td>
-                <td>12</td>
-                <td>7</td>
-                <td>7</td>
-                <td>38</td>
-                <td>26</td>
-                <td>+12</td>
-              </tr>
-              <tr>
-                <td>6</td>
-                <td>G.D Porto D´Ave</td>
-                <td>43</td>
-                <td>26</td>
-                <td>12</td>
-                <td>7</td>
-                <td>7</td>
-                <td>39</td>
-                <td>30</td>
-                <td>+9</td>
-              </tr>
-              <tr>
-                <td>7</td>
-                <td>F.C Amares</td>
-                <td>34</td>
-                <td>26</td>
-                <td>10</td>
-                <td>4</td>
-                <td>12</td>
-                <td>45</td>
-                <td>45</td>
-                <td>0</td>
-              </tr>
-              <tr>
-                <td>8</td>
-                <td>S. Paio D`Arcos F.C</td>
-                <td>30</td>
-                <td>26</td>
-                <td>8</td>
-                <td>6</td>
-                <td>12</td>
-                <td>33</td>
-                <td>34</td>
-                <td>-1</td>
-              </tr>
-              <tr>
-                <td>9</td>
-                <td>A.D Ninense</td>
-                <td>30</td>
-                <td>26</td>
-                <td>9</td>
-                <td>3</td>
-                <td>14</td>
-                <td>39</td>
-                <td>48</td>
-                <td>-9</td>
-              </tr>
-              <tr>
-                <td>10</td>
-                <td>A.F.C Martim</td>
-                <td>29</td>
-                <td>26</td>
-                <td>7</td>
-                <td>8</td>
-                <td>11</td>
-                <td>25</td>
-                <td>32</td>
-                <td>-7</td>
-              </tr>
-              <tr className="bg-red-400">
-                <td>11</td>
-                <td>G.D.R Esporões</td>
-                <td>29</td>
-                <td>26</td>
-                <td>7</td>
-                <td>8</td>
-                <td>11</td>
-                <td>26</td>
-                <td>39</td>
-                <td>-13</td>
-              </tr>
-              <tr className="bg-red-300">
-                <td>12</td>
-                <td>U.D Vila Chã</td>
-                <td>28</td>
-                <td>26</td>
-                <td>8</td>
-                <td>4</td>
-                <td>14</td>
-                <td>36</td>
-                <td>43</td>
-                <td>-7</td>
-              </tr>
-              <tr className="bg-red-300">
-                <td>12</td>
-                <td>S.C Ucha</td>
-                <td>19</td>
-                <td>26</td>
-                <td>5</td>
-                <td>4</td>
-                <td>17</td>
-                <td>26</td>
-                <td>57</td>
-                <td>-31</td>
-              </tr>
-              <tr className="bg-red-300">
-                <td>13</td>
-                <td>G.F.C Pousa</td>
-                <td>15</td>
-                <td>26</td>
-                <td>4</td>
-                <td>3</td>
-                <td>19</td>
-                <td>20</td>
-                <td>53</td>
-                <td>-33</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div className="pt-6 flex flex-col space-y-2">
-          <div className="flex space-x-6 items-center text-xs md:text-base">
-            <span className="w-4 h-4 bg-green-300 rounded-md" />
-            <p>Qualificação - Apuramento de Campeão</p>
-          </div>
-          <div className="flex space-x-6 items-center text-xs md:text-base">
-            <span className="w-4 h-4 bg-red-400 rounded-md" />
-            <p>Possível Despromoção - Através das descidas via CP</p>
-          </div>
-          <div className="flex space-x-6 items-center text-xs md:text-base">
-            <span className="w-4 h-4 bg-red-300 rounded-md" />
-            <p>Despromoção</p>
-          </div>
-        </div>
+    <div className="flex flex-col rounded-sm shadow-md">
+      <div className="h-1 bg-green-600 rounded-t-sm"></div>
+      <div className="flex text-white bg-gray-700">
+        <p className="text-xs px-6 py-4">
+          Campeonato Pró-Nacional A.F Braga - Série A - 2021/2022
+        </p>
+      </div>
+      <div className="w-full flex flex-col space-y-6">
+        <table className="w-full bg-white">
+          <thead className="text-gray-700 text-xs md:text-sm">
+            <tr className="h-14 border-b border-gray-200">
+              <th className="border-r border-gray-200">Posição</th>
+              <th className="border-r border-gray-200">Equipa</th>
+              <th className="border-r border-gray-200">Jogos</th>
+              <th className="border-r border-gray-200 hidden md:table-cell">
+                Vitórias
+              </th>
+              <th className="border-r border-gray-200 hidden md:table-cell">
+                Empates
+              </th>
+              <th className="border-r border-gray-200 hidden md:table-cell">
+                Derrotas
+              </th>
+              <th className="border-r border-gray-200 hidden md:table-cell">
+                +/-
+              </th>
+              <th>Pontos</th>
+            </tr>
+          </thead>
+          <tbody className="w-full text-sm font-thin">
+            <tr className="border-b border-gray-200">
+              <td className="text-center border-r border-gray-200 py-4">1</td>
+              <td className="border-r border-gray-200">
+                <div className="w-full h-full flex space-x-6 items-center justify-start pl-4">
+                  <Image
+                    src="/images/oponents/championship/dumiense.png"
+                    alt="dumiense"
+                    width={23}
+                    height={34}
+                  />
+                  <p className="mx-4">Dumiense/CJP II</p>
+                </div>
+              </td>
+              <td className="text-center border-r border-gray-200">26</td>
+              <td className="text-center border-r border-gray-200 hidden md:table-cell">
+                22
+              </td>
+              <td className="text-center border-r border-gray-200 hidden md:table-cell">
+                4
+              </td>
+              <td className="text-center border-r border-gray-200 hidden md:table-cell">
+                0
+              </td>
+              <td className="text-center border-r border-gray-200 hidden md:table-cell">
+                +43
+              </td>
+              <td className="text-center">70</td>
+            </tr>
+            <tr className="border-b border-gray-200">
+              <td className="text-center border-r border-gray-200 py-4">2</td>
+              <td className="border-r border-gray-200">
+                <div className="w-full h-full flex space-x-6 items-center justify-start pl-4">
+                  <Image
+                    src="/images/oponents/championship/santa_maria_fc.png"
+                    alt="santa_maria_fc"
+                    width={23}
+                    height={34}
+                  />
+                  <p className="mx-4">Santa Maria F.C</p>
+                </div>
+              </td>
+              <td className="text-center border-r border-gray-200">26</td>
+              <td className="text-center border-r border-gray-200 hidden md:table-cell">
+                14
+              </td>
+              <td className="text-center border-r border-gray-200 hidden md:table-cell">
+                7
+              </td>
+              <td className="text-center border-r border-gray-200 hidden md:table-cell">
+                5
+              </td>
+              <td className="text-center border-r border-gray-200 hidden md:table-cell">
+                +19
+              </td>
+              <td className="text-center">49</td>
+            </tr>
+            <tr className="border-b border-gray-200">
+              <td className="text-center border-r border-gray-200 py-4">3</td>
+              <td className="border-r border-gray-200">
+                <div className="w-full h-full flex space-x-6 items-center justify-start pl-4">
+                  <Image
+                    src="/images/oponents/championship/fc_marinhas.png"
+                    alt="fc_marinhas"
+                    width={23}
+                    height={34}
+                  />
+                  <p className="mx-4">F.C Marinhas</p>
+                </div>
+              </td>
+              <td className="text-center border-r border-gray-200">26</td>
+              <td className="text-center border-r border-gray-200 hidden md:table-cell">
+                14
+              </td>
+              <td className="text-center border-r border-gray-200 hidden md:table-cell">
+                4
+              </td>
+              <td className="text-center border-r border-gray-200 hidden md:table-cell">
+                8
+              </td>
+              <td className="text-center border-r border-gray-200 hidden md:table-cell">
+                +12
+              </td>
+              <td className="text-center">46</td>
+            </tr>
+            <tr className="border-b border-gray-200">
+              <td className="text-center border-r border-gray-200 py-4">4</td>
+              <td className="border-r border-gray-200">
+                <div className="w-full h-full flex space-x-6 items-center justify-start pl-4">
+                  <Image
+                    src="/images/oponents/championship/gd_prado.png"
+                    alt="gd_prado"
+                    width={23}
+                    height={34}
+                  />
+                  <p className="mx-4">G.D Prado</p>
+                </div>
+              </td>
+              <td className="text-center border-r border-gray-200">26</td>
+              <td className="text-center border-r border-gray-200 hidden md:table-cell">
+                12
+              </td>
+              <td className="text-center border-r border-gray-200 hidden md:table-cell">
+                7
+              </td>
+              <td className="text-center border-r border-gray-200 hidden md:table-cell">
+                7
+              </td>
+              <td className="text-center border-r border-gray-200 hidden md:table-cell">
+                +6
+              </td>
+              <td className="text-center">43</td>
+            </tr>
+            <tr className="border-b border-gray-200 bg-gray-100 font-normal text-green-600">
+              <td className="text-center border-r border-gray-200 py-4">5</td>
+              <td className="border-r border-gray-200">
+                <div className="w-full h-full flex space-x-6 items-center justify-start pl-4">
+                  <Image
+                    src="/images/emblema.png"
+                    alt="sc_cabreiros"
+                    width={23}
+                    height={34}
+                  />
+                  <p className="mx-4">S.C Cabreiros</p>
+                </div>
+              </td>
+              <td className="text-center border-r border-gray-200">26</td>
+              <td className="text-center border-r border-gray-200 hidden md:table-cell">
+                12
+              </td>
+              <td className="text-center border-r border-gray-200 hidden md:table-cell">
+                7
+              </td>
+              <td className="text-center border-r border-gray-200 hidden md:table-cell">
+                7
+              </td>
+              <td className="text-center border-r border-gray-200 hidden md:table-cell">
+                +12
+              </td>
+              <td className="text-center">43</td>
+            </tr>
+            <tr className="border-b border-gray-200">
+              <td className="text-center border-r border-gray-200 py-4">6</td>
+              <td className="border-r border-gray-200">
+                <div className="w-full h-full flex space-x-6 items-center justify-start pl-4">
+                  <Image
+                    src="/images/oponents/championship/gd_porto_dave.png"
+                    alt="gd_porto_dave"
+                    width={23}
+                    height={34}
+                  />
+                  <p className="mx-4">G.D Porto D&apos;Ave</p>
+                </div>
+              </td>
+              <td className="text-center border-r border-gray-200">26</td>
+              <td className="text-center border-r border-gray-200 hidden md:table-cell">
+                12
+              </td>
+              <td className="text-center border-r border-gray-200 hidden md:table-cell">
+                7
+              </td>
+              <td className="text-center border-r border-gray-200 hidden md:table-cell">
+                7
+              </td>
+              <td className="text-center border-r border-gray-200 hidden md:table-cell">
+                +9
+              </td>
+              <td className="text-center">43</td>
+            </tr>
+            <tr className="border-b border-gray-200">
+              <td className="text-center border-r border-gray-200 py-4">7</td>
+              <td className="border-r border-gray-200">
+                <div className="w-full h-full flex space-x-6 items-center justify-start pl-4">
+                  <Image
+                    src="/images/oponents/championship/fc_amares.png"
+                    alt="fc_amares"
+                    width={23}
+                    height={34}
+                  />
+                  <p className="mx-4">F.C Amares</p>
+                </div>
+              </td>
+              <td className="text-center border-r border-gray-200">26</td>
+              <td className="text-center border-r border-gray-200 hidden md:table-cell">
+                10
+              </td>
+              <td className="text-center border-r border-gray-200 hidden md:table-cell">
+                4
+              </td>
+              <td className="text-center border-r border-gray-200 hidden md:table-cell">
+                12
+              </td>
+              <td className="text-center border-r border-gray-200 hidden md:table-cell">
+                0
+              </td>
+              <td className="text-center">34</td>
+            </tr>
+            <tr className="border-b border-gray-200">
+              <td className="text-center border-r border-gray-200 py-4">8</td>
+              <td className="border-r border-gray-200">
+                <div className="w-full h-full flex space-x-6 items-center justify-start pl-4">
+                  <Image
+                    src="/images/oponents/championship/sao_paio_darcos_fc.png"
+                    alt="sao_paio_darcos_fc"
+                    width={23}
+                    height={34}
+                  />
+                  <p className="mx-4">São Paio D&apos;Arcos F.C</p>
+                </div>
+              </td>
+              <td className="text-center border-r border-gray-200">26</td>
+              <td className="text-center border-r border-gray-200 hidden md:table-cell">
+                8
+              </td>
+              <td className="text-center border-r border-gray-200 hidden md:table-cell">
+                6
+              </td>
+              <td className="text-center border-r border-gray-200 hidden md:table-cell">
+                12
+              </td>
+              <td className="text-center border-r border-gray-200 hidden md:table-cell">
+                -1
+              </td>
+              <td className="text-center">30</td>
+            </tr>
+            <tr className="border-b border-gray-200">
+              <td className="text-center border-r border-gray-200 py-4">9</td>
+              <td className="border-r border-gray-200">
+                <div className="w-full h-full flex space-x-6 items-center justify-start pl-4">
+                  <Image
+                    src="/images/oponents/championship/ad_ninense.png"
+                    alt="ad_ninense"
+                    width={23}
+                    height={34}
+                  />
+                  <p className="mx-4">A.D Ninense</p>
+                </div>
+              </td>
+              <td className="text-center border-r border-gray-200">26</td>
+              <td className="text-center border-r border-gray-200 hidden md:table-cell">
+                9
+              </td>
+              <td className="text-center border-r border-gray-200 hidden md:table-cell">
+                3
+              </td>
+              <td className="text-center border-r border-gray-200 hidden md:table-cell">
+                14
+              </td>
+              <td className="text-center border-r border-gray-200 hidden md:table-cell">
+                -9
+              </td>
+              <td className="text-center">30</td>
+            </tr>
+            <tr className="border-b border-gray-200">
+              <td className="text-center border-r border-gray-200 py-4">10</td>
+              <td className="border-r border-gray-200">
+                <div className="w-full h-full flex space-x-6 items-center justify-start pl-4">
+                  <Image
+                    src="/images/oponents/championship/afc_martim.png"
+                    alt="afc_martim"
+                    width={23}
+                    height={34}
+                  />
+                  <p className="mx-4">A.F.C Martim</p>
+                </div>
+              </td>
+              <td className="text-center border-r border-gray-200">26</td>
+              <td className="text-center border-r border-gray-200 hidden md:table-cell">
+                7
+              </td>
+              <td className="text-center border-r border-gray-200 hidden md:table-cell">
+                8
+              </td>
+              <td className="text-center border-r border-gray-200 hidden md:table-cell">
+                11
+              </td>
+              <td className="text-center border-r border-gray-200 hidden md:table-cell">
+                -7
+              </td>
+              <td className="text-center">29</td>
+            </tr>
+            <tr className="border-b border-gray-200">
+              <td className="text-center border-r border-gray-200 py-4">11</td>
+              <td className="border-r border-gray-200">
+                <div className="w-full h-full flex space-x-6 items-center justify-start pl-4">
+                  <Image
+                    src="/images/oponents/championship/gdr_esporoes.png"
+                    alt="gdr_esporoes"
+                    width={23}
+                    height={34}
+                  />
+                  <p className="mx-4">G.D.R Esporões</p>
+                </div>
+              </td>
+              <td className="text-center border-r border-gray-200">26</td>
+              <td className="text-center border-r border-gray-200 hidden md:table-cell">
+                7
+              </td>
+              <td className="text-center border-r border-gray-200 hidden md:table-cell">
+                8
+              </td>
+              <td className="text-center border-r border-gray-200 hidden md:table-cell">
+                11
+              </td>
+              <td className="text-center border-r border-gray-200 hidden md:table-cell">
+                -13
+              </td>
+              <td className="text-center">29</td>
+            </tr>
+            <tr className="border-b border-gray-200">
+              <td className="text-center border-r border-gray-200 py-4">12</td>
+              <td className="border-r border-gray-200">
+                <div className="w-full h-full flex space-x-6 items-center justify-start pl-4">
+                  <Image
+                    src="/images/oponents/championship/ud_vila_cha.png"
+                    alt="ud_vila_cha"
+                    width={23}
+                    height={34}
+                  />
+                  <p className="mx-4">U.D Vila Chã</p>
+                </div>
+              </td>
+              <td className="text-center border-r border-gray-200">26</td>
+              <td className="text-center border-r border-gray-200 hidden md:table-cell">
+                8
+              </td>
+              <td className="text-center border-r border-gray-200 hidden md:table-cell">
+                4
+              </td>
+              <td className="text-center border-r border-gray-200 hidden md:table-cell">
+                14
+              </td>
+              <td className="text-center border-r border-gray-200 hidden md:table-cell">
+                -7
+              </td>
+              <td className="text-center">28</td>
+            </tr>
+            <tr className="border-b border-gray-200">
+              <td className="text-center border-r border-gray-200 py-4">13</td>
+              <td className="border-r border-gray-200">
+                <div className="w-full h-full flex space-x-6 items-center justify-start pl-4">
+                  <Image
+                    src="/images/oponents/championship/sc_ucha.png"
+                    alt="sc_ucha"
+                    width={23}
+                    height={34}
+                  />
+                  <p className="mx-4">S.C Ucha</p>
+                </div>
+              </td>
+              <td className="text-center border-r border-gray-200">26</td>
+              <td className="text-center border-r border-gray-200 hidden md:table-cell">
+                5
+              </td>
+              <td className="text-center border-r border-gray-200 hidden md:table-cell">
+                4
+              </td>
+              <td className="text-center border-r border-gray-200 hidden md:table-cell">
+                17
+              </td>
+              <td className="text-center border-r border-gray-200 hidden md:table-cell">
+                -31
+              </td>
+              <td className="text-center">19</td>
+            </tr>
+            <tr className="border-b border-gray-200">
+              <td className="text-center border-r border-gray-200 py-4">14</td>
+              <td className="border-r border-gray-200">
+                <div className="w-full h-full flex space-x-6 items-center justify-start pl-4">
+                  <Image
+                    src="/images/oponents/championship/gfc_pousa.png"
+                    alt="gfc_pousa"
+                    width={23}
+                    height={34}
+                  />
+                  <p className="mx-4">G.F.C Pousa</p>
+                </div>
+              </td>
+              <td className="text-center border-r border-gray-200">26</td>
+              <td className="text-center border-r border-gray-200 hidden md:table-cell">
+                4
+              </td>
+              <td className="text-center border-r border-gray-200 hidden md:table-cell">
+                3
+              </td>
+              <td className="text-center border-r border-gray-200 hidden md:table-cell">
+                19
+              </td>
+              <td className="text-center border-r border-gray-200 hidden md:table-cell">
+                -33
+              </td>
+              <td className="text-center">15</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ClassificationTable
+export default ClassificationTable;
