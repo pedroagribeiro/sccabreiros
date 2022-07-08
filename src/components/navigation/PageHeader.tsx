@@ -36,7 +36,7 @@ const PageHeader = ({ title, subpages }: SectionElements) => {
           ))}
         </div>
       </div>
-      <div className="w-full flex lg:hidden">
+      <div className="w-full flex lg:hidden font-agencygothic">
         <div className="w-full">
           <div className="w-full dropdown relative">
             <button
