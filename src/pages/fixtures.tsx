@@ -4,10 +4,6 @@ import UpcomingFixture from '../components/result/Fixture';
 import { GoDash, GoPlus } from 'react-icons/go';
 import { trpc } from '../utils/trpc';
 
-type DropdownStatusType = {
-  [key: string]: boolean;
-};
-
 const Fixtures = () => {
   const {
     data: fixtures,
@@ -30,9 +26,21 @@ const Fixtures = () => {
     }
   };
 
+  const isItLoading = () => {
+    const r = isLoading ? 'animate-bounce' : 'hidden';
+    return r;
+  };
+
   return (
     <div className="px-6 md:px-16 2xl:px-64 mt-8 mb-8">
       <div className="flex flex-col">
+        <div
+          className={`animate-pulse flex ${isItLoading()} min-w-full text-center min-h-screen items-center`}
+        >
+          <p className="w-full font-agencygothic text-4xl text-gray-700">
+            Carregando...
+          </p>
+        </div>
         {fixtures?.fixtures
           .sort((fixture) => fixture[1][0])
           .map((month_year_fixtures) => {
