@@ -25,6 +25,11 @@ const Results = () => {
       setDropdownsStatus(new_state);
     }
   };
+
+  const isItLoading = () => {
+    isLoading ? 'animate-bounce' : null;
+  };
+
   return (
     <div className="px-6 md:px-16 2xl:px-64 mt-8 mb-8">
       <div className="flex flex-col">
@@ -34,7 +39,7 @@ const Results = () => {
             return (
               <span key={month_year_fixtures[0] as string}>
                 <button
-                  className="w-full flex justify-between px-10 py-6 text-gray-700 hover:text-green-600 text-2xl font-agencygothic"
+                  className={`${isItLoading()} w-full flex justify-between px-10 py-6 text-gray-700 hover:text-green-600 text-2xl font-agencygothic`}
                   onClick={() =>
                     updateDropdownStatus(month_year_fixtures[0] as string)
                   }
