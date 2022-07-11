@@ -18,7 +18,7 @@
     url('/fonts/AgencyGothicCT/AgencyGothicCT-Bold.woff') format('woff');
 }
 
-@font-face {
+/* @font-face {
   font-family: 'Fira Sans';
   font-style: thin;
   font-weight: 300;
@@ -37,4 +37,4 @@
   font-style: bold;
   font-weight: 600;
   src: local(''), url('/fonts/FiraSans/FiraSans-Bold.ttf') format('truetype');
-}
+} */

@@ -51,12 +51,6 @@ const Contact = () => {
         />
         <div className="flex justify-center items-center mt-16 mb-16 text-white">
           <div className="max-w-5xl w-5/6 flex flex-col space-y-0 items-center md:w-3/5 lg:w-2/5">
-            <div className="w-full flex space-x-4 bg-green-600 rounded-sm justify-center">
-              <h2 className="text-3xl px-3 text-center uppercase py-4">
-                Formulário de contacto
-              </h2>
-            </div>
-
             <Formik
               initialValues={initialValues}
               onSubmit={async (values, actions) => {
@@ -86,12 +80,12 @@ const Contact = () => {
                 });
               }}
             >
-              <Form className="w-full flex flex-col items-center space-y-4  bg-white ring-1 ring-gray-200 rounded-sm px-8 pt-6 pb-8 mb-4">
+              <Form className="w-full flex flex-col items-center space-y-4 bg-white rounded-sm shadow-md px-8 pt-6 pb-8 mb-4">
                 <div className="w-full flex flex-col space-y-2">
                   <div className="flex space-x-1 items-center">
                     <label
                       htmlFor="fullName"
-                      className="block text-gray-700 text-md font-bold"
+                      className="block text-gray-700 text-lg font-bold font-agencygothic"
                     >
                       Nome completo
                     </label>
@@ -112,7 +106,7 @@ const Contact = () => {
                   <div className="flex space-x-1 items-center">
                     <label
                       htmlFor="email"
-                      className="block text-gray-700 text-md font-bold"
+                      className="block text-gray-700 text-lg font-bold font-agencygothic"
                     >
                       Email
                     </label>
@@ -155,7 +149,7 @@ const Contact = () => {
                   <div className="flex space-x-1 items-center">
                     <label
                       htmlFor="message"
-                      className="block text-gray-700 text-md font-bold"
+                      className="block text-gray-700 text-lg font-bold font-agencygothic"
                     >
                       Mensagem
                     </label>

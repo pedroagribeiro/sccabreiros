@@ -10,7 +10,7 @@ module.exports = {
       },
     },
     fontFamily: {
-      sans: ['Fira Sans', 'sans-serif'],
+      sans: ['Saira', 'sans-serif'],
     },
   },
   plugins: [],
