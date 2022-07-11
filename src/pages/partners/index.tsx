@@ -1,7 +1,7 @@
 import React, { ReactElement } from 'react';
-import Layout from '../components/layouts/Layout';
+import Layout from '../../components/layouts/Layout';
 import Image from 'next/image';
-import OfficialPartner from '../components/partners/OfficialPartner';
+import OfficialPartner from '../../components/partners/OfficialPartner';
 
 const Partners = () => {
   return (
@@ -9,14 +9,14 @@ const Partners = () => {
       <h3 className="text-3xl md:text-start">Patrocinadores oficiais</h3>
       <div className="flex flex-col space-y-6 mt-10 mb-16">
         <OfficialPartner
-          image="/partners/cpw.png"
+          image="/images/partners/cpw.png"
           name="CPW Engenharia"
           description="Fundada em Maio de 2010 com sede em Povoa de Lanhoso, a empresa CPW desenvolve a sua atividade na área da construção civil, dedicando-se maioritariamente à execução de empreitadas de obras públicas."
           website="https://cpwengenharia.webnode.pt/"
           facebook="https://www.facebook.com/CPW-Engenharia-109867074482676/"
         />
         <OfficialPartner
-          image="/partners/ledechem.png"
+          image="/images/partners/ledechem.png"
           name="Ledechem"
           description="Em 2020, a Ledechem apresentou-se com uma nova imagem corporativa. O objectivo era reforçar e sublinhar a filosofia inovadora da empresa. Hoje, a Ledechem é uma referência portuguesa no sector, trazendo produtos certificados para o mercado, investindo continuamente na eco-eficiência."
           website="https://ledechem.pt/en/"
@@ -24,7 +24,7 @@ const Partners = () => {
           instagram="https://www.instagram.com/ledechem.pt/"
         />
         <OfficialPartner
-          image="/partners/lp_rr_contabilidade.png"
+          image="/images/partners/lp_rr_contabilidade.png"
           name="LP & RR - Contabilidade & Seguros"
           description="Promover o desenvolvimento dos seus clientes permitindo que os ambientes económicos, financeiros e tributários não representem problemas, mas vantagens. Atingir o sucesso pela cooperação com os seus clientes. Ser um verdadeiro parceiro dos seus clientes, oferecendo um serviço altamente especializado, qualificado e profissional."
           website="https://www.lp-rr.com/?"

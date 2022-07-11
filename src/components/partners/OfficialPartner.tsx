@@ -1,16 +1,16 @@
-import React from 'react'
-import Image from 'next/image'
-import Description from './Description'
+import React from 'react';
+import Image from 'next/image';
+import Description from './Description';
 
 type OfficialPartnerProps = {
-  image: string
-  name: string
-  description: string
-  website?: string
-  facebook?: string
-  instagram?: string
-  twitter?: string
-}
+  image: string;
+  name: string;
+  description: string;
+  website?: string;
+  facebook?: string;
+  instagram?: string;
+  twitter?: string;
+};
 
 const OfficialPartner = ({
   image,
@@ -22,7 +22,7 @@ const OfficialPartner = ({
   twitter,
 }: OfficialPartnerProps) => {
   return (
-    <div className="flex flex-col md:flex-row justify-between items-center ring-1 ring-gray-200 bg-gray-200 rounded-md">
+    <div className="flex flex-col md:flex-row justify-between items-center ring-2 ring-gray-100 bg-gray-200 rounded-sm shadow-md">
       <div className="px-10">
         <Image src={image} alt="cpw" width={500} height={200} />
       </div>
@@ -35,7 +35,7 @@ const OfficialPartner = ({
         twitter={twitter}
       />
     </div>
-  )
-}
+  );
+};
 
-export default OfficialPartner
+export default OfficialPartner;

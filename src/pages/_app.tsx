@@ -6,6 +6,16 @@ import { withTRPC } from '@trpc/next';
 import { AppType } from 'next/dist/shared/lib/utils';
 import { AppRouter } from '../server/routers';
 
+// Fonts
+import '@fontsource/saira/300.css';
+import '@fontsource/saira/400.css';
+import '@fontsource/saira/500.css';
+import '@fontsource/saira/600.css';
+import '@fontsource/saira/700.css';
+import '@fontsource/teko/400.css';
+import '@fontsource/teko/600.css';
+import '@fontsource/teko/700.css';
+
 type NextPageWithLayout = NextPage & {
   getLayout?: (page: ReactElement) => ReactNode;
 };

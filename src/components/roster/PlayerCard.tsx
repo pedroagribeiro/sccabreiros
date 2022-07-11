@@ -44,7 +44,9 @@ const PlayerCard = ({
             <p className="font-thin text-sm">Portugal</p>
           </div>
         </div>
-        <p className="font-agencygothic text-8xl text-gray-400">{number}</p>
+        <div className="flex flex-col">
+          <p className="font-teko text-8xl text-gray-400 pt-2">{number}</p>
+        </div>
       </div>
     </div>
   );

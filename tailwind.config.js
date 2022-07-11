@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        agencygothic: ['AgencyGothicCT'],
+        teko: ['Teko'],
       },
     },
     fontFamily: {

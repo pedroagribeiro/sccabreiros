@@ -1,6 +1,6 @@
 import React, { ReactElement } from 'react';
-import Layout from '../components/layouts/Layout';
-import StaffCard from '../components/staff/StaffCard';
+import Layout from '../../components/layouts/Layout';
+import StaffCard from '../../components/staff/StaffCard';
 
 const Staff = () => {
   return (
@@ -16,28 +16,28 @@ const Staff = () => {
           <StaffCard
             first_name="Dinis"
             second_name="Rodrigues"
-            photo="/staff/coaches/dinis_rodrigues.png"
+            photo="/images/staff/coaches/dinis_rodrigues.png"
             position="Treinador principal"
             number={1}
           />
           <StaffCard
             first_name="Carlos"
             second_name="Costa"
-            photo="/staff/coaches/carlos_costa.png"
+            photo="/images/staff/coaches/carlos_costa.png"
             position="Treinador adjunto"
             number={2}
           />
           <StaffCard
             first_name="Miguel"
             second_name="Costa"
-            photo="/staff/coaches/miguel.png"
+            photo="/images/staff/coaches/miguel.png"
             position="Treinador Guarda-Redes"
             number={3}
           />
           <StaffCard
             first_name="José"
             second_name="Lopes"
-            photo="/staff/coaches/jose_lopes.png"
+            photo="/images/staff/coaches/jose_lopes.png"
             position="Treinador Guarda-Redes"
             number={4}
           />

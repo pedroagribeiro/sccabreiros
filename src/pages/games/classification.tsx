@@ -1,6 +1,6 @@
 import React, { ReactElement } from 'react';
-import Layout from '../components/layouts/Layout';
-import ClassificationTable from '../components/table/ClassificationTable';
+import Layout from '../../components/layouts/Layout';
+import ClassificationTable from '../../components/table/ClassificationTable';
 
 const Classification = () => {
   return (
@@ -14,9 +14,9 @@ Classification.getLayout = (page: ReactElement) => (
   <Layout
     title="Classificação"
     subpages={[
-      { title: 'Próximos Jogos', url: '/fixtures' },
-      { title: 'Resultados', url: '/results' },
-      { title: 'Classificação', url: '/classification' },
+      { title: 'Próximos Jogos', url: '/games/fixtures' },
+      { title: 'Resultados', url: '/games/results' },
+      { title: 'Classificação', url: '/games/classification' },
     ]}
   >
     {page}

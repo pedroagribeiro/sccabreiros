@@ -17,8 +17,8 @@ const Navbar = () => {
       url: '/facilities',
     },
     {
-      title: 'Juvenis',
-      url: '/juvenis',
+      title: 'Parceiros',
+      url: '/partners',
     },
     {
       title: 'Contacto',
@@ -37,7 +37,7 @@ const Navbar = () => {
     },
     {
       title: 'Jogos',
-      url: '/fixtures',
+      url: '/games/fixtures',
     },
     {
       title: 'História',
@@ -49,7 +49,7 @@ const Navbar = () => {
     },
     {
       title: 'Resultados',
-      url: '/results',
+      url: '/games/results',
     },
   ];
 
@@ -96,7 +96,9 @@ const Navbar = () => {
                 <button key={index}>
                   <Link href={item.url}>
                     <div className="w-min flex flex-col items-start hover:bg-white">
-                      <p className="uppercase bg-green-600">{item.title}</p>
+                      <p className="uppercase bg-green-600 font-medium">
+                        {item.title}
+                      </p>
                       <div className="w-min h-1 rounded-md"></div>
                     </div>
                   </Link>
@@ -149,7 +151,10 @@ const Navbar = () => {
             <div className="h-full w-full flex justify-between items-center">
               <div className="flex space-x-8 text-white">
                 {lowerBarItems.map((item, index) => (
-                  <button key={index} className="uppercase font-2xl">
+                  <button
+                    key={index}
+                    className="uppercase font-2xl font-medium"
+                  >
                     <Link href={item.url}>
                       <div className="flex flex-col hover:bg-white">
                         <p className="bg-green-600">{item.title}</p>

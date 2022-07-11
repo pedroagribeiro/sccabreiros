@@ -1,11 +1,11 @@
 import React, { ReactElement, useState } from 'react';
 import { BsFillPatchCheckFill } from 'react-icons/bs';
-import Layout from '../components/layouts/Layout';
-import PageHeader from '../components/navigation/PageHeader';
+import Layout from '../../components/layouts/Layout';
+import PageHeader from '../../components/navigation/PageHeader';
 import { Formik, Form, Field } from 'formik';
-import InfoModal from '../components/navigation/InfoModal';
-import { inferQueryResponse } from './api/trpc/[trpc]';
-import { trpc } from '../utils/trpc';
+import InfoModal from '../../components/navigation/InfoModal';
+import { inferQueryResponse } from '../api/trpc/[trpc]';
+import { trpc } from '../../utils/trpc';
 
 type ContactFormContentType = {
   fullName: string;
@@ -85,7 +85,7 @@ const Contact = () => {
                   <div className="flex space-x-1 items-center">
                     <label
                       htmlFor="fullName"
-                      className="block text-gray-700 text-lg font-bold font-agencygothic"
+                      className="block text-gray-700 text-lg font-semibold"
                     >
                       Nome completo
                     </label>
@@ -106,7 +106,7 @@ const Contact = () => {
                   <div className="flex space-x-1 items-center">
                     <label
                       htmlFor="email"
-                      className="block text-gray-700 text-lg font-bold font-agencygothic"
+                      className="block text-gray-700 text-lg font-semibold"
                     >
                       Email
                     </label>
@@ -127,7 +127,7 @@ const Contact = () => {
                   <div className="flex space-x-1 items-center">
                     <label
                       htmlFor="subject"
-                      className="block text-gray-700 text-md font-bold"
+                      className="block text-gray-700 text-md font-semibold"
                     >
                       Assunto
                     </label>
@@ -149,7 +149,7 @@ const Contact = () => {
                   <div className="flex space-x-1 items-center">
                     <label
                       htmlFor="message"
-                      className="block text-gray-700 text-lg font-bold font-agencygothic"
+                      className="block text-gray-700 text-lg font-semibold"
                     >
                       Mensagem
                     </label>

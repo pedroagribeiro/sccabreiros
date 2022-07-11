@@ -1,15 +1,15 @@
-import React, { ReactElement, useState } from 'react';
-import Layout from '../components/layouts/Layout';
-import Fixture from '../components/result/Fixture';
-import { trpc } from '../utils/trpc';
+import React, { ReactElement, useState, useEffect, useCallback } from 'react';
+import Layout from '../../components/layouts/Layout';
+import UpcomingFixture from '../../components/result/Fixture';
 import { GoDash, GoPlus } from 'react-icons/go';
+import { trpc } from '../../utils/trpc';
 
-const Results = () => {
+const Fixtures = () => {
   const {
     data: fixtures,
     refetch,
     isLoading,
-  } = trpc.useQuery(['fixture.getPastFixtures']);
+  } = trpc.useQuery(['fixture.getUpcomingFixtures']);
 
   const [dropdownsStatus, setDropdownsStatus] = useState(new Map([]));
 
@@ -76,7 +76,7 @@ const Results = () => {
                   }`}
                 >
                   {month_year_fixtures[1].map((fixture, index) => (
-                    <Fixture
+                    <UpcomingFixture
                       key={index}
                       date={fixture.date}
                       textDate={fixture.textDate}
@@ -97,17 +97,17 @@ const Results = () => {
   );
 };
 
-Results.getLayout = (page: ReactElement) => (
+Fixtures.getLayout = (page: ReactElement) => (
   <Layout
-    title="Resultados"
+    title="Próximos Jogos"
     subpages={[
-      { title: 'Próximos Jogos', url: '/fixtures' },
-      { title: 'Resultados', url: '/results' },
-      { title: 'Classificação', url: '/classification' },
+      { title: 'Próximos jogos', url: '/games/fixtures' },
+      { title: 'Resultados', url: '/games/results' },
+      { title: 'Classificação', url: '/games/classification' },
     ]}
   >
     {page}
   </Layout>
 );
 
-export default Results;
+export default Fixtures;

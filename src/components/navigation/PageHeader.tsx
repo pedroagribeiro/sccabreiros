@@ -22,7 +22,7 @@ const PageHeader = ({ title, subpages }: SectionElements) => {
   return (
     <div>
       <div className="w-full hidden lg:flex flex-col divide-y divide-gray-500 bg-gray-700 px-6 md:px-16 2xl:px-64 text-white font-agencygothic">
-        <h2 className="uppercase text-4xl py-8">{title}</h2>
+        <h2 className="uppercase text-3xl py-8 font-medium">{title}</h2>
         <div className="flex space-x-6">
           {subpages.map((item, index) => (
             <button className="mt-2" key={index}>
