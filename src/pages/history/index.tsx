@@ -60,7 +60,7 @@ const History = () => {
         </p>
         <div className="mt-12 flex flex-col space-y-4 items-center">
           <Image
-            src="/formation/everyone.jpg"
+            src="/images/formation/everyone.jpg"
             alt="formation"
             width={600}
             height={400}

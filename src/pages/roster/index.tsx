@@ -10,7 +10,7 @@ const Roster = () => {
     isLoading,
   } = trpc.useQuery(['roster.getFullRoster']);
 
-  const isItLoadingDiv = () => {
+  const isItLoading = () => {
     const r = isLoading ? 'animate-bounce' : 'hidden';
     return r;
   };
@@ -18,15 +18,13 @@ const Roster = () => {
   return (
     <div>
       <div
-        className={`animate-pulse flex ${isItLoadingDiv()} min-w-full text-center min-h-screen items-center`}
+        className={`animate-pulse flex ${isItLoading()} min-w-full text-center min-h-screen items-center`}
       >
-        <p className="w-full font-teko text-4xl text-gray-700">Carregando...</p>
+        <p className="font-teko uppercase w-full text-4xl text-gray-700">
+          Carregando...
+        </p>
       </div>
-      <div
-        className={`${
-          !isLoading ? 'flex' : 'hidden'
-        }flex flex-col space-y-8 relative px-4 pb-8 mx-auto mt-8 max-w-2xl sm:px-6 sm:mt-12 lg:px-8 lg:pb-10 lg:max-w-7xl text-gray-700`}
-      >
+      <div className="flex flex-col space-y-8 relative px-4 pb-8 mx-auto mt-8 max-w-2xl sm:px-6 sm:mt-12 lg:px-8 lg:pb-10 lg:max-w-7xl text-gray-700">
         <div className="flex flex-col space-y-6">
           <div className="flex flex-col">
             <h2 className="text-4xl text-gray-700 font-teko uppercase">

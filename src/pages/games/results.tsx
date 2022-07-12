@@ -37,7 +37,7 @@ const Results = () => {
         <div
           className={`animate-pulse flex ${isItLoadingDiv()} min-w-full text-center min-h-screen items-center`}
         >
-          <p className="w-full font-agencygothic text-4xl text-gray-700">
+          <p className="font-teko uppercase w-full text-4xl text-gray-700">
             Carregando...
           </p>
         </div>

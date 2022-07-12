@@ -165,13 +165,19 @@ const Navbar = () => {
                 ))}
               </div>
               <div className="flex items-center">
-                <Image
-                  className="px-4"
-                  src="/images/partners/ledechem_branco.png"
-                  alt="ledechem"
-                  width={125}
-                  height={31}
-                />
+                <a
+                  href="https://ledechem.pt/en/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Image
+                    className="px-4"
+                    src="/images/partners/ledechem_branco.png"
+                    alt="ledechem"
+                    width={125}
+                    height={31}
+                  />
+                </a>
               </div>
             </div>
           </div>

@@ -1,15 +1,15 @@
-import React from 'react'
-import { AiOutlineGlobal, AiOutlineTwitter } from 'react-icons/ai'
-import { FaFacebookF, FaInstagram } from 'react-icons/fa'
+import React from 'react';
+import { AiOutlineGlobal, AiOutlineTwitter } from 'react-icons/ai';
+import { FaFacebookF, FaInstagram } from 'react-icons/fa';
 
 type DescriptionProps = {
-  name: string
-  description: string
-  website?: string
-  facebook?: string
-  instagram?: string
-  twitter?: string
-}
+  name: string;
+  description: string;
+  website?: string;
+  facebook?: string;
+  instagram?: string;
+  twitter?: string;
+};
 
 const Description = ({
   name,
@@ -21,7 +21,7 @@ const Description = ({
 }: DescriptionProps) => {
   return (
     <div className="w-full p-6  flex flex-col space-y-4 bg-gray-100 text-gray-700">
-      <p className="text-2xl">{name}</p>
+      <p className="text-2xl font-semibold">{name}</p>
       <p className="text-lg">{description}</p>
       <div className="flex space-x-6">
         {website ? (
@@ -54,7 +54,7 @@ const Description = ({
         )}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Description
+export default Description;

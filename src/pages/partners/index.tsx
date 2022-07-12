@@ -6,7 +6,12 @@ import OfficialPartner from '../../components/partners/OfficialPartner';
 const Partners = () => {
   return (
     <div className="flex flex-col items-center md:items-start px-4 pb-8 mx-auto mt-8 max-w-2xl sm:px-6 sm:mt-20 lg:px-8 lg:pb-0 lg:max-w-7xl text-green-600">
-      <h3 className="text-3xl md:text-start">Patrocinadores oficiais</h3>
+      <div className="flex flex-col">
+        <h2 className="text-4xl text-gray-700 font-teko uppercase">
+          Patrocinadores oficiais
+        </h2>
+        <div className="h-1 w-10 bg-green-600"></div>
+      </div>
       <div className="flex flex-col space-y-6 mt-10 mb-16">
         <OfficialPartner
           image="/images/partners/cpw.png"
