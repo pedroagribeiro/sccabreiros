@@ -8,6 +8,7 @@ import { GiHamburgerMenu } from 'react-icons/gi';
 
 const Navbar = () => {
   const upperBarItems = [
+    { title: 'Faz-te sócio', url: '/membership' },
     {
       title: 'Formação',
       url: '/youngsters',

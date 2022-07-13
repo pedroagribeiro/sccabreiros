@@ -22,13 +22,12 @@ const Contact = () => {
     message: '',
   };
 
-  const contactMutation = trpc.useMutation(['contact.submit-contact']);
-
-  const handleContact = async (values: ContactFormContentType) => {
-    await contactMutation.mutateAsync(values);
-  };
+  const contactMutation = trpc.useMutation(['contact.submit-contact'], {
+    async onSuccess() {},
+  });
 
   const [displayModal, setDisplayModal] = useState(false);
+
   const onClose = () => {
     setDisplayModal(false);
   };
@@ -49,32 +48,29 @@ const Contact = () => {
           text={modalInfo.text}
           success={modalInfo.success}
         />
-        <div className="flex justify-center items-center mt-16 mb-16 text-white">
+        <div className="flex justify-center items-center mt-16 mb-16">
           <div className="max-w-5xl w-5/6 flex flex-col space-y-0 items-center md:w-3/5 lg:w-2/5">
             <Formik
               initialValues={initialValues}
               onSubmit={async (values, actions) => {
-                await handleContact(values);
+                await contactMutation.mutateAsync(values);
                 setDisplayModal(true);
-                console.log(contactMutation.status);
-                console.log('LOADING: ' + contactMutation.isLoading);
-                console.log('ERROR: ' + contactMutation.isError);
-                if (contactMutation.isSuccess) {
-                  console.log(contactMutation.status);
-                  setModalInfo({
-                    title: 'Contacto submetido',
-                    text: 'O seu contacto foi submetido com sucesso e tentaremos responder com a maior brevidade possível',
-                    success: true,
-                  });
-                } else if (contactMutation.isError) {
-                  console.log(contactMutation.status);
-                  setModalInfo({
-                    title: 'Ocorreu um erro!',
-                    text: 'Ocorreu um erro ao submeter o seu contacto. Tente novamente e se continuar a obter este erro tente mais tarde',
-                    success: false,
-                  });
+                {
+                  contactMutation.isSuccess &&
+                    setModalInfo({
+                      title: 'Contacto submetido',
+                      text: 'O seu contacto foi submetido com sucesso e tentaremos responder com a maior brevidade possível',
+                      success: true,
+                    });
                 }
-
+                {
+                  contactMutation.isError &&
+                    setModalInfo({
+                      title: 'Ocorreu um erro!',
+                      text: 'Ocorreu um erro ao submeter o seu contacto. Tente novamente e se continuar a obter este erro tente mais tarde',
+                      success: false,
+                    });
+                }
                 actions.resetForm({
                   values: { fullName: '', email: '', subject: '', message: '' },
                 });
@@ -179,6 +175,7 @@ const Contact = () => {
                   <button
                     type="submit"
                     className="mt-8 bg-green-600 text-white px-3 py-2 rounded-md hover:bg-green-700"
+                    disabled={contactMutation.isLoading}
                   >
                     Submeter contacto
                   </button>
