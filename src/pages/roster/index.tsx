@@ -2,6 +2,7 @@ import React, { ReactElement } from 'react';
 import Layout from '../../components/layouts/Layout';
 import PlayerCard from '../../components/roster/PlayerCard';
 import { trpc } from '../../utils/trpc';
+import Trpc from '../api/trpc/[trpc]';
 
 const Roster = () => {
   // const {
@@ -20,7 +21,6 @@ const Roster = () => {
   return (
     <div>
       <p className="text-lg">{JSON.stringify(data)}</p>
-
       <div
         className={`animate-pulse flex ${isItLoading()} min-w-full text-center min-h-screen items-center`}
       >
