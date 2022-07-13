@@ -56,7 +56,7 @@ const Contact = () => {
                 await contactMutation.mutateAsync(values);
                 setDisplayModal(true);
                 {
-                  contactMutation.isSuccess &&
+                  contactMutation.status == 'success' &&
                     setModalInfo({
                       title: 'Contacto submetido',
                       text: 'O seu contacto foi submetido com sucesso e tentaremos responder com a maior brevidade possível',
@@ -64,7 +64,7 @@ const Contact = () => {
                     });
                 }
                 {
-                  contactMutation.isError &&
+                  contactMutation.status == 'error' &&
                     setModalInfo({
                       title: 'Ocorreu um erro!',
                       text: 'Ocorreu um erro ao submeter o seu contacto. Tente novamente e se continuar a obter este erro tente mais tarde',
