@@ -4,19 +4,23 @@ import PlayerCard from '../../components/roster/PlayerCard';
 import { trpc } from '../../utils/trpc';
 
 const Roster = () => {
-  const {
-    data: roster,
-    refetch,
-    isLoading,
-  } = trpc.useQuery(['roster.getFullRoster']);
+  // const {
+  //   data: roster,
+  //   refetch,
+  //   isLoading,
+  // } = trpc.useQuery(['roster.getFullRoster']);
+
+  const data = trpc.useQuery(['roster.getFullRoster']);
 
   const isItLoading = () => {
-    const r = isLoading ? 'animate-bounce' : 'hidden';
+    const r = data.isLoading ? 'animate-bounce' : 'hidden';
     return r;
   };
 
   return (
     <div>
+      <p className="text-lg">{JSON.stringify(data)}</p>
+
       <div
         className={`animate-pulse flex ${isItLoading()} min-w-full text-center min-h-screen items-center`}
       >
@@ -24,6 +28,7 @@ const Roster = () => {
           Carregando...
         </p>
       </div>
+
       <div className="flex flex-col space-y-8 relative px-4 pb-8 mx-auto mt-8 max-w-2xl sm:px-6 sm:mt-12 lg:px-8 lg:pb-10 lg:max-w-7xl text-gray-700">
         <div className="flex flex-col space-y-6">
           <div className="flex flex-col">
@@ -33,7 +38,7 @@ const Roster = () => {
             <div className="h-1 w-10 bg-green-600"></div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-6 lg:gap-10 gap-y-4">
-            {roster?.roster
+            {data.data?.roster
               .filter((player) => player.position == 'Guarda-redes')
               .sort((p1, p2) => p1.number - p2.number)
               .map((player) => (
@@ -59,7 +64,7 @@ const Roster = () => {
             <div className="h-1 w-10 bg-green-600"></div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-6 lg:gap-10 gap-y-4">
-            {roster?.roster
+            {data.data?.roster
               .filter((player) => player.position == 'Defesa')
               .sort((p1, p2) => p1.number - p2.number)
               .map((player) => (
@@ -85,7 +90,7 @@ const Roster = () => {
             <div className="h-1 w-10 bg-green-600"></div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-6 lg:gap-10 gap-y-4">
-            {roster?.roster
+            {data.data?.roster
               .filter((player) => player.position == 'Médio')
               .sort((p1, p2) => p1.number - p2.number)
               .map((player) => (
@@ -111,7 +116,7 @@ const Roster = () => {
             <div className="h-1 w-10 bg-green-600"></div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-6 lg:gap-10 gap-y-4">
-            {roster?.roster
+            {data.data?.roster
               .filter((player) => player.position == 'Avançado')
               .sort((p1, p2) => p1.number - p2.number)
               .map((player) => (

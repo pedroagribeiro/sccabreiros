@@ -313,7 +313,7 @@ const ClassificationTable = () => {
               </td>
               <td className="text-center">29</td>
             </tr>
-            <tr className="border-b border-gray-200">
+            <tr className="border-b border-gray-200 text-red-600">
               <td className="text-center border-r border-gray-200 py-4">11</td>
               <td className="border-r border-gray-200">
                 <div className="w-full h-full flex space-x-6 items-center justify-start pl-4">
@@ -341,7 +341,7 @@ const ClassificationTable = () => {
               </td>
               <td className="text-center">29</td>
             </tr>
-            <tr className="border-b border-gray-200">
+            <tr className="border-b border-gray-200 text-red-600">
               <td className="text-center border-r border-gray-200 py-4">12</td>
               <td className="border-r border-gray-200">
                 <div className="w-full h-full flex space-x-6 items-center justify-start pl-4">
@@ -369,7 +369,7 @@ const ClassificationTable = () => {
               </td>
               <td className="text-center">28</td>
             </tr>
-            <tr className="border-b border-gray-200">
+            <tr className="border-b border-gray-200 text-red-600">
               <td className="text-center border-r border-gray-200 py-4">13</td>
               <td className="border-r border-gray-200">
                 <div className="w-full h-full flex space-x-6 items-center justify-start pl-4">
@@ -397,7 +397,7 @@ const ClassificationTable = () => {
               </td>
               <td className="text-center">19</td>
             </tr>
-            <tr className="border-b border-gray-200">
+            <tr className="border-b border-gray-200 text-red-600">
               <td className="text-center border-r border-gray-200 py-4">14</td>
               <td className="border-r border-gray-200">
                 <div className="w-full h-full flex space-x-6 items-center justify-start pl-4">

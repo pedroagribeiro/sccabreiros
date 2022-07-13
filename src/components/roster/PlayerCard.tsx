@@ -23,6 +23,12 @@ const PlayerCard = ({
   position,
   zerozero,
 }: PlayerInfo) => {
+  const fromNationality = (nationality: string) => {
+    if (nationality === 'PT') return 'Portugal';
+    if (nationality === 'BR') return 'Brasil';
+    return;
+  };
+
   return (
     <div className="flex flex-col rounded-sm shadow-md bg-white">
       <div className="w-full h-1 bg-green-600 rounded-t-sm"></div>
@@ -41,7 +47,7 @@ const PlayerCard = ({
               svg
               style={{ width: '1.7em', height: '1.7em' }}
             />
-            <p className="font-thin text-sm">Portugal</p>
+            <p className="font-thin text-sm">{fromNationality(nationality)}</p>
           </div>
         </div>
         <div className="flex flex-col">

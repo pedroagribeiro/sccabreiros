@@ -12,6 +12,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fontsource/roboto": "^4.5.7",
     "@fontsource/saira": "^4.5.8",
     "@fontsource/teko": "^4.5.8",
     "@headlessui/react": "^1.6.4",

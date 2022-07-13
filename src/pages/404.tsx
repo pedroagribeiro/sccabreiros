@@ -1,7 +1,7 @@
-import React, { ReactElement } from 'react'
-import Image from 'next/image'
-import Head from 'next/head'
-import Link from 'next/link'
+import React, { ReactElement } from 'react';
+import Image from 'next/image';
+import Head from 'next/head';
+import Link from 'next/link';
 
 const NotFound = () => {
   return (
@@ -14,7 +14,12 @@ const NotFound = () => {
 
       <main className="h-screen">
         <div className="flex flex-col items-center justify-center space-y-4 h-screen p-10">
-          <Image src="/emblema.png" alt="emblema" width={144} height={194} />
+          <Image
+            src="/images/emblema.png"
+            alt="emblema"
+            width={144}
+            height={194}
+          />
           <div className="flex flex-col items-center text-center text-green-800">
             <p className="text-2xl font-bold">Sporting Clube de Cabreiros</p>
             <p className="text-xl">desde 1932</p>
@@ -37,7 +42,7 @@ const NotFound = () => {
         </div>
       </main>
     </div>
-  )
-}
+  );
+};
 
-export default NotFound
+export default NotFound;
