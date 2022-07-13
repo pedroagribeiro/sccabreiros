@@ -21,6 +21,7 @@ const Roster = () => {
   return (
     <div>
       <p className="text-lg">{JSON.stringify(data)}</p>
+      <p className="text-lg">{process.env.VERCEL_URL}</p>
       <div
         className={`animate-pulse flex ${isItLoading()} min-w-full text-center min-h-screen items-center`}
       >
