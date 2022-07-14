@@ -18,6 +18,8 @@ model NewsPost {
   playerId  Int?
   fixture   Fixture? @relation(name: "Fixture", fields: [fixtureId], references: [id])
   fixtureId Int?
+  image     String
+  date      DateTime
 }
 
 model Contact {
