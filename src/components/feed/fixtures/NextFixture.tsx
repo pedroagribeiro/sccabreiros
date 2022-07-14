@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { MdOutlineKeyboardArrowRight } from 'react-icons/md';
+import Link from 'next/link';
 
 const NextFixture = () => {
   return (
@@ -31,14 +32,18 @@ const NextFixture = () => {
             </div>
           </div>
           <div className="flex space-x-4 pt-4 uppercase">
-            <div className="flex text-white items-center">
-              <p className="text-md">Notícias</p>
-              <MdOutlineKeyboardArrowRight className="text-xl" />
-            </div>
-            <div className="flex text-white items-center">
-              <p className="text-md">Classificação</p>
-              <MdOutlineKeyboardArrowRight className="text-xl" />
-            </div>
+            <Link href="/news">
+              <button className="flex text-white items-center uppercase">
+                <p className="text-md">Notícias</p>
+                <MdOutlineKeyboardArrowRight className="text-xl" />
+              </button>
+            </Link>
+            <Link href="/games/classification">
+              <button className="flex text-white items-center uppercase">
+                <p className="text-md">Classificação</p>
+                <MdOutlineKeyboardArrowRight className="text-xl" />
+              </button>
+            </Link>
           </div>
         </div>
       </div>

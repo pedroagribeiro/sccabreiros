@@ -12,12 +12,14 @@ const LandingFeed = () => {
         </div>
         <div className="w-full lg:w-3/12 flex flex-col">
           <NextFixture />
-          <div className="flex bg-green-600 p-4 rounded-sm justify-center shadow-md mb-4">
+          <button className="flex bg-green-600 p-4 rounded-sm justify-center shadow-md mb-4">
             <div className="flex space-x-2 items-center text-white">
-              <p className="uppercase">Sincroniza com o teu calendário</p>
-              <BiDownload className="font-2xl" />
+              <p className="uppercase text-sm">
+                Sincroniza com o teu calendário
+              </p>
+              <BiDownload className="text-xl" />
             </div>
-          </div>
+          </button>
         </div>
       </div>
     </div>

@@ -7,15 +7,15 @@ const Highlight = () => {
       <h2 className="bg-green-600 text-3xl font-agencygothic uppercase text-white p-4 rounded-sm shadow-md">
         Bem-vindo Telmo!
       </h2>
-      <div className="h-full flex flex-col shadow-md">
+      <div className="flex flex-col shadow-md">
         <div className="bg-green-600 h-1 rounded-t-sm"></div>
         <div className="flex flex-col lg:flex-row bg-gray-100 rounded-sm ">
-          <div className="w-full lg:w-3/5">
+          <div className="w-full flex lg:w-3/5">
             <Image
-              src="/images/interviews/entrevista_telmo.png"
+              src="/images/interviews/telmo.png"
               alt="interview_telmo"
-              width={651}
-              height={345}
+              width={1448}
+              height={800}
             />
           </div>
           <div className="w-full lg:w-2/5 flex flex-col space-y-2 px-6 py-4">
