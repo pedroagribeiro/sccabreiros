@@ -1,7 +1,7 @@
 import React, { ReactElement, useState } from 'react';
 import { BsFillPatchCheckFill } from 'react-icons/bs';
 import Layout from '../../components/layouts/Layout';
-import { Formik, Form, Field } from 'formik';
+import { Formik, Form, Field, validateYupSchema } from 'formik';
 import InfoModal from '../../components/navigation/InfoModal';
 import { inferQueryResponse } from '../api/trpc/[trpc]';
 import { trpc } from '../../utils/trpc';
@@ -31,10 +31,6 @@ const Membership = () => {
 
   const memberMutation = trpc.useMutation(['membership.submit-membership']);
 
-  const handleMembership = async (values: MembershipFormContentType) => {
-    await memberMutation.mutate(values);
-  };
-
   const [displayModal, setDisplayModal] = useState(false);
   const onClose = () => setDisplayModal(false);
   const [modalInfo, setModalInfo] = useState({
@@ -54,28 +50,29 @@ const Membership = () => {
       />
       <div className="flex justify-center items-center mt-16 mb-16 text-gray-700">
         <div className="max-w-6xl flex flex-col space-y-0 items-center mx-6 md:mx-32 lg:mx-72 ">
-          <div className="w-full flex space-x-4 bg-white ring-1 rounded-sm ring-gray-200 ">
-            <div className="bg-green-600 w-2 rounded-sm" />
-            <h2 className="font-bold text-2xl px-3 py-2 text-center md:items-start">
-              Formulário de adesão de novo sócio
-            </h2>
-          </div>
           <Formik
             initialValues={initialValues}
-            onSubmit={(values, actions) => {
-              handleMembership(values);
-              if (memberMutation.isSuccess) {
-                setModalInfo({
-                  title: 'Candidatura submetida',
-                  text: 'A sua candidatura a sócio foi submetida com sucesso',
-                  success: true,
-                });
-              } else {
-                setModalInfo({
-                  title: 'Ocorreu um erro com a candidatura',
-                  text: 'Ocorreu um erro ao submeter a sua candidatura. Por favor reveja os seus dados e tente de novo. Se o problema persistir contacte-nos.',
-                  success: false,
-                });
+            onSubmit={async (values: MembershipFormContentType, actions) => {
+              values.birthdate = new Date(values.birthdate);
+              values.phone = values.phone.toString();
+              console.log(values.birthdate);
+              await memberMutation.mutateAsync(values);
+              console.log(memberMutation);
+              {
+                memberMutation.status == 'success' &&
+                  setModalInfo({
+                    title: 'Candidatura submetida',
+                    text: 'A sua candidatura a sócio foi submetida com sucesso',
+                    success: true,
+                  });
+              }
+              {
+                memberMutation.status == 'error' &&
+                  setModalInfo({
+                    title: 'Ocorreu um erro com a candidatura',
+                    text: 'Ocorreu um erro ao submeter a sua candidatura. Por favor reveja os seus dados e tente de novo. Se o problema persistir contacte-nos.',
+                    success: false,
+                  });
               }
               setDisplayModal(true);
               actions.resetForm({
@@ -93,7 +90,7 @@ const Membership = () => {
             }}
           >
             <Form
-              className="w-full flex flex-col items-center space-y-4 bg-white ring-1 ring-gray-200 rounded-sm px-8 pt-6 pb-8 mb-4"
+              className="w-full flex flex-col items-center space-y-4 bg-white ring-1 ring-gray-200 rounded-sm shadow-md px-8 pt-6 pb-8 mb-4"
               action="/send-data-here"
               method="post"
             >
@@ -101,7 +98,7 @@ const Membership = () => {
                 <div className="flex space-x-1 items-center">
                   <label
                     htmlFor="fullName"
-                    className="block text-gray-700 text-md font-bold"
+                    className="block text-gray-700 text-lg font-semibold"
                   >
                     Nome completo
                   </label>
@@ -122,7 +119,7 @@ const Membership = () => {
                 <div className="flex space-x-1 items-center">
                   <label
                     htmlFor="birthdate"
-                    className="block text-gray-700 text-md font-bold"
+                    className="block text-gray-700 text-lg font-semibold"
                   >
                     Data de nascimento
                   </label>
@@ -142,7 +139,7 @@ const Membership = () => {
                 <div className="flex space-x-1 items-center">
                   <label
                     htmlFor="address"
-                    className="block text-gray-700 text-md font-bold"
+                    className="block text-gray-700 text-lg font-semibold"
                   >
                     Morada
                   </label>
@@ -165,7 +162,7 @@ const Membership = () => {
                   <div className="flex space-x-1 items-center">
                     <label
                       htmlFor="postalCode"
-                      className="block text-gray-700 text-md font-bold"
+                      className="block text-gray-700 text-lg font-semibold"
                     >
                       Código-postal
                     </label>
@@ -186,7 +183,7 @@ const Membership = () => {
                   <div className="flex space-x-1 items-center">
                     <label
                       htmlFor="location"
-                      className="block text-gray-700 text-md font-bold"
+                      className="block text-gray-700 text-lg font-semibold"
                     >
                       Localidade
                     </label>
@@ -209,7 +206,7 @@ const Membership = () => {
                   <div className="flex space-x-1 items-center">
                     <label
                       htmlFor="phone"
-                      className="block text-gray-700 text-md font-bold"
+                      className="block text-gray-700 text-lg font-semibold"
                     >
                       Contacto telefónico
                     </label>
@@ -232,7 +229,7 @@ const Membership = () => {
                   <div className="flex space-x-1 items-center">
                     <label
                       htmlFor="photo"
-                      className="block text-gray-700 text-md font-bold"
+                      className="block text-gray-700 text-lg font-semibold"
                     >
                       Carregar foto
                     </label>
@@ -254,7 +251,7 @@ const Membership = () => {
                 <div className="flex space-x-1 items-center">
                   <label
                     htmlFor="email"
-                    className="block text-gray-700 text-md font-bold"
+                    className="block text-gray-700 text-lg font-semibold"
                   >
                     Email
                   </label>

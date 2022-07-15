@@ -16,19 +16,19 @@ const NewsPostPage = () => {
 
   //   return <p>{JSON.stringify(post)}</p>;
   return (
-    <div className="px-6 md:px-16 2xl:px-80 mt-14 mb-8">
+    <div className="px-6 md:px-16 xl:px-80 mt-14 mb-8">
       <div className="flex flex-col space-y-4">
         <div className="bg-green-600 rounded-sm uppercase font-teko text-white text-3xl p-4">
           Euro 2022
         </div>
-        <div className="flex flex-col">
+        <div className="flex flex-col text-gray-800">
           <div className="h-1 bg-green-600 rounded-t-sm"></div>
-          <div className="flex flex-col p-4 space-y-2 bg-white">
-            <p className="text-gray-500 uppercase">News</p>
+          <div className="flex flex-col p-4 space-y-1 bg-white">
+            <p className="text-gray-500 uppercase font-semibold">Notícias</p>
             <p className="text-2xl font-medium">{post?.news_post?.title}</p>
-            <div className="flex flex-row space-x-2">
-              <p>Pedro Ribeiro</p>
-              <p>14 de julho de 2022</p>
+            <div className="flex flex-row space-x-2 text-sm items-end">
+              <p className="underline">Pedro Ribeiro</p>
+              <p className="text-xs text-gray-500">14 de julho de 2022</p>
             </div>
           </div>
           <div className="flex w-full">

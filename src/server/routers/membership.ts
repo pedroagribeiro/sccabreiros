@@ -5,7 +5,7 @@ import { prisma } from '../utils/prisma';
 export const membershipRouter = trpc.router().mutation('submit-membership', {
   input: z.object({
     fullName: z.string(),
-    birthdate: z.date(),
+    birthdate: z.any(),
     address: z.string(),
     postalCode: z.string(),
     location: z.string(),
@@ -14,9 +14,13 @@ export const membershipRouter = trpc.router().mutation('submit-membership', {
     email: z.string(),
   }),
   async resolve({ input }) {
+    console.log(input);
     const membership = await prisma.member.create({
-      data: { ...input },
+      data: {
+        ...input,
+        birthdate: new Date(input.birthdate),
+      },
     });
-    return { success: true, membership };
+    return { success: true };
   },
 });

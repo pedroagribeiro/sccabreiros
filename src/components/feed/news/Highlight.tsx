@@ -1,7 +1,12 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
-const Highlight = () => {
+type HighlightProps = {
+  id: number;
+};
+
+const Highlight = ({ id }: HighlightProps) => {
   return (
     <div className="flex flex-col space-y-4">
       <h2 className="bg-green-600 text-3xl font-agencygothic uppercase text-white p-4 rounded-sm shadow-md">
@@ -19,6 +24,7 @@ const Highlight = () => {
             />
           </div>
           <div className="w-full lg:w-2/5 flex flex-col space-y-2 px-6 py-4">
+            <div></div>
             <p className="uppercase text-gray-400 text-sm">Entrevista</p>
             <h3 className="text-2xl text-gray-700">
               Telmo está ansioso pelo início da época
@@ -28,6 +34,13 @@ const Highlight = () => {
               oficialização do vínculo, momento em que expressou o seu
               entusiasmo pelo início dos trabalhos.
             </p>
+            <div className="w-full h-full flex justify-center items-end">
+              <Link href={`/news/${id}`}>
+                <button className="bg-green-600 p-3 rounded-sm text-white uppercase text-sm">
+                  Lê o artigo completo
+                </button>
+              </Link>
+            </div>
           </div>
         </div>
       </div>

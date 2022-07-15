@@ -47,12 +47,14 @@ const Results = () => {
             return (
               <span key={month_year_fixtures[0] as string}>
                 <button
-                  className="w-full flex justify-between px-10 py-6 text-gray-700 hover:text-green-600 text-2xl font-agencygothic"
+                  className="w-full flex justify-between items-center px-10 py-6 text-gray-700 hover:text-green-600 text-2xl font-agencygothic"
                   onClick={() =>
                     updateDropdownStatus(month_year_fixtures[0] as string)
                   }
                 >
-                  <p className="uppercase">{month_year_fixtures[0]}</p>
+                  <p className="uppercase font-teko text-4xl">
+                    {month_year_fixtures[0]}
+                  </p>
                   <GoDash
                     className={`${
                       dropdownsStatus.get(month_year_fixtures[0]) === false
