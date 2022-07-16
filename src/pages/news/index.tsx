@@ -82,7 +82,7 @@ const News = () => {
                   >
                     <button>
                       <div className="w-full flex button opacity-100 hover:opacity-70 transition duration-300 ease-in-out bg-green-600">
-                        <div className="flex w-2/5 md:w-1/5">
+                        <div className="w-2/5 md:w-1/5 hidden lg:flex">
                           <Image
                             src={news_post.image}
                             alt="interview_telmo"
@@ -90,12 +90,12 @@ const News = () => {
                             height={800}
                           />
                         </div>
-                        <div className="w-4/5 flex flex-col space-y-2 bg-white px-8 py-auto justify-center rounded-r-sm">
-                          <span className="flex flex-col space-2-4 w-full items-start">
+                        <div className="w-full lg:w-4/5 flex flex-col space-y-2 bg-white px-8 py-auto justify-center rounded-r-sm">
+                          <span className="flex flex-col space-2-4 w-full items-start py-4 lg:py-0">
                             <p className="uppercase font-bold text-gray-400">
                               Notícias
                             </p>
-                            <p className="text-gray-700 text-md lg:text-2xl font-normal">
+                            <p className="text-gray-700 text-sm lg:text-2xl font-normal">
                               {news_post.title}
                             </p>
                           </span>
