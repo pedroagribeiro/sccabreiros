@@ -99,4 +99,37 @@ export const fixtureRouter = trpc
         fixtures: Array.from(updated_fixtures_map),
       };
     },
+  })
+  .query('getUpcomingFixture', {
+    async resolve() {
+      const fixtures = await prisma.fixture.findMany({
+        select: {
+          date: true,
+          location: true,
+          venue: true,
+          homeTeam: true,
+          awayTeam: true,
+          homeTeamGoals: true,
+          awayTeamGoals: true,
+          competition: true,
+          round: true,
+        },
+        where: {
+          date: {
+            gte: new Date(),
+          },
+        },
+      });
+
+      fixtures.sort((fixture) => fixture.date.getTime());
+
+      const selected_fixture = {
+        ...fixtures[0],
+        textDate: turn_date_to_text(fixtures[0].date),
+      };
+
+      return {
+        fixture: selected_fixture,
+      };
+    },
   });

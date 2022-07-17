@@ -1,44 +1,24 @@
-import React from 'react';
-import Image from 'next/image';
-import { MdOutlineKeyboardArrowRight } from 'react-icons/md';
 import Link from 'next/link';
-import { Fixture, Team } from '@prisma/client';
+import React from 'react';
+import { MdOutlineKeyboardArrowRight } from 'react-icons/md';
 
-type FixtureInfo = {
-  textDate: string;
-  venue: string;
-  homeTeam: Team;
-  awayTeam: Team;
-};
-
-const NextFixture = ({ textDate, venue, homeTeam, awayTeam }: FixtureInfo) => {
+const NextFixtureLoading = () => {
   return (
     <div className="shadow-md mb-4">
       <div className="bg-green-600 h-1 rounded-t-sm"></div>
       <div className="flex flex-col bg-gray-700 rounded-b-sm">
-        <div className="flex flex-col space-y-2 divide-y divide-gray-200/30 text-white font-extralight text-xs p-4">
-          <p>
-            {textDate} | {venue}
-          </p>
+        <div className="flex flex-col space-y-2 divide-y divide-gray-200/30 text-white font-extralight text-xs p-4 animate-pulse">
+          <div className="rounded-full bg-gray-500 h-2 w-full"></div>
           <div className="flex justify-around pt-6 pb-4 items-center">
             <div className="flex flex-col space-y-2 items-center">
-              <Image
-                src={homeTeam.logo}
-                alt={homeTeam.name}
-                width={56}
-                height={75}
-              />
-              <p className="text-sm text-gray-100">{homeTeam.shorthand_name}</p>
+              <div className="rounded-full h-20 w-20 bg-gray-600"></div>
+              <div className="rounded-full bg-gray-600 h-2 w-full"></div>
             </div>
             <p className="text-4xl">V</p>
             <div className="flex flex-col space-y-2 items-center">
-              <Image
-                src={awayTeam.logo}
-                alt={awayTeam.name}
-                width={56}
-                height={75}
-              />
-              <p className="text-sm text-gray-100">{awayTeam.shorthand_name}</p>
+              <div className="rounded-full h-20 w-20 bg-gray-600"></div>
+
+              <div className="rounded-full bg-gray-600 h-2 w-full"></div>
             </div>
           </div>
           <div className="flex space-x-4 pt-4 uppercase">
@@ -61,4 +41,4 @@ const NextFixture = ({ textDate, venue, homeTeam, awayTeam }: FixtureInfo) => {
   );
 };
 
-export default NextFixture;
+export default NextFixtureLoading;
