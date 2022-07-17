@@ -126,5 +126,37 @@
     "shorthand_name": "Vieira S.C",
     "competition": "A.F Braga - Pró-Nacional - Série B",
     "logo": "/images/oponents/championship/vieira_sc.png"
+  },
+  {
+    "id": 17,
+    "step": "Sénior",
+    "name": "Clube Desportivo de Ponte",
+    "shorthand_name": "C.D Ponte",
+    "competition": "A.F Braga - Pró-Nacional - Série B",
+    "logo": "/images/oponents/championship/cd_ponte.png"
+  },
+  {
+    "id": 18,
+    "step": "Sénior",
+    "name": "Clube de Caçadores das Taipas",
+    "shorthand_name": "C.C Taipas",
+    "competition": "A.F Braga - Pró-Nacional - Série B",
+    "logo": "/images/oponents/championship/cc_taipas.png"
+  },
+  {
+    "id": 19,
+    "step": "Sénior",
+    "name": "Ribeirão Futebol Clube",
+    "shorthand_name": "Ribeirão F.C",
+    "competition": "A.F Braga - Pró-Nacional - Série B",
+    "logo": "/images/oponents/championship/ribeirao_fc.png"
+  },
+  {
+    "id": 20,
+    "step": "Sénior",
+    "name": "Sequeirense Futebol Clube",
+    "shorthand_name": "Sequeirense F.C",
+    "competition": "A.F Braga - Divisão de Honra - Série A",
+    "logo": "/images/oponents/championship/sequeirense_fc.png"
   }
 ]
