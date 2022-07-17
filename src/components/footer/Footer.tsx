@@ -38,10 +38,10 @@ const Footer = () => {
             </div>
             <div className="flex flex-col md:flex-row space-x-0 md:space-x-2 space-y-2 md:space-y-0">
               <button className="uppercase text-white text-sm rounded-full border-2 border-white px-6 py-3">
-                <p>Iniciar sessão</p>
+                <p>Notícias</p>
               </button>
               <button className="uppercase text-white text-sm rounded-full bg-green-600 px-6 py-3">
-                Inscrever-se
+                Faz-te sócio!
               </button>
             </div>
           </div>

@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { IoMdPerson } from 'react-icons/io';
-import { FiSearch } from 'react-icons/fi';
-import { BsFillPersonFill } from 'react-icons/bs';
 import { GiHamburgerMenu } from 'react-icons/gi';
 
 const Navbar = () => {
@@ -75,9 +73,6 @@ const Navbar = () => {
             </Link>
           </div>
           <div className="flex space-x-2 text-white ">
-            <button className="h-min p-3 hover:bg-green-700 rounded-sm">
-              <BsFillPersonFill className="text-2xl" />
-            </button>
             <button
               className="h-min p-3 hover:bg-green-700 rounded-sm"
               onClick={() => onClickOfCanvasToggle()}
@@ -140,14 +135,6 @@ const Navbar = () => {
                   </Link>
                 </button>
               ))}
-              <div className="flex space-x-2">
-                <Link href="/">
-                  <IoMdPerson className="text-lg" />
-                </Link>
-                <Link href="/">
-                  <FiSearch className="text-lg" />
-                </Link>
-              </div>
             </div>
             <div className="h-full w-full flex justify-between items-center">
               <div className="flex space-x-8 text-white">

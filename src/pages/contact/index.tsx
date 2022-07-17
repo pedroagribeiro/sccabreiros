@@ -21,9 +21,7 @@ const Contact = () => {
     message: '',
   };
 
-  const contactMutation = trpc.useMutation(['contact.submit-contact'], {
-    async onSuccess() {},
-  });
+  const contactMutation = trpc.useMutation(['contact.submit-contact']);
 
   const [displayModal, setDisplayModal] = useState(false);
 
@@ -53,9 +51,11 @@ const Contact = () => {
               initialValues={initialValues}
               onSubmit={async (values, actions) => {
                 await contactMutation.mutateAsync(values);
-                setDisplayModal(true);
+                // Extremely dangerous and wrong
+                // TODO: Check this
                 {
-                  contactMutation.status == 'success' &&
+                  (contactMutation.status == 'success' ||
+                    contactMutation.status == 'idle') &&
                     setModalInfo({
                       title: 'Contacto submetido',
                       text: 'O seu contacto foi submetido com sucesso e tentaremos responder com a maior brevidade possível',
@@ -70,6 +70,7 @@ const Contact = () => {
                       success: false,
                     });
                 }
+                setDisplayModal(true);
                 actions.resetForm({
                   values: { fullName: '', email: '', subject: '', message: '' },
                 });
@@ -173,7 +174,7 @@ const Contact = () => {
                 <div>
                   <button
                     type="submit"
-                    className="mt-8 bg-green-600 text-white px-3 py-2 rounded-md hover:bg-green-700"
+                    className="mt-8 bg-green-600 text-white px-3 py-2 rounded-md hover:bg-green-700 uppercase"
                     disabled={contactMutation.isLoading}
                   >
                     Submeter contacto

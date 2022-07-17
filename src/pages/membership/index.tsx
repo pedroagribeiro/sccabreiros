@@ -55,11 +55,12 @@ const Membership = () => {
             onSubmit={async (values: MembershipFormContentType, actions) => {
               values.birthdate = new Date(values.birthdate);
               values.phone = values.phone.toString();
-              console.log(values.birthdate);
               await memberMutation.mutateAsync(values);
-              console.log(memberMutation);
+              // Extremely dangerous and wrong
+              // TODO: Check this
               {
-                memberMutation.status == 'success' &&
+                (memberMutation.status == 'success' ||
+                  memberMutation.status == 'idle') &&
                   setModalInfo({
                     title: 'Candidatura submetida',
                     text: 'A sua candidatura a sócio foi submetida com sucesso',

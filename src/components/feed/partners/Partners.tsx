@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const Partners = () => {
   return (
-    <div className="flex flex-col w-full space-y-4 text-gray-700 mt-8">
+    <div className="flex flex-col w-full space-y-4 text-gray-700 mt-4">
       <div className="flex flex-col">
         <p className="text-3xl font-teko uppercase">Parceiros</p>
         <div className="w-6 h-1 bg-green-600"></div>

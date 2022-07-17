@@ -18,7 +18,7 @@ const LandingFeed = () => {
   return (
     <div className="px-6 md:px-16 2xl:px-64 mt-8">
       <div className="flex flex-col lg:flex-row space-x-0 lg:space-x-4 space-y-4 lg:space-y-0 justify-center lg:justify-between mb-4">
-        <div className="flex flex-col space-y-14 h-max w-full lg:w-9/12">
+        <div className="flex flex-col space-y-6 h-max w-full lg:w-9/12">
           <Highlight id={1} />
           <MembershipHighlight />
         </div>
