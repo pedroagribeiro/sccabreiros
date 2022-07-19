@@ -205,5 +205,18 @@
     "specific_position": "Médio Ofensivo",
     "zerozeroId": 101116,
     "step": "Sénior"
+  },
+  {
+    "id": 16,
+    "fullname": "Rodrigo Alexandre Gomes Peixoto",
+    "nickname": "Peixoto",
+    "photo": "/images/roster/backline/peixoto.png",
+    "nationality": "PT",
+    "age": 19,
+    "number": 26,
+    "position": "Defesa",
+    "specific_position": "Defesa Esquerdo",
+    "zerozeroId": 548013,
+    "step": "Sénior"
   }
 ]

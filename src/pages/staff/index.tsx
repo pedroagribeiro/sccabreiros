@@ -41,6 +41,13 @@ const Staff = () => {
             position="Treinador Guarda-Redes"
             number={4}
           />
+          <StaffCard
+            first_name="Manuel"
+            second_name="Oliveira"
+            photo="/images/staff/directors/manuel_oliveira.png"
+            position="Roupeiro"
+            number={5}
+          />
         </div>
       </div>
       <div className="flex flex-col space-y-6">
@@ -50,7 +57,80 @@ const Staff = () => {
           </h2>
           <div className="h-1 w-10 bg-green-600"></div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-6 lg:gap-10 gap-y-4"></div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-6 lg:gap-10 gap-y-4">
+          <StaffCard
+            first_name="Sebastião"
+            second_name="Oliveira"
+            photo="/images/staff/directors/sebastiao_oliveira.png"
+            position="Vice-Presidente"
+            number={1}
+          />
+          <StaffCard
+            first_name="Isac"
+            second_name="Silva"
+            photo="/images/staff/directors/isac_silva.png"
+            position="Vice-Presidente"
+            number={2}
+          />
+          <StaffCard
+            first_name="Pedro"
+            second_name="Ribeiro"
+            photo="/images/staff/directors/pedro_ribeiro.png"
+            position="Tesoureiro & Media"
+            number={3}
+          />
+          <StaffCard
+            first_name="Ricardo"
+            second_name="Silva"
+            photo="/images/staff/directors/ricardo_silva.png"
+            position="Secretário"
+            number={4}
+          />
+          <StaffCard
+            first_name="António"
+            second_name="Ferreira"
+            photo="/images/staff/directors/antonio_ferreira.png"
+            position="Secretário"
+            number={5}
+          />
+          <StaffCard
+            first_name="Rui"
+            second_name="Cruz"
+            photo="/images/staff/directors/rui_cruz.png"
+            position="Vice-Secretário"
+            number={6}
+          />
+
+          <StaffCard
+            first_name="Jorge"
+            second_name="Gonçalves"
+            photo="/images/staff/directors/jorge_gonçalves.png"
+            position="Vice-Presidente Assembleia Geral"
+            number={7}
+          />
+          <StaffCard
+            first_name="Bernardo"
+            second_name="Ribeiro"
+            photo="/images/staff/directors/bernardo_ribeiro.png"
+            position="Vogal"
+            number={8}
+          />
+          <StaffCard
+            first_name="Francisco"
+            second_name="Borges"
+            photo="/images/staff/directors/francisco_borges.png"
+            position="Vogal"
+            number={9}
+          />
+
+          <StaffCard
+            first_name="Domingos"
+            second_name="Ferreira"
+            photo="/images/staff/directors/domingos_ferreira.png"
+            position="Vogal"
+            number={10}
+          />
+        </div>
       </div>
     </div>
   );
