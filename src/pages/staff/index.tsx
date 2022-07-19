@@ -128,7 +128,7 @@ const Staff = () => {
             second_name="Ferreira"
             photo="/images/staff/directors/domingos_ferreira.png"
             position="Vogal"
-            number={10}
+            number={9}
           />
         </div>
       </div>

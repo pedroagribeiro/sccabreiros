@@ -218,5 +218,18 @@
     "specific_position": "Defesa Esquerdo",
     "zerozeroId": 548013,
     "step": "Sénior"
+  },
+  {
+    "id": 17,
+    "fullname": "Diogo António Apolinário Costa",
+    "nickname": "Diogo Apolinário",
+    "photo": "/images/roster/backline/diogo_apolinario.png",
+    "nationality": "PT",
+    "age": 29,
+    "number": 23,
+    "position": "Defesa",
+    "specific_position": "Defesa Central",
+    "zerozeroId": 188079,
+    "step": "Sénior"
   }
 ]
