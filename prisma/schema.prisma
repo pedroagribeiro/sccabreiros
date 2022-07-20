@@ -10,18 +10,6 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model NewsPost {
-  id        Int      @id @default(autoincrement())
-  title     String
-  body      String
-  player    Roster?  @relation(name: "Player", fields: [playerId], references: [id])
-  playerId  Int?
-  fixture   Fixture? @relation(name: "Fixture", fields: [fixtureId], references: [id])
-  fixtureId Int?
-  image     String
-  date      DateTime
-}
-
 model Contact {
   id       Int    @id @default(autoincrement())
   fullName String
@@ -56,7 +44,6 @@ model Fixture {
   competition   String
   round         String?
   season        String
-  posts         NewsPost[] @relation("Fixture")
 }
 
 model Roster {
@@ -71,7 +58,6 @@ model Roster {
   specific_position String?
   zerozeroId        Int
   step              String
-  posts             NewsPost[] @relation("Player")
 }
 
 model CashFlow {

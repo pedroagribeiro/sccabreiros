@@ -10,6 +10,7 @@ const ClassificationTable = () => {
           Campeonato Pró-Nacional A.F Braga - Série A - 2021/2022
         </p>
       </div>
+      {/* Para o benjamim */}
       <div className="w-full flex flex-col space-y-6">
         <table className="w-full bg-white">
           <thead className="text-gray-700 text-xs md:text-sm">
@@ -428,6 +429,7 @@ const ClassificationTable = () => {
           </tbody>
         </table>
       </div>
+      {/* Ja nao é para o Benjamim */}
     </div>
   );
 };

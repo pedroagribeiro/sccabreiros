@@ -9,7 +9,7 @@ export type SubPage = {
 
 export type SectionElements = {
   title: String;
-  subpages: SubPage[];
+  subpages?: SubPage[];
 };
 
 const PageHeader = ({ title, subpages }: SectionElements) => {
@@ -24,7 +24,7 @@ const PageHeader = ({ title, subpages }: SectionElements) => {
       <div className="w-full hidden lg:flex flex-col divide-y divide-gray-500 bg-gray-700 px-6 md:px-16 2xl:px-64 text-white font-agencygothic">
         <h2 className="uppercase text-3xl py-8 font-medium">{title}</h2>
         <div className="flex space-x-6">
-          {subpages.map((item, index) => (
+          {subpages?.map((item, index) => (
             <button className="mt-2" key={index}>
               <Link href={item.url}>
                 <div className="flex flex-col hover:bg-white">
@@ -53,7 +53,7 @@ const PageHeader = ({ title, subpages }: SectionElements) => {
                 dropdownActive ? 'block' : 'hidden'
               } bg-white text-base text-left`}
             >
-              {subpages.map((item, index) => (
+              {subpages?.map((item, index) => (
                 <li key={index}>
                   <Link
                     className="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100"

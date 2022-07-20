@@ -4,7 +4,6 @@ import teams from './data/teams.json';
 import roster from './data/roster.json';
 import cash_flows from './data/cash_flows.json';
 import fixtures from './data/fixtures.json';
-import news from './data/news.json';
 
 const prisma = new PrismaClient({
   log: ['info', 'warn', 'error'],
@@ -17,14 +16,12 @@ const seed = async () => {
   await prisma.roster.deleteMany({});
   await prisma.cashFlow.deleteMany({});
   await prisma.fixture.deleteMany({});
-  await prisma.newsPost.deleteMany({});
 
   await createMembers();
   await createTeams();
   await createRoster();
   await createCashFlows();
   await createFixtures();
-  await createNews();
 };
 
 async function createMembers() {
@@ -132,26 +129,6 @@ async function createFixtures() {
   });
 
   return prisma.fixture.findMany({});
-}
-
-async function createNews() {
-  const _news: Prisma.NewsPostCreateManyInput[] = [];
-  news.forEach((news_post) => {
-    _news.push({
-      title: news_post.title,
-      body: news_post.body,
-      playerId: news_post.playerId!,
-      fixtureId: news_post.fixtureId!,
-      image: news_post.image,
-      date: new Date(news_post.date),
-    });
-  });
-
-  await prisma.newsPost.createMany({
-    data: _news,
-  });
-
-  return prisma.newsPost.findMany({});
 }
 
 seed();
