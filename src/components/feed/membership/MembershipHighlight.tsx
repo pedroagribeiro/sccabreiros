@@ -17,12 +17,13 @@ const MembershipHighlight = () => {
               alt="interview_telmo"
               width={1448}
               height={800}
+              className="rounded-none"
             />
           </div>
           <div className="w-full lg:w-2/5 flex flex-col space-y-2 px-6 py-4">
             <div></div>
             <p className="uppercase text-gray-400 text-sm">Informação</p>
-            <h3 className="text-2xl text-gray-700">
+            <h3 className="text-2xl text-gray-700 font-medium">
               Faz parte da nossa família e apoia o clube da tua terra!
             </h3>
             <p className="font-extralight text-sm text-gray-600">

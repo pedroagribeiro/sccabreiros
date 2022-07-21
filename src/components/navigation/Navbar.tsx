@@ -89,7 +89,7 @@ const Navbar = () => {
           <div className="pt-8 px-16 text-white flex flex-col space-y-4 divide-y divide-gray-400">
             <div className="flex flex-col space-y-2 text-md">
               {lowerBarItems.map((item, index) => (
-                <button key={index}>
+                <button key={index} onClick={() => onClickOfCanvasToggle()}>
                   <Link href={item.url}>
                     <div className="w-min flex flex-col items-start hover:bg-white">
                       <p className="uppercase bg-green-600 font-medium">
@@ -103,7 +103,7 @@ const Navbar = () => {
             </div>
             <div className="flex flex-col items-start space-y-2 text-sm pt-2">
               {upperBarItems.map((item, index) => (
-                <button key={index}>
+                <button key={index} onClick={() => onClickOfCanvasToggle()}>
                   <Link href={item.url}>
                     <p className="uppercase">{item.title}</p>
                   </Link>

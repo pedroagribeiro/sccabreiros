@@ -53,6 +53,8 @@ egestas integer eget aliquet. Bibendum est ultricies integer quis auctor elit
 sed vulputate mi. Duis ultricies lacus sed turpis tincidunt id aliquet. Morbi
 tempus iaculis urna id.
 
+![Cenas](/images/interviews/diogo.png)
+
 Lectus quam id leo in vitae turpis massa sed elementum. Luctus accumsan tortor
 posuere ac ut consequat semper viverra nam. Id volutpat lacus laoreet non
 curabitur. Consequat semper viverra nam libero justo. Egestas egestas fringilla

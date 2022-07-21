@@ -46,9 +46,9 @@ const Post = ({ frontmatter, content }: PropsType) => {
               />
             </div>
             <div
-              className="text-lg text-gray-700 mt-8"
+              className="text-lg text-gray-700 mt-8 flex flex-col space-y-3 items-start"
               dangerouslySetInnerHTML={{ __html: md().render(content) }}
-            />
+            ></div>
           </div>
         </div>
       </div>

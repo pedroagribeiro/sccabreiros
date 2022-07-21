@@ -102,24 +102,25 @@ const Blog = ({ posts }: PropsType) => {
                         }}
                       >
                         <button>
-                          <div className="w-full flex button opacity-100 hover:opacity-70 transition duration-300 ease-in-out bg-green-600">
-                            <div className="w-2/5 md:w-1/5 hidden lg:flex">
+                          <div className="w-full flex flex-col lg:flex-row button opacity-100 hover:opacity-70 transition duration-300 ease-in-out">
+                            <div className="w-full md:w-1/5 flex">
                               <Image
                                 src={news_post.frontmatter.bannerImage}
                                 alt="interview_telmo"
                                 width={1448}
                                 height={800}
+                                className="rounded-none"
                               />
                             </div>
-                            <div className="w-full lg:w-4/5 flex flex-col space-y-2 bg-white px-8 py-auto justify-center rounded-r-sm">
-                              <span className="flex flex-col space-2-4 w-full items-start py-4 lg:py-0">
+                            <div className="w-full lg:w-4/5 flex flex-col space-y-2 bg-white px-4 lg:px-8 py-auto justify-center rounded-r-sm">
+                              <div className="flex w-full flex-col space-y-2 items-start py-4 lg:py-0">
                                 <p className="uppercase font-bold text-gray-400">
                                   {news_post.frontmatter.category}
                                 </p>
-                                <p className="text-gray-700 text-sm lg:text-2xl font-normal">
+                                <p className="text-gray-700 text-md lg:text-2xl">
                                   {news_post.frontmatter.title}
                                 </p>
-                              </span>
+                              </div>
                             </div>
                           </div>
                         </button>
@@ -133,26 +134,6 @@ const Blog = ({ posts }: PropsType) => {
       </div>
     </div>
   );
-  // return posts ? (
-  //   <main>
-  //     {posts.map((post) => {
-  //       //extract slug and frontmatter
-  //       const { slug, frontmatter } = post;
-  //       //extract frontmatter properties
-  //       const { title, author, category, date, bannerImage } = frontmatter;
-
-  //       //JSX for individual blog listing
-  //       return (
-  //         <article key={title}>
-  //           <Link href={`/posts/${slug}`}>
-  //             <h1>{title}</h1>
-  //           </Link>
-  //           <h3>{author}</h3>
-  //           <h3>{date}</h3>
-  //         </article>
-  //       );
-  //     })}
-  //   </main>
 };
 
 export async function getStaticProps() {

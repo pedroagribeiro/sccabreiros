@@ -9,7 +9,7 @@ const Facilities = () => {
     <div className="flex flex-col space-y-8 relative px-4 pb-8 mx-auto mt-8 max-w-2xl sm:px-6 sm:mt-12 lg:px-8 lg:pb-10 lg:max-w-7xl text-gray-700">
       <div className="flex flex-col space-y-6">
         <div className="flex flex-col">
-          <h2 className="text-4xl text-gray-700 font-teko uppercase">
+          <h2 className="text-4xl text-gray-700 font-teko uppercase pb-0 font-normal">
             Infraestrutura
           </h2>
           <div className="h-1 w-10 bg-green-600"></div>
