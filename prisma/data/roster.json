@@ -231,5 +231,18 @@
     "specific_position": "Defesa Central",
     "zerozeroId": 188079,
     "step": "Sénior"
+  },
+  {
+    "id": 18,
+    "fullname": "Diogo Miguel Oliveira Coelho",
+    "nickname": "Diogo Coelho",
+    "photo": "/images/roster/strikers/diogo_coelho.png",
+    "nationality": "PT",
+    "age": 22,
+    "number": 11,
+    "position": "Avançado",
+    "specific_position": "Avançado Direito",
+    "zerozeroId": 615864,
+    "step": "Sénior"
   }
 ]
