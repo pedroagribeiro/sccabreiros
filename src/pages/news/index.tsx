@@ -181,7 +181,11 @@ export async function getStaticProps() {
 
 Blog.getLayout = (page: ReactElement) => {
   return (
-    <Layout title="Notícias" subpages={[{ title: 'Notícias', url: '/news' }]}>
+    <Layout
+      title="Notícias"
+      description="Consulta as últimas notícias que dizem respeito ao nosso clube"
+      subpages={[{ title: 'Notícias', url: '/news' }]}
+    >
       {page}
     </Layout>
   );

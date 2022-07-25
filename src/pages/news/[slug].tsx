@@ -100,7 +100,11 @@ export async function getStaticProps({ params: { slug } }: StaticPropsType) {
 }
 
 Post.getLayout = (page: ReactElement) => (
-  <Layout title="Notícias" subpages={[{ title: 'Notícias', url: '/news' }]}>
+  <Layout
+    title="Notícias"
+    description="Notícia"
+    subpages={[{ title: 'Notícias', url: '/news' }]}
+  >
     {page}
   </Layout>
 );

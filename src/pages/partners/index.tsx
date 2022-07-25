@@ -43,6 +43,7 @@ const Partners = () => {
 Partners.getLayout = (page: ReactElement) => (
   <Layout
     title="Parceiros"
+    description="Sabe mais sobre os nossos parceiros e descobre uma oportunidade de negócio."
     subpages={[{ title: 'Parceiros', url: '/partners' }]}
   >
     {page}

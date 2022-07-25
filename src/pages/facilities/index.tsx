@@ -106,6 +106,7 @@ const Facilities = () => {
 Facilities.getLayout = (page: ReactElement) => (
   <Layout
     title="Instalações"
+    description="Estas são as instalações que temos disponíveis para a prática desportiva."
     subpages={[{ title: 'Instalações', url: '/facilities' }]}
   >
     {page}

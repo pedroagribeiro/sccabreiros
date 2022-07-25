@@ -75,6 +75,7 @@ const Youngsters = () => {
 Youngsters.getLayout = (page: ReactElement) => (
   <Layout
     title="Formação"
+    description="Fica a saber mais sobre o nosso projeto de formação."
     subpages={[{ title: 'Formação', url: '/youngsters' }]}
   >
     {page}

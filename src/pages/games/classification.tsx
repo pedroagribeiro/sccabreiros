@@ -13,6 +13,7 @@ const Classification = () => {
 Classification.getLayout = (page: ReactElement) => (
   <Layout
     title="Classificação"
+    description="Nesta secção podem ser consultadas as classificações da nossa equipa sénior nos campeonatos ao longo dos anos."
     subpages={[
       { title: 'Próximos Jogos', url: '/games/fixtures' },
       { title: 'Resultados', url: '/games/results' },

@@ -133,7 +133,11 @@ const Roster = () => {
 };
 
 Roster.getLayout = (page: ReactElement) => (
-  <Layout title="Plantel" subpages={[{ title: 'Plantel', url: '/roster' }]}>
+  <Layout
+    title="Plantel"
+    description="Consulta a constituição da nossa equipa sénior e fica a conhecer melhor os nossos leões"
+    subpages={[{ title: 'Plantel', url: '/roster' }]}
+  >
     {page}
   </Layout>
 );

@@ -74,7 +74,11 @@ const History = () => {
 };
 
 History.getLayout = (page: ReactElement) => (
-  <Layout title="História" subpages={[{ title: 'História', url: '/history' }]}>
+  <Layout
+    title="História"
+    description="Consulta a história da evolução do nosso clube."
+    subpages={[{ title: 'História', url: '/history' }]}
+  >
     {page}
   </Layout>
 );

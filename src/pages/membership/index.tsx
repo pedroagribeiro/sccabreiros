@@ -294,6 +294,7 @@ const Membership = () => {
 Membership.getLayout = (page: ReactElement) => (
   <Layout
     title="Faz-te sócio"
+    description="Torna-te sócio do clube do teu coração e ajuda-nos."
     subpages={[{ title: 'Faz-te sócio', url: '/membership' }]}
   >
     {page}

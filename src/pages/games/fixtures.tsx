@@ -102,6 +102,7 @@ const Fixtures = () => {
 Fixtures.getLayout = (page: ReactElement) => (
   <Layout
     title="Próximos Jogos"
+    description="Consulta os próximos jogos da nossa equipa sénior."
     subpages={[
       { title: 'Próximos jogos', url: '/games/fixtures' },
       { title: 'Resultados', url: '/games/results' },

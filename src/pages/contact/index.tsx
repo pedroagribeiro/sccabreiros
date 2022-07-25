@@ -192,6 +192,7 @@ const Contact = () => {
 Contact.getLayout = (page: ReactElement) => (
   <Layout
     title="Contacte-nos"
+    description="Os nossos adeptos e simpatizantes podem enviar-nos uma mensagem sobre qualquer assunto e tentaremos responde com a maior brevidade."
     subpages={[{ title: 'Contacta-nos', url: '/contact' }]}
   >
     {page}

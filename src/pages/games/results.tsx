@@ -102,6 +102,7 @@ const Results = () => {
 Results.getLayout = (page: ReactElement) => (
   <Layout
     title="Resultados"
+    description="Consulta o resultado dos últimos jogos da equipa sénior."
     subpages={[
       { title: 'Próximos Jogos', url: '/games/fixtures' },
       { title: 'Resultados', url: '/games/results' },

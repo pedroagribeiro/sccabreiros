@@ -7,8 +7,8 @@ const NotFound = () => {
   return (
     <div className="bg-gray-100">
       <Head>
-        <title></title>
-        <meta name="description" content="Sporting Clube de Cabreiros" />
+        <title>Página não encontrada</title>
+        <meta name="description" content="Página inexistente" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
