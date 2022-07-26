@@ -166,5 +166,21 @@
     "shorthand_name": "Gil Vicente F.C",
     "competition": "Primeira Liga",
     "logo": "/images/oponents/primeira_liga/gil_vicente.png"
+  },
+  {
+    "id": 22,
+    "step": "Sénior",
+    "name": "Associação Desportiva de Esposende",
+    "shorthand_name": "A.D Esposende",
+    "competition": "A.F Braga - Divisão de Honra - Série A",
+    "logo": "/images/oponents/championship/ad_esposende.png"
+  },
+  {
+    "id": 23,
+    "step": "Sénior",
+    "name": "Forjães S.C",
+    "shorthand_name": "Forjães Sport Clube",
+    "competition": "A.F Braga - Divisão de Honra - Série A",
+    "logo": "/images/oponents/championship/forjaes_sc.png"
   }
 ]
