@@ -2,6 +2,8 @@ import * as trpc from '@trpc/server';
 import { prisma } from '../utils/prisma';
 import moment from 'moment';
 
+moment.locale('pt-PT');
+
 const turn_date_to_text = (date: Date) => {
   const m = moment(date).locale('pt');
   return m.format('dddd[,] D [de] MMMM YYYY');

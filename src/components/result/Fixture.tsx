@@ -97,12 +97,7 @@ const Fixture = ({
             </p>
           </div>
         </div>
-        <div className="flex space-x-6 p-4">
-          <button className="flex space-x-1 text-white font-normal items-center">
-            <p className="uppercase">News & Video</p>
-            <MdOutlineKeyboardArrowRight className="text-xl" />
-          </button>
-        </div>
+        <div className="flex space-x-6 p-4"></div>
       </div>
     </div>
   );
