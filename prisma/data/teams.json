@@ -158,5 +158,13 @@
     "shorthand_name": "Sequeirense F.C",
     "competition": "A.F Braga - Divisão de Honra - Série A",
     "logo": "/images/oponents/championship/sequeirense_fc.png"
+  },
+  {
+    "id": 21,
+    "step": "Júniores Sub-19",
+    "name": "Gil Vicente Futebol Clube",
+    "shorthand_name": "Gil Vicente F.C",
+    "competition": "Primeira Liga",
+    "logo": "/images/oponents/primeira_liga/gil_vicente.png"
   }
 ]

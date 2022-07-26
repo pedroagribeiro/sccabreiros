@@ -5,7 +5,7 @@ import Link from 'next/link';
 const MembershipHighlight = () => {
   return (
     <div className="flex flex-col space-y-4">
-      <h2 className="bg-green-600 text-3xl font-agencygothic uppercase text-white p-4 rounded-sm shadow-md">
+      <h2 className="bg-green-600 text-3xl font-agencygothic font-normal uppercase text-white p-4 rounded-sm shadow-md">
         Ajuda o teu clube!
       </h2>
       <div className="flex flex-col shadow-md">

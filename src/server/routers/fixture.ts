@@ -81,7 +81,7 @@ export const fixtureRouter = trpc
       const updated_fixtures_map = new Map() as Map<String, any[]>;
 
       fixtures
-        .sort((fixture) => -fixture.date.getTime())
+        .sort((fixture) => fixture.date.getTime())
         .forEach((fixture) => {
           const month_year = turn_date_to_month_year(fixture.date);
           const updated_fixture = {

@@ -35,9 +35,12 @@ const LandingFeed = () => {
           )}
           <button className="flex bg-green-600 p-4 rounded-sm justify-center shadow-md mb-4">
             <div className="flex space-x-2 items-center text-white">
-              <p className="uppercase text-sm">
-                Sincroniza com o teu calendário
-              </p>
+              <div className="flex flex-col">
+                <p className="uppercase text-sm">
+                  Sincroniza com o teu calendário
+                </p>
+                <p className="text-xs">(Funcionalidade em desenvolvimento)</p>
+              </div>
               <BiDownload className="text-xl" />
             </div>
           </button>
