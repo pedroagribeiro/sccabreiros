@@ -32,7 +32,8 @@ const MyApp = ({ Component, pageProps }: AppPropsWithLayout) => {
 };
 
 const getBaseUrl = () => {
-  if (process.env.VERCEL_URL) return `https://${process.env.VERCEL_URL}`;
+  if (process.env.NEXT_PUBLIC_VERCEL_URL)
+    return `https://${process.env.NEXT_PUBLIC_VERCEL_URL}`;
   return `http://localhost:${process.env.PORT ?? 3000}`;
 };
 
@@ -42,8 +43,8 @@ export default withTRPC<AppRouter>({
      * If you want to use SSR, you need to use the server's full URL
      * @link https://trpc.io/docs/ssr
      */
-    // const url = `${getBaseUrl()}/api/trpc`;
-    const url = 'https://dev.sccabreiros.org/api/trpc';
+    const url = `${getBaseUrl()}/api/trpc`;
+    // const url = 'https://dev.sccabreiros.org/api/trpc';
 
     return {
       url,
