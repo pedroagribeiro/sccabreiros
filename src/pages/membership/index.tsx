@@ -56,7 +56,7 @@ const Membership = () => {
         success={modalInfo.success}
       />
       <div className='flex justify-center items-center mt-16 mb-16 text-gray-700'>
-        <div className='max-w-6xl flex flex-col space-y-0 items-center md:mx-32 lg:mx-72 '>
+        <div className='flex w-11/12 md:w-9/12 lg:w-6/12 flex-col space-y-0 items-center'>
           <Formik
             initialValues={initialValues}
             onSubmit={async (values: MembershipFormContentType, actions) => {
