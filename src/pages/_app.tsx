@@ -44,7 +44,6 @@ export default withTRPC<AppRouter>({
      * @link https://trpc.io/docs/ssr
      */
     const url = `${getBaseUrl()}/api/trpc`;
-    // const url = 'https://dev.sccabreiros.org/api/trpc';
 
     return {
       url,

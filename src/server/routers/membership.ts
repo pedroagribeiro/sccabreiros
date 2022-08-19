@@ -14,8 +14,7 @@ export const membershipRouter = trpc.router().mutation('submit-membership', {
     email: z.string(),
   }),
   async resolve({ input }) {
-    console.log(input);
-    const membership = await prisma.member.create({
+    const membership = await prisma.membershipSubmission.create({
       data: {
         ...input,
         birthdate: new Date(input.birthdate),

@@ -343,7 +343,9 @@
     "location": "Ponte",
     "venue": "Parque de Jogos Dr. João Afonso de Almeida",
     "homeTeamId": 17,
+    "homeTeamGoals": 1,
     "awayTeamId": 1,
+    "awayTeamGoals": 0,
     "competition": "Amigável",
     "season": "2022/2023"
   },
@@ -353,7 +355,9 @@
     "location": "Cabreiros",
     "venue": "Complexo Desportivo de Cabreiros",
     "homeTeamId": 1,
+    "homeTeamGoals": 1,
     "awayTeamId": 21,
+    "awayTeamGoals": 3,
     "competition": "Apresentação do plantel",
     "season": "2022/2023"
   },
@@ -363,7 +367,9 @@
     "location": "Caldas das Taipas - Guimarães",
     "venue": "Estádio do Montinho",
     "homeTeamId": 18,
+    "homeTeamGoals": 1,
     "awayTeamId": 1,
+    "awayTeamGoals": 3,
     "competition": "Amigável",
     "season": "2022/2023"
   },

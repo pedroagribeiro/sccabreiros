@@ -8,7 +8,8 @@
     "location": "Semelhe",
     "phoneNumber": "914991214",
     "photo": "https://imgbb.com/0.png",
-    "email": "bernardoribeiro42@gmail.com"
+    "email": "bernardoribeiro42@gmail.com",
+    "handled": false
   },
   {
     "id": 1,
@@ -19,7 +20,8 @@
     "location": "Semelhe",
     "phoneNumber": "916669693",
     "photo": "https://imgbb.com/1.png",
-    "email": "pedrouminhoribeiro@gmail.com"
+    "email": "pedrouminhoribeiro@gmail.com",
+    "handled": false
   },
   {
     "id": 2,
@@ -30,6 +32,7 @@
     "location": "Várzea",
     "phoneNumber": "962228592",
     "photo": "https://imgbb.com/2.png",
-    "email": "jose_laurentino@gmail.com"
+    "email": "jose_laurentino@gmail.com",
+    "handled": false
   }
 ]
