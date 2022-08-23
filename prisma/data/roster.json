@@ -70,7 +70,7 @@
     "photo": "/images/roster/strikers/figo.png",
     "nationality": "PT",
     "age": 25,
-    "number": 7,
+    "number": 11,
     "position": "Avançado",
     "specific_position": "Avançado Direito",
     "zerozeroId": 307456,
@@ -174,7 +174,7 @@
     "photo": "/images/roster/strikers/tekla.png",
     "nationality": "PT",
     "age": 28,
-    "number": 90,
+    "number": 70,
     "position": "Avançado",
     "specific_position": "Ponta de Lança",
     "zerozeroId": 418173,
@@ -239,7 +239,7 @@
     "photo": "/images/roster/strikers/diogo_coelho.png",
     "nationality": "PT",
     "age": 22,
-    "number": 11,
+    "number": 7,
     "position": "Avançado",
     "specific_position": "Avançado Direito",
     "zerozeroId": 615864,
@@ -269,6 +269,19 @@
     "position": "Guarda-redes",
     "specific_position": "Guarda-Redes",
     "zerozeroId": 528950,
+    "step": "Sénior"
+  },
+  {
+    "id": 22,
+    "fullname": "Vinicius Augusto de Freitas",
+    "nickname": "Vinicius",
+    "photo": "/images/roster/strikers/vinicius.png",
+    "nationality": "BR",
+    "age": 24,
+    "number": 98,
+    "position": "Avançado",
+    "specific_position": "Avançado Esquerdo",
+    "zerozeroId": 828822,
     "step": "Sénior"
   }
 ]

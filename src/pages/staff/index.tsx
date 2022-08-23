@@ -156,6 +156,13 @@ const Staff = () => {
             position='Vogal da Direção'
             number={15}
           />
+          <StaffCard
+            first_name='Rita'
+            second_name='Fernandes'
+            photo='/images/staff/directors/rita_fernandes.png'
+            position='Vogal da Direção'
+            number={16}
+          />
         </div>
       </div>
     </div>
