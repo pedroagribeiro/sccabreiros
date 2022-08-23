@@ -257,5 +257,18 @@
     "specific_position": "Avançado",
     "zerozeroId": 353167,
     "step": "Sénior"
+  },
+  {
+    "id": 21,
+    "fullname": "José Miguel Santos Costa",
+    "nickname": "José Costa",
+    "photo": "/images/roster/goalkeepers/jose_costa.png",
+    "nationality": "PT",
+    "age": 20,
+    "number": 31,
+    "position": "Guarda-redes",
+    "specific_position": "Guarda-Redes",
+    "zerozeroId": 528950,
+    "step": "Sénior"
   }
 ]
