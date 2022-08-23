@@ -12,6 +12,8 @@ const Classification = () => {
     'classification.available-seasons',
   ]);
 
+  const teams = trpc.useQuery(['teams.get-all-teams']);
+
   const available_seasons = [
     '2017/2018',
     '2018/2019',
@@ -33,7 +35,7 @@ const Classification = () => {
     }
   };
 
-  return data ? (
+  return data && teams.data ? (
     <div className='px-6 md:px-16 2xl:px-64 mt-8 mb-8'>
       <div className='flex justify-center items-center text-center mb-6 rounded-sm w-full md:w-36 md:ml-6'>
         <button
@@ -52,7 +54,10 @@ const Classification = () => {
           <BsFillArrowRightCircleFill />
         </button>
       </div>
-      <ClassificationTable season={data![chosenSeason]} />
+      <ClassificationTable
+        teams={teams.data!.teams}
+        season={data![chosenSeason]}
+      />
     </div>
   ) : (
     <div

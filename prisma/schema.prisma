@@ -85,7 +85,8 @@ model Team {
   id             Int       @id @default(autoincrement())
   step           String
   name           String
-  shorthand_name String
+  shorthand_name String 
+  zerozero_alias String
   competition    String
   logo           String
   homeFixtures   Fixture[] @relation("HomeTeam")

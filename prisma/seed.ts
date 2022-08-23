@@ -53,6 +53,7 @@ async function createTeams() {
       step: team.step,
       name: team.name,
       shorthand_name: team.shorthand_name,
+      zerozero_alias: team.zerozero_alias,
       competition: team.competition,
       logo: team.logo,
     });

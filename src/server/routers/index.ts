@@ -4,6 +4,7 @@ import { fixtureRouter } from './fixture';
 import { contactRouter } from './contact';
 import { membershipRouter } from './membership';
 import { classificationRouter } from './classification';
+import { teamsRouter } from './team';
 
 export const appRouter = trpc
   .router()
@@ -11,6 +12,7 @@ export const appRouter = trpc
   .merge('fixture.', fixtureRouter)
   .merge('contact.', contactRouter)
   .merge('membership.', membershipRouter)
-  .merge('classification.', classificationRouter);
+  .merge('classification.', classificationRouter)
+  .merge('teams.', teamsRouter);
 
 export type AppRouter = typeof appRouter;

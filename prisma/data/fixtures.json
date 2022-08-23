@@ -379,7 +379,9 @@
     "location": "São Martinho de Sande - Guimarães",
     "venue": "Complexo Desportivo D. Maria Teresa",
     "homeTeamId": 15,
+    "homeTeamGoals": 2,
     "awayTeamId": 1,
+    "awayTeamGoals": 2,
     "competition": "Amigável",
     "season": "2022/2023"
   },

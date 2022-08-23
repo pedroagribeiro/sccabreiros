@@ -4,13 +4,42 @@ import { trpc } from '../../utils/trpc';
 
 type ClassificationProps = {
   season: string;
+  teams: Array<any>;
 };
 
-const ClassificationTable = ({ season }: ClassificationProps) => {
+const ClassificationTable = ({ season, teams }: ClassificationProps) => {
   const { data, refetch, isLoading } = trpc.useQuery([
     'classification.season-classification',
     { season },
   ]);
+
+  const calculateTeamImage = (name: string) => {
+    let image = '/images/emblema.png';
+    teams.forEach((team) => {
+      if (team.zerozero_alias === name) {
+        image = team.logo;
+      }
+    });
+    return image;
+  };
+
+  const hydrateTableLines = (data: Array<any>) => {
+    return data.map((table_line) => {
+      return {
+        ...table_line,
+        logo: calculateTeamImage(table_line.team),
+      };
+    });
+  };
+
+  const isItUs = (team: string) => {
+    if (team === 'SC Cabreiros') {
+      return 'text-green-600 font-bold bg-green-100';
+    } else {
+      return '';
+    }
+  };
+
   return data ? (
     <span>
       <div className='flex flex-col rounded-sm shadow-md'>
@@ -44,10 +73,12 @@ const ClassificationTable = ({ season }: ClassificationProps) => {
               </tr>
             </thead>
             <tbody className='w-full text-sm font-thin'>
-              {data.map((table_line) => (
+              {hydrateTableLines(data).map((table_line) => (
                 <tr
                   key={'row-key-' + table_line.position}
-                  className='border-b border-gray-200'
+                  className={`border-b border-gray-200 ${isItUs(
+                    table_line.team,
+                  )}`}
                 >
                   <td className='text-center border-r border-gray-200 py-4'>
                     {table_line.position}
@@ -55,8 +86,8 @@ const ClassificationTable = ({ season }: ClassificationProps) => {
                   <td className='border-r border-gray-200'>
                     <div className='w-full h-full flex space-x-6 items-center justify-start pl-4'>
                       <Image
-                        src='/images/oponents/championship/dumiense.png'
-                        alt='dumiense'
+                        src={table_line.logo}
+                        alt={table_line.team}
                         width={23}
                         height={34}
                       />
