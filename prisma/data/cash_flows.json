@@ -1,0 +1,23 @@
+[
+  {
+    "id": 0,
+    "amount": 242.12,
+    "type": "expense",
+    "description": "Faturaz Luz Boa - Abril",
+    "category": "DESPESAS - ELETRICIDADE"
+  },
+  {
+    "id": 1,
+    "amount": 1230.0,
+    "type": "income",
+    "description": "Patrocínio Ledechem - Abril 2022",
+    "category": "RECEITA - PATROCÍNIOS"
+  },
+  {
+    "id": 2,
+    "amount": 25.0,
+    "type": "expense",
+    "description": "Multra - Atrasado pagamento IUC",
+    "category": "DESPESAS - AUTORIDADE TRIBUTÁRIA"
+  }
+]

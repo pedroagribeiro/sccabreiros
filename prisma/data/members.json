@@ -1,0 +1,38 @@
+[
+  {
+    "id": 0,
+    "fullName": "Bernardo da Cruz Ribeiro",
+    "birthdate": "1965-06-17",
+    "address": "Rua Santa Leocádia, porta 101",
+    "postalCode": "4705-362",
+    "location": "Semelhe",
+    "phoneNumber": "914991214",
+    "photo": "https://imgbb.com/0.png",
+    "email": "bernardoribeiro42@gmail.com",
+    "handled": false
+  },
+  {
+    "id": 1,
+    "fullName": "Pedro Alexandre Gonçalves Ribeiro",
+    "birthdate": "1999-03-29",
+    "address": "Rua Santa Leocádia, porta 101",
+    "postalCode": "4705-362",
+    "location": "Semelhe",
+    "phoneNumber": "916669693",
+    "photo": "https://imgbb.com/1.png",
+    "email": "pedrouminhoribeiro@gmail.com",
+    "handled": false
+  },
+  {
+    "id": 2,
+    "fullName": "José Laurentino Fernandes Azevedo",
+    "birthdate": "1966-01-03",
+    "address": "Rua da Cachada, porta 104",
+    "postalCode": "4700-000",
+    "location": "Várzea",
+    "phoneNumber": "962228592",
+    "photo": "https://imgbb.com/2.png",
+    "email": "jose_laurentino@gmail.com",
+    "handled": false
+  }
+]

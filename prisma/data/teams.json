@@ -1,0 +1,326 @@
+[
+  {
+    "id": 1,
+    "step": "Sénior",
+    "name": "Sporting Clube de Cabreiros",
+    "shorthand_name": "S.C Cabreiros",
+    "zerozero_alias": "SC Cabreiros",
+    "competition": "A.F Braga - Pró-Nacional - Série A",
+    "logo": "/images/emblema.png"
+  },
+  {
+    "id": 2,
+    "step": "Sénior",
+    "name": "Grupo Desportivo Recreativo de Esporões",
+    "shorthand_name": "G.D.R Esporões",
+    "zerozero_alias": "GDR Esporões",
+    "competition": "A.F Braga - Pró-Nacional - Série A",
+    "logo": "/images/oponents/championship/gdr_esporoes.png"
+  },
+  {
+    "id": 3,
+    "step": "Sénior",
+    "name": "Associação Desportiva Ninense",
+    "shorthand_name": "A.D Ninense",
+    "zerozero_alias": "AD Ninense",
+    "competition": "A.F Braga - Pró-Nacional - Série A",
+    "logo": "/images/oponents/championship/ad_ninense.png"
+  },
+  {
+    "id": 4,
+    "step": "Sénior",
+    "name": "Dumiense/CJP II",
+    "shorthand_name": "Dumiense/CJP II",
+    "zerozero_alias": "Dumiense/CJP II",
+    "competition": "A.F Braga - Pró-Nacional - Série A",
+    "logo": "/images/oponents/championship/dumiense.png"
+  },
+  {
+    "id": 5,
+    "step": "Sénior",
+    "name": "Sporting Clube da Ucha",
+    "shorthand_name": "S.C Ucha",
+    "zerozero_alias": "Ucha",
+    "competition": "A.F Braga - Pró-Nacional - Série A",
+    "logo": "/images/oponents/championship/sc_ucha.png"
+  },
+  {
+    "id": 6,
+    "step": "Sénior",
+    "name": "Académico Futebol Clube de Martim",
+    "shorthand_name": "A.F.C Martim",
+    "zerozero_alias": "AFC Martim",
+    "competition": "A.F Braga - Pró-Nacional - Série A",
+    "logo": "/images/oponents/championship/afc_martim.png"
+  },
+  {
+    "id": 7,
+    "step": "Sénior",
+    "name": "Futebol Clube de Amares",
+    "shorthand_name": "F.C Amares",
+    "zerozero_alias": "FC Amares",
+    "competition": "A.F Braga - Pró-Nacional - Série A",
+    "logo": "/images/oponents/championship/fc_amares.png"
+  },
+  {
+    "id": 8,
+    "step": "Sénior",
+    "name": "Futebol Clube Marinhas",
+    "shorthand_name": "F.C Marinhas",
+    "zerozero_alias": "Marinhas",
+    "competition": "A.F Braga - Pró-Nacional - Série A",
+    "logo": "/images/oponents/championship/fc_marinhas.png"
+  },
+  {
+    "id": 9,
+    "step": "Sénior",
+    "name": "Grupo Desportivo Porto D'Ave",
+    "shorthand_name": "Porto D´Ave",
+    "zerozero_alias": "Porto D´Ave",
+    "competition": "A.F Braga - Pró-Nacional - Série A",
+    "logo": "/images/oponents/championship/gd_porto_dave.png"
+  },
+  {
+    "id": 10,
+    "step": "Sénior",
+    "name": "Grupo Desportivo de Prado",
+    "shorthand_name": "G.D Prado",
+    "zerozero_alias": "GD Prado",
+    "competition": "A.F Braga - Pró-Nacional - Série A",
+    "logo": "/images/oponents/championship/gd_prado.png"
+  },
+  {
+    "id": 11,
+    "step": "Sénior",
+    "name": "Grupo Futebol Clube da Pousa",
+    "shorthand_name": "G.F.C Pousa",
+    "zerozero_alias": "GFC Pousa",
+    "competition": "A.F Braga - Pró-Nacional - Série A",
+    "logo": "/images/oponents/championship/gfc_pousa.png"
+  },
+  {
+    "id": 12,
+    "step": "Sénior",
+    "name": "Santa Maria Futebol Clube",
+    "shorthand_name": "Santa Maria F.C",
+    "zerozero_alias": "Santa Maria FC",
+    "competition": "A.F Braga - Pró-Nacional - Série A",
+    "logo": "/images/oponents/championship/santa_maria_fc.png"
+  },
+  {
+    "id": 13,
+    "step": "Sénior",
+    "name": "São Paio D'Arcos Futebol Clube",
+    "shorthand_name": "São Paio D'Arcos F.C",
+    "zerozero_alias": "S.Paio D´Arcos FC",
+    "competition": "A.F Braga - Pró-Nacional - Série A",
+    "logo": "/images/oponents/championship/sao_paio_darcos_fc.png"
+  },
+  {
+    "id": 14,
+    "step": "Sénior",
+    "name": "União Desportiva de Vila Chã",
+    "shorthand_name": "U.D Vila Chã",
+    "zerozero_alias": "UD Vila Chã",
+    "competition": "A.F Braga - Pró-Nacional - Série A",
+    "logo": "/images/oponents/championship/ud_vila_cha.png"
+  },
+  {
+    "id": 15,
+    "step": "Sénior",
+    "name": "Grupo Desportivo Recreativo Os Sandinenses",
+    "shorthand_name": "G.D.R Os Sandinenses",
+    "zerozero_alias": "Os Sandinenses",
+    "competition": "A.F Braga - Pró-Nacional - Série B",
+    "logo": "/images/oponents/championship/gdr_sandinenses.png"
+  },
+  {
+    "id": 16,
+    "step": "Sénior",
+    "name": "Vieira Sport Clube",
+    "shorthand_name": "Vieira S.C",
+    "zerozero_alias": "Vieira",
+    "competition": "A.F Braga - Pró-Nacional - Série B",
+    "logo": "/images/oponents/championship/vieira_sc.png"
+  },
+  {
+    "id": 17,
+    "step": "Sénior",
+    "name": "Clube Desportivo de Ponte",
+    "shorthand_name": "C.D Ponte",
+    "zerozero_alias": "Ponte",
+    "competition": "A.F Braga - Pró-Nacional - Série B",
+    "logo": "/images/oponents/championship/cd_ponte.png"
+  },
+  {
+    "id": 18,
+    "step": "Sénior",
+    "name": "Clube de Caçadores das Taipas",
+    "shorthand_name": "C.C Taipas",
+    "zerozero_alias": "Caç. Taipas",
+    "competition": "A.F Braga - Pró-Nacional - Série B",
+    "logo": "/images/oponents/championship/cc_taipas.png"
+  },
+  {
+    "id": 19,
+    "step": "Sénior",
+    "name": "Ribeirão Futebol Clube",
+    "shorthand_name": "Ribeirão F.C",
+    "zerozero_alias": "Ribeirão 1968 FC",
+    "competition": "A.F Braga - Pró-Nacional - Série B",
+    "logo": "/images/oponents/championship/ribeirao_fc.png"
+  },
+  {
+    "id": 20,
+    "step": "Sénior",
+    "name": "Sequeirense Futebol Clube",
+    "shorthand_name": "Sequeirense F.C",
+    "zerozero_alias": "Sequeirense",
+    "competition": "A.F Braga - Divisão de Honra - Série A",
+    "logo": "/images/oponents/championship/sequeirense_fc.png"
+  },
+  {
+    "id": 21,
+    "step": "Júniores Sub-19",
+    "name": "Gil Vicente Futebol Clube",
+    "shorthand_name": "Gil Vicente F.C",
+    "zerozero_alias": "Gil Vicente FC",
+    "competition": "Primeira Liga",
+    "logo": "/images/oponents/primeira_liga/gil_vicente.png"
+  },
+  {
+    "id": 22,
+    "step": "Sénior",
+    "name": "Associação Desportiva de Esposende",
+    "shorthand_name": "A.D Esposende",
+    "zerozero_alias": "Esposende",
+    "competition": "A.F Braga - Divisão de Honra - Série A",
+    "logo": "/images/oponents/championship/ad_esposende.png"
+  },
+  {
+    "id": 23,
+    "step": "Sénior",
+    "name": "Forjães S.C",
+    "shorthand_name": "Forjães Sport Clube",
+    "zerozero_alias": "Forjães",
+    "competition": "A.F Braga - Divisão de Honra - Série A",
+    "logo": "/images/oponents/championship/forjaes_sc.png"
+  },
+  {
+    "id": 24,
+    "step": "Sénior",
+    "name": "Pevidém Sport Clube",
+    "shorthand_name": "Pevidém S.C",
+    "zerozero_alias": "Pevidém SC",
+    "competition": "Campeonato de Portugal",
+    "logo": "/images/oponents/championship/pevidem.png"
+  },
+  {
+    "id": 25,
+    "step": "Sénior",
+    "name": "Brito Sport Clube",
+    "shorthand_name": "Brito S.C",
+    "zerozero_alias": "Brito SC",
+    "competition": "Campeonato de Portugal",
+    "logo": "/images/oponents/championship/brito.png"
+  },
+  {
+    "id": 26,
+    "step": "Sénior",
+    "name": "Vilaverdense Futebol Clube",
+    "shorthand_name": "Vilaverdense F.C",
+    "zerozero_alias": "Vilaverdense FC",
+    "competition": "A.F Braga - Divisão de Honra - Série A",
+    "logo": "/images/oponents/championship/vilaverdense.png"
+  },
+  {
+    "id": 27,
+    "step": "Sénior",
+    "name": "Grupo Desportivo de Joane",
+    "shorthand_name": "G.D Joane",
+    "zerozero_alias": "GD Joane",
+    "competition": "A.F Braga - Pró-Nacional - Série B",
+    "logo": "/images/oponents/championship/gd_joane.png"
+  },
+  {
+    "id": 28,
+    "step": "Sénior",
+    "name": "União Torcatense",
+    "shorthand_name": "U. Torcatense",
+    "zerozero_alias": "U. Torcatense",
+    "competition": "A.F Braga - Divisão de Honra - Série B",
+    "logo": "/images/oponents/championship/torcatense.png"
+  },
+  {
+    "id": 29,
+    "step": "Sénior",
+    "name": "Arões Sport Clube",
+    "shorthand_name": "Arões S.C",
+    "zerozero_alias": "Arões SC",
+    "competition": "A.F Braga - Divisão de Honra - Série B",
+    "logo": "/images/oponents/championship/aroes_sc.png"
+  },
+  {
+    "id": 30,
+    "step": "Sénior",
+    "name": "Centro Cultural e Desportivo de Santa Eulália",
+    "shorthand_name": "C.C.D Santa Eulália",
+    "zerozero_alias": "CCD Santa Eulália",
+    "competition": "A.F Braga - Divisão de Honra - Série B",
+    "logo": "/images/oponents/championship/ccd_santa_eulalia.png"
+  },
+  {
+    "id": 31,
+    "step": "Sénior",
+    "name": "Grupo Desportivo de Serzedelo",
+    "shorthand_name": "G.D Serzedelo",
+    "zerozero_alias": "GD Serzedelo",
+    "competition": "A.F Braga - Divisão de Honra - Série B",
+    "logo": "/images/oponents/championship/gd_serzedelo.png"
+  },
+  {
+    "id": 32,
+    "step": "Sénior",
+    "name": "Berço Sport Clube",
+    "shorthand_name": "Berço S.C",
+    "zerozero_alias": "Berço SC",
+    "competition": "A.F Braga - Divisão de Honra - Série B",
+    "logo": "/images/oponents/championship/berco_sc.png"
+  },
+  {
+    "id": 33,
+    "step": "Sénior",
+    "name": "União Desportivo de Airão",
+    "shorthand_name": "U.D Airão",
+    "zerozero_alias": "UD Airão",
+    "competition": "A.F Braga - Divisão de Honra - Série B",
+    "logo": "/images/oponents/championship/ud_airao.png"
+  },
+  {
+    "id": 34,
+    "step": "Sénior",
+    "name": "Sport Clube Maria da Fonte",
+    "shorthand_name": "S.C Maria da Fonte",
+    "zerozero_alias": "Maria da Fonte",
+    "competition": "Campeonato de Portugal",
+    "logo": "/images/oponents/championship/maria_da_fonte.png"
+  },
+  {
+    "id": 35,
+    "step": "Sénior",
+    "name": "Águias da Graça",
+    "shorthand_name": "Águias da Graça",
+    "zerozero_alias": "Águias da Graça",
+    "competition": "A.F Braga - Divisão de Honra - Série A",
+    "logo": "/images/oponents/championship/aguias_da_graça.png"
+  },
+  {
+    "id": 36,
+    "step": "Sénior",
+    "name": "Amigos de Urgeses",
+    "shorthand_name": "Amigos de Urgeses",
+    "zerozero_alias": "Amigos de Urgeses",
+    "competition": "A.F Braga - Divisão de Honra - Série A",
+    "logo": "/images/oponents/championship/amigos_de_urgeses.png"
+  }
+]
