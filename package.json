@@ -23,6 +23,7 @@
     "@trpc/react": "^9.25.3",
     "@trpc/server": "^9.25.3",
     "axios": "^0.27.2",
+    "cors": "^2.8.5",
     "filestack-react": "^4.0.1",
     "formik": "^2.2.9",
     "gray-matter": "^4.0.3",
@@ -44,6 +45,7 @@
     "zod": "^3.17.3"
   },
   "devDependencies": {
+    "@types/cors": "^2.8.12",
     "@types/markdown-it": "^12.2.3",
     "@types/node": "^17.0.45",
     "@types/react": "18.0.10",
