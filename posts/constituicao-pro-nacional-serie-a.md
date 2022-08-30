@@ -10,7 +10,7 @@ bannerImage: '/images/news/constituicao_serie_a.png'
 
 # Constituição da Série A da Divisão Pró-Nacional
 
-Durante o dia de hoje, 21 de julho de 2022, a **Associação de Futebol de Braga**
+Durante o dia 21 de julho de 2022 a **Associação de Futebol de Braga**
 comunicou aos clubes a constituição das duas séries que compõem a divisão
 **Pró-Nacional**. Como é sabido, a série em que habitualmente militamos é a
 **série A** pelo que nos interessa particularmente a constituição da mesma.
