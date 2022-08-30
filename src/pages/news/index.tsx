@@ -49,26 +49,26 @@ const Blog = ({ posts }: PropsType) => {
   };
 
   return (
-    <div className="px-6 md:px-16 2xl:px-64 mt-8 mb-8">
-      <div className="flex flex-col">
+    <div className='px-6 md:px-16 2xl:px-64 mt-8 mb-8'>
+      <div className='flex flex-col'>
         <div
           className={`animate-pulse flex ${isItLoading()} min-w-full text-center min-h-screen items-center`}
         >
-          <p className="font-teko uppercase w-full font-agencygothic text-4xl text-gray-700">
+          <p className='font-teko uppercase w-full font-agencygothic text-4xl text-gray-700'>
             Carregando...
           </p>
         </div>
-        <div className="flex flex-col space-y-4">
+        <div className='flex flex-col space-y-4'>
           {posts &&
             posts.map((month_year_news_posts) => (
               <span key={month_year_news_posts[0] as string}>
                 <button
-                  className="w-full flex justify-between px-10 py-6 items-center text-gray-700 hover:text-green-600 text-2xl font-agencygothic"
+                  className='w-full flex justify-between px-10 py-6 items-center text-gray-700 hover:text-green-600 text-2xl font-agencygothic'
                   onClick={() =>
                     updateDropdownStatus(month_year_news_posts[0] as string)
                   }
                 >
-                  <p className="uppercase font-teko text-4xl">
+                  <p className='uppercase font-teko text-4xl'>
                     {month_year_news_posts[0] as string}
                   </p>
                   <GoDash
@@ -102,22 +102,25 @@ const Blog = ({ posts }: PropsType) => {
                         }}
                       >
                         <button>
-                          <div className="w-full flex flex-col lg:flex-row button opacity-100 hover:opacity-70 transition duration-300 ease-in-out">
-                            <div className="w-full md:w-1/5 flex">
+                          <div className='w-full flex flex-col lg:flex-row button opacity-100 hover:opacity-70 transition duration-300 ease-in-out'>
+                            <div className='w-full md:w-1/5 flex'>
                               <Image
                                 src={news_post.frontmatter.bannerImage}
-                                alt="interview_telmo"
+                                alt={
+                                  news_post.frontmatter.author +
+                                  news_post.frontmatter.title
+                                }
                                 width={1448}
                                 height={800}
-                                className="rounded-none"
+                                className='rounded-none'
                               />
                             </div>
-                            <div className="w-full lg:w-4/5 flex flex-col space-y-2 bg-white px-4 lg:px-8 py-auto justify-center rounded-r-sm">
-                              <div className="flex w-full flex-col space-y-2 items-start py-4 lg:py-0">
-                                <p className="uppercase font-bold text-gray-400">
+                            <div className='w-full lg:w-4/5 flex flex-col space-y-2 bg-white px-4 lg:px-8 py-auto justify-center rounded-r-sm'>
+                              <div className='flex w-full flex-col space-y-2 items-start py-4 lg:py-0'>
+                                <p className='uppercase font-bold text-gray-400'>
                                   {news_post.frontmatter.category}
                                 </p>
-                                <p className="text-gray-700 text-md lg:text-2xl">
+                                <p className='text-gray-700 text-md lg:text-2xl'>
                                   {news_post.frontmatter.title}
                                 </p>
                               </div>
@@ -153,7 +156,7 @@ export async function getStaticProps() {
 
   const monthyears = [] as Array<string>;
   initial_posts
-    .sort((post) => post.frontmatter.id)
+    .sort((post) => -post.frontmatter.id)
     .forEach((post) => {
       if (!monthyears.includes(post.frontmatter.monthyear)) {
         monthyears.push(post.frontmatter.monthyear);
@@ -182,8 +185,8 @@ export async function getStaticProps() {
 Blog.getLayout = (page: ReactElement) => {
   return (
     <Layout
-      title="Notícias"
-      description="Consulta as últimas notícias que dizem respeito ao nosso clube"
+      title='Notícias'
+      description='Consulta as últimas notícias que dizem respeito ao nosso clube'
       subpages={[{ title: 'Notícias', url: '/news' }]}
     >
       {page}

@@ -16,13 +16,13 @@ const LandingFeed = () => {
   } = trpc.useQuery(['fixture.getUpcomingFixture']);
 
   return (
-    <div className="px-6 md:px-16 2xl:px-64 mt-8">
-      <div className="flex flex-col lg:flex-row space-x-0 lg:space-x-4 space-y-4 lg:space-y-0 justify-center lg:justify-between mb-4">
-        <div className="flex flex-col space-y-6 h-max w-full lg:w-9/12">
-          <Highlight id={'constituicao-pro-nacional-serie-a'} />
+    <div className='px-6 md:px-16 2xl:px-64 mt-8'>
+      <div className='flex flex-col lg:flex-row space-x-0 lg:space-x-4 space-y-4 lg:space-y-0 justify-center lg:justify-between mb-4'>
+        <div className='flex flex-col space-y-6 h-max w-full lg:w-9/12'>
+          <Highlight id={'inicio-formacao-2022-2023'} />
           <MembershipHighlight />
         </div>
-        <div className="w-full lg:w-3/12 flex flex-col">
+        <div className='w-full lg:w-3/12 flex flex-col'>
           {!isLoading && fixture ? (
             <NextFixture
               textDate={fixture!.fixture.textDate}
@@ -33,15 +33,15 @@ const LandingFeed = () => {
           ) : (
             <NextFixtureLoading />
           )}
-          <button className="flex bg-green-600 p-4 rounded-sm justify-center shadow-md mb-4">
-            <div className="flex space-x-2 items-center text-white">
-              <div className="flex flex-col">
-                <p className="uppercase text-sm">
+          <button className='flex bg-green-600 p-4 rounded-sm justify-center shadow-md mb-4'>
+            <div className='flex space-x-2 items-center text-white'>
+              <div className='flex flex-col'>
+                <p className='uppercase text-sm'>
                   Sincroniza com o teu calendário
                 </p>
-                <p className="text-xs">(Funcionalidade em desenvolvimento)</p>
+                <p className='text-xs'>(Funcionalidade em desenvolvimento)</p>
               </div>
-              <BiDownload className="text-xl" />
+              <BiDownload className='text-xl' />
             </div>
           </button>
           <FollowUs />
