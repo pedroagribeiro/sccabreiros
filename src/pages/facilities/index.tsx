@@ -75,7 +75,7 @@ const Facilities = () => {
       </div>
       <div className='flex flex-col space-y-6'>
         <div className='flex flex-col'>
-          <h2 className='text-4xl text-gray-700 font-teko uppercase'>
+          <h2 className='text-4xl text-gray-700 font-teko uppercase pb-0 font-normal'>
             Localização
           </h2>
           <div className='h-1 w-10 bg-green-600'></div>
