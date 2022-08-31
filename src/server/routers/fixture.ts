@@ -21,6 +21,7 @@ export const fixtureRouter = trpc
     async resolve() {
       const fixtures = await prisma.fixture.findMany({
         select: {
+          id: true,
           date: true,
           location: true,
           venue: true,
