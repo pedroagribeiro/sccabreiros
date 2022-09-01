@@ -125,7 +125,9 @@ export const fixtureRouter = trpc
         },
       });
 
-      fixtures.sort((fixture) => fixture.date.getTime());
+      fixtures.sort((fixture, followingFixture) =>
+        fixture.date.getTime() > followingFixture.date.getTime() ? 1 : -1,
+      );
 
       const selected_fixture = {
         ...fixtures[0],

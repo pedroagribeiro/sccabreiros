@@ -79,7 +79,7 @@ const Results = () => {
                 >
                   {month_year_fixtures[1]
                     .sort((fixture, followingFixture) =>
-                      fixture.id > followingFixture.id ? -1 : 1,
+                      fixture.date > followingFixture.date ? -1 : 1,
                     )
                     .map((fixture, index) => (
                       <Fixture

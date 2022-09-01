@@ -32,12 +32,12 @@ const Fixtures = () => {
   };
 
   return (
-    <div className="px-6 md:px-16 2xl:px-64 mt-8 mb-8">
-      <div className="flex flex-col">
+    <div className='px-6 md:px-16 2xl:px-64 mt-8 mb-8'>
+      <div className='flex flex-col'>
         <div
           className={`animate-pulse flex ${isItLoading()} min-w-full text-center min-h-screen items-center`}
         >
-          <p className="font-teko uppercase w-full font-agencygothic text-4xl text-gray-700">
+          <p className='font-teko uppercase w-full font-agencygothic text-4xl text-gray-700'>
             Carregando...
           </p>
         </div>
@@ -47,12 +47,12 @@ const Fixtures = () => {
             return (
               <span key={month_year_fixtures[0] as string}>
                 <button
-                  className="w-full flex justify-between items-center px-10 py-6 text-gray-700 hover:text-green-600 text-2xl font-agencygothic"
+                  className='w-full flex justify-between items-center px-10 py-6 text-gray-700 hover:text-green-600 text-2xl font-agencygothic'
                   onClick={() =>
                     updateDropdownStatus(month_year_fixtures[0] as string)
                   }
                 >
-                  <p className="uppercase font-teko text-4xl">
+                  <p className='uppercase font-teko text-4xl'>
                     {month_year_fixtures[0]}
                   </p>
                   <GoDash
@@ -77,19 +77,23 @@ const Fixtures = () => {
                       : 'block'
                   }`}
                 >
-                  {month_year_fixtures[1].map((fixture, index) => (
-                    <UpcomingFixture
-                      key={index}
-                      date={fixture.date}
-                      textDate={fixture.textDate}
-                      venue={fixture.venue}
-                      competition={fixture.competition}
-                      home_team={fixture.homeTeam}
-                      away_team={fixture.awayTeam}
-                      home_team_goals={fixture.homeTeamGoals!}
-                      away_team_goals={fixture.awayTeamGoals!}
-                    />
-                  ))}
+                  {month_year_fixtures[1]
+                    .sort((fixture, followingFixture) =>
+                      fixture.date > followingFixture.date ? 1 : -1,
+                    )
+                    .map((fixture, index) => (
+                      <UpcomingFixture
+                        key={index}
+                        date={fixture.date}
+                        textDate={fixture.textDate}
+                        venue={fixture.venue}
+                        competition={fixture.competition}
+                        home_team={fixture.homeTeam}
+                        away_team={fixture.awayTeam}
+                        home_team_goals={fixture.homeTeamGoals!}
+                        away_team_goals={fixture.awayTeamGoals!}
+                      />
+                    ))}
                 </div>
               </span>
             );
@@ -101,8 +105,8 @@ const Fixtures = () => {
 
 Fixtures.getLayout = (page: ReactElement) => (
   <Layout
-    title="Próximos Jogos"
-    description="Consulta os próximos jogos da nossa equipa sénior."
+    title='Próximos Jogos'
+    description='Consulta os próximos jogos da nossa equipa sénior.'
     subpages={[
       { title: 'Próximos jogos', url: '/games/fixtures' },
       { title: 'Resultados', url: '/games/results' },
