@@ -20,8 +20,9 @@ const Classification = () => {
     '2019/2020',
     '2020/2021',
     '2021/2022',
+    '2022/2023',
   ];
-  const [chosenSeason, setChosenSeason] = useState(4);
+  const [chosenSeason, setChosenSeason] = useState(5);
 
   const setNextSeason = () => {
     if (chosenSeason < data!.length - 1) {
