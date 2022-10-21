@@ -42,7 +42,9 @@ const Results = () => {
           </p>
         </div>
         {fixtures?.fixtures
-          .sort((fixture) => fixture[1][0])
+          .sort((month_fixtures, next_month_fixtures) =>
+            month_fixtures[1][0].date > next_month_fixtures[1][0].date ? -1 : 1,
+          )
           .map((month_year_fixtures) => {
             return (
               <span key={month_year_fixtures[0] as string}>
