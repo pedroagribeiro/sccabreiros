@@ -2,8 +2,7 @@ import * as trpc from '@trpc/server';
 import axios from 'axios';
 import { z } from 'zod';
 
-const scraping_service_url =
-  'https://sccabreiros-scraping-service.herokuapp.com';
+const scraping_service_url = "https://scraping-sccabreiros-production.up.railway.app";
 
 export const classificationRouter = trpc
   .router()
