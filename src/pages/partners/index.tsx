@@ -29,7 +29,7 @@ const Partners = () => {
           instagram="https://www.instagram.com/ledechem.pt/"
         />
         <OfficialPartner
-          image="/images/partners/lp_rr_contabilidade.png"
+          image="/images/partners/lp_contabilidade.png"
           name="LP & RR - Contabilidade & Seguros"
           description="Promover o desenvolvimento dos seus clientes permitindo que os ambientes económicos, financeiros e tributários não representem problemas, mas vantagens. Atingir o sucesso pela cooperação com os seus clientes. Ser um verdadeiro parceiro dos seus clientes, oferecendo um serviço altamente especializado, qualificado e profissional."
           website="https://www.lp-rr.com/?"

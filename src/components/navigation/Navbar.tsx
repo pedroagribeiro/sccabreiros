@@ -173,7 +173,7 @@ const Navbar = () => {
                 >
                   <Image
                     className='px-4'
-                    src='/images/partners/lp_rr_white.png'
+                    src='/images/partners/lp_white.png'
                     alt='lp_rr_contabilidade'
                     width={42}
                     height={35}
