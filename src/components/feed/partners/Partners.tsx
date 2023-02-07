@@ -37,7 +37,7 @@ const Partners = () => {
         <button>
           <a href="https://www.lp-rr.com/?" target="_blank" rel="noreferrer">
             <Image
-              src="/images/partners/lp_rr_contabilidade.png"
+              src="/images/partners/lp_contabilidade.png"
               alt="lp_rr_contabilidade"
               width={500}
               height={200}

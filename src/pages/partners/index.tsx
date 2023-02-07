@@ -30,7 +30,7 @@ const Partners = () => {
         />
         <OfficialPartner
           image="/images/partners/lp_contabilidade.png"
-          name="LP & RR - Contabilidade & Seguros"
+          name="L & P - Contabilidade e Seguros"
           description="Promover o desenvolvimento dos seus clientes permitindo que os ambientes económicos, financeiros e tributários não representem problemas, mas vantagens. Atingir o sucesso pela cooperação com os seus clientes. Ser um verdadeiro parceiro dos seus clientes, oferecendo um serviço altamente especializado, qualificado e profissional."
           website="https://www.lp-rr.com/?"
           facebook="https://www.facebook.com/LuisPereiraeRuiRamos/"
