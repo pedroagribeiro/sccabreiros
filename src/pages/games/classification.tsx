@@ -41,7 +41,7 @@ const Classification = () => {
 
   return data && teams.data ? (
     <div className='px-6 md:px-16 2xl:px-64 mt-8 mb-8'>
-      <div className='flex justify-center items-center text-center mb-6 rounded-sm w-full md:w-36 md:ml-6'>
+      <div className='flex justify-center items-center text-center mb-6 rounded-sm w-full md:w-96 md:ml-6'>
         <button
           onClick={() => setPreviousSeason()}
           className='text-green-600 text-xl'
