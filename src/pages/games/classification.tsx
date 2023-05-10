@@ -21,8 +21,9 @@ const Classification = () => {
     '2020/2021',
     '2021/2022',
     '2022/2023',
+    '2022/2023 - Fase de manutenção'
   ];
-  const [chosenSeason, setChosenSeason] = useState(5);
+  const [chosenSeason, setChosenSeason] = useState(6);
 
   const setNextSeason = () => {
     if (chosenSeason < data!.length - 1) {
