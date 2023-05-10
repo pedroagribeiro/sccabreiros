@@ -14,15 +14,17 @@ const Classification = () => {
 
   const teams = trpc.useQuery(['teams.get-all-teams']);
 
-  const available_seasons = [
-    '2017/2018',
-    '2018/2019',
-    '2019/2020',
-    '2020/2021',
-    '2021/2022',
-    '2022/2023',
-    '2022/2023 - Fase de manutenção'
-  ];
+  const season_slug_to_verbose = (slug: string): string => {
+    if (slug === "2017.2018") return "2017/2018"
+    if (slug === "2018.2019") return "2018/2019"
+    if (slug === "2019.2020") return "2019/2020"
+    if (slug === "2020.2021") return "2020/2021"
+    if (slug === "2021.2022") return "2021/2022"
+    if (slug === "2022.2023") return "2022/2023"
+    if (slug === "2022.2023.Relegation") return "2022/2023 - Manutenção"
+    else return ""
+  }
+
   const [chosenSeason, setChosenSeason] = useState(6);
 
   const setNextSeason = () => {
@@ -47,7 +49,7 @@ const Classification = () => {
           <BsFillArrowLeftCircleFill />
         </button>
         <p className='p-2 text-green-600 font-semibold text-xl text-center mx-4'>
-          {data![chosenSeason]}
+          {season_slug_to_verbose(data![chosenSeason])}
         </p>
         <button
           onClick={() => setNextSeason()}
